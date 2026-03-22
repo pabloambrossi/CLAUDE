@@ -1,4 +1,4 @@
-[MASTER.md](https://github.com/user-attachments/files/26168271/MASTER.md)
+[MASTER.md](https://github.com/user-attachments/files/26168485/MASTER.md)
 # MASTER KNOWLEDGE BASE -- Alkemy G&I Strategic Vision Presentation
 ## Q1 2026 Business Review for Duccio Vitale (CEO Global)
 
@@ -879,5 +879,70 @@ Italy's DTC uses a **Design -> Enable -> Scale** model:
 
 ---
 
+---
+
+# ADDENDUM: New Information (22 March, late session)
+
+## NEW PARTNERSHIP: ABTasty (CRO Technology Platform)
+
+- **Status:** Exploring. Attended their event this week. Mutual client referral model under discussion.
+- **What ABTasty is:** Experience Optimization Platform — A/B testing, content personalization, feature experimentation, recommendations & merchandising, AI-powered audience segmentation. 1,200 clients globally, $64M raised, 30% YoY growth, profitable. Offices in Spain.
+- **CRO with AI vision:** Atoms methodology + ABTasty tooling + Alkemy Martech/UX = comprehensive AI-powered CRO. Cross-practice: UX (research+design) + Martech (data+measurement) + Tech (implementation).
+- **Business model:** Mutual client referrals + joint CRO offering.
+
+## ATOMS STATUS UPGRADE
+
+- **Previous:** "To be activated"
+- **Current:** NOW activated — starting to offer their CRO framework in Spain
+- **Impact:** CRO becomes a strong cross-practice entry product (UX + Data/Martech)
+
+## NEW SOURCE: Alkemy-Retex (Atoms, Witailer, Cosmic) — 73 pages
+
+Group companies portfolio (via Retex acquisition) — ready-made capabilities Spain can leverage WITHOUT hiring:
+
+**Atoms (CRO & Performance):**
+- Enterprise CRO methodology: hybrid research (quali+quanti), A/B and multivariate testing, priority matrix
+- Team model: UX Designer + UI Designer + CRO Specialist + Analyst + Developer + PM
+- Services: Tag management, tools setup, quali-quanti analysis, data visualization, KPI frameworks, A/B & MV testing
+- NOW being activated in Spain + ABTasty as tech platform partner
+
+**Witailer (Retail Media & Marketplaces):**
+- Amazon activation, marketplace management, advertising campaigns across retailers
+- Intelligent Platform for cross-marketplace analytics and optimization
+- AMC Team (Data Scientists with 2+ years Amazon Marketing Cloud experience)
+- Supports brands across diverse retailers and POCs (points of commerce)
+- 2 people from Witailer Spain already hired into Agency team
+- Joint go-to-market with Cosmic planned
+
+**Cosmic (Short-Form Video & Creator Economy):**
+- 100% focused on short-form vertical video (TikTok, Reels, Shorts)
+- **Milky Way** — proprietary technology that identifies viral trends BEFORE they peak using algorithm-based analysis of billions of posts
+- Services: Creative strategy, video production (internal + creators), creator scouting & management, paid media amplification, channel management
+- Key differentiator: not a creator agency — a strategic video partner with trend-prediction tech
+- In Spanish market already — natural synergy with Alkemy+ BX for Social Commerce + content
+
+**Impact for the presentation:**
+These three group companies dramatically accelerate Alkemy Spain's time to value:
+- CRO: Atoms methodology is READY, not a plan
+- Retail Media: Witailer platform is LIVE, not a concept
+- Social Commerce content: Cosmic has production capability + trend tech, not a promise
+This means several "Q2" velocity markers could become "NOW" if we activate group synergies properly.
+
+## UX INNOVATION: Synthetic User Testing with AI Agents
+
+- **Status:** In active client conversations. Helvetia = first proof point.
+- **What:** User testing with AI agents (synthetic users) alongside real people. Scalable, faster.
+- **Helvetia case:** New hiring portal design — testing with AI agents + real users. "Designed by Humans, Powered by AI" literally in action.
+- **Differentiation:** No one in our tier offers AI-powered user research at scale.
+- **Cross-practice:** Can be applied to BX content testing, Media landing page optimization, Martech conversion flows.
+
+## HELVETIA RELATIONSHIP EXPANDING
+
+- **Original:** Cross-practice v0.1 (Tech + UX + GEO + Consulting + BX). 10 deliverables, 145 assets, 10 weeks.
+- **NEW:** Hiring portal design with AI agent testing.
+- **Significance:** Cross-sell is working. First cross-practice client already expanding = G&I Role 3 in action.
+
+---
+
 *END OF MASTER KNOWLEDGE BASE*
-*Total sources: 22 documents. All data points attributed. Tags: [VERIFIED] = multiple sources, [SINGLE] = one source.*
+*Total sources: 24 documents + addendum. All data points attributed. Tags: [VERIFIED] = multiple sources, [SINGLE] = one source.*
