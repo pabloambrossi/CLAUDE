@@ -1,4 +1,4 @@
-[00-reality-check.md](https://github.com/user-attachments/files/26168120/00-reality-check.md)
+[00-reality-check.md](https://github.com/user-attachments/files/26168170/00-reality-check.md)
 # Reality Check v2 — Deep Dive by Practice
 ## What we do today → What the market demands → How we bridge the gap
 
@@ -242,13 +242,28 @@ This alignment with Italy is powerful for Duccio — Spain and Italy speaking th
 **Bridge:** SDLC transformation includes UX in the flow. Capability evolving naturally.
 
 ### Consulting (TRANSVERSAL CAPABILITY within Data.Tech.AI)
+**Lead: Letizia Mazza**
 
 Not a separate practice — a cross-cutting capability that helps clients translate business needs into actionable plans and requirements for their transformation.
 
 **What we do today:** Business consulting, data/tech strategy, operations excellence, eCommerce advisory
 **Role in the new model:** The critical bridge between "what the client's business needs" and "what DTC builds." Without consulting, DTC delivers technology. WITH consulting, DTC delivers business transformation.
 **Market demands:** AI strategy & governance consulting, DORA compliance for FSI, capability building programs, AI Act readiness
-**Bridge:** ECIJA partnership + AI Compliance hire. Existing consulting team reframes as the "translator" between business ambition and technical execution.
+**Bridge:** ECIJA partnership + AI Compliance hire. Letizia's team reframes as the "translator" between business ambition and technical execution.
+
+### DTC CLIENT ENTRY — Two paths based on maturity
+
+**Path A: Legacy client (competitive positioning)**
+Client has legacy systems, technical debt, operational inefficiency. They need modernization.
+→ We enter with AI-powered legacy modernization — making them competitive again.
+→ Same 6 enablement layers, but framed as "catching up with AI acceleration."
+
+**Path B: Innovative client (disruptive positioning)**
+Client has a modern stack but wants to transform their operations and business model.
+→ We enter with agentic foundations and orchestration — making them a disruptor.
+→ Same 6 enablement layers, but framed as "leapfrogging with AI-native operations."
+
+Same capabilities. Different framing. Client maturity determines the entry point.
 
 ---
 
@@ -358,9 +373,8 @@ This year is FUNDAMENTAL for positioning Alkemy as a key player. Full commitment
 
 ---
 
-## OPEN QUESTIONS FOR PABLO (to refine before Phase 1)
-
-1. BX: The trend docs are being extracted — once ready, I'll propose additional opportunities beyond Social Commerce and Digital Listening. Are there specific areas you're curious about?
-2. Naming: You said you don't like the current names. Should we work on naming AFTER we validate the full market analysis, or do you have preferences already?
-3. Dependencies: The DTC priority order you gave (Legacy → Foundations → Governance → Deployment → Compliance) — is this the order you want to PRESENT to Duccio, or the order you think is the actual sequence for clients?
-4. Consulting: Is there a specific person leading consulting within DTC, or is it distributed?
+## RESOLVED — All questions answered
+- BX: 30 opportunities identified via trend research
+- Naming: AFTER market analysis validation
+- DTC order: Confirmed as both client sequence AND presentation order. Two entry paths (legacy=competitive, innovative=disruptive)
+- Consulting: Led by Letizia Mazza, transversal within DTC
