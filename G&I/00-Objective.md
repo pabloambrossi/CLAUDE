@@ -1,4 +1,4 @@
-[00-objective.md](https://github.com/user-attachments/files/26168180/00-objective.md)
+[00-objective.md](https://github.com/user-attachments/files/26168491/00-objective.md)
 # Objective Brief — G&I Strategic Vision Presentation
 
 ## What is this presentation?
