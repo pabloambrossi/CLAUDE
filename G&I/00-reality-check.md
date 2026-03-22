@@ -1,4 +1,4 @@
-[00-reality-check.md](https://github.com/user-attachments/files/26168170/00-reality-check.md)
+[00-reality-check.md](https://github.com/user-attachments/files/26168487/00-reality-check.md)
 # Reality Check v2 — Deep Dive by Practice
 ## What we do today → What the market demands → How we bridge the gap
 
@@ -141,7 +141,19 @@ The strategy: move from commodity media buying to high-value services that let u
 - Attention metrics (aCPM) integrated into reporting
 - Retail Media performance unified with other channels
 
+**CRO — A major cross-practice opportunity (UX + Data/Martech):**
+- **Atoms partnership** — provides CRO methodology, already activated. Starting to offer their framework.
+- **ABTasty partnership** (NEW, exploring) — Experience Optimization Platform: A/B testing, content personalization, feature experimentation, recommendations & merchandising, audience segmentation. 1,200 clients globally, $64M raised, 30% YoY growth. Exploring mutual client referrals. Attended their event this week.
+- **CRO with AI** — combining Atoms methodology + ABTasty tooling + our Martech/UX capabilities. This is genuinely cross-practice: UX does the research + design, Martech does the data + measurement, tech implements.
+- **This could become one of the strongest entry products** — concrete, measurable, fast ROI for clients.
+
+**UX Innovation — Synthetic User Testing with AI Agents:**
+- Already in conversation with clients about running user testing with AI agents (synthetic users) alongside real people
+- **Helvetia proof point**: They've asked us to design a new hiring portal, and we're doing it with AI agent testing + real users to make it scalable
+- This is a genuine differentiator — no one else in our tier is offering AI-powered user research at scale
+
 **Bridges needed:**
+- ABTasty partnership formalization (mutual client referrals, joint CRO offering)
 - Atoms partnership for CRO Sprint packaging (immediate)
 - Data scientist profile for MTA/MMM (hire or partnership)
 - AI/LLM integration into analytics workflows (German's domain — operational innovation)
