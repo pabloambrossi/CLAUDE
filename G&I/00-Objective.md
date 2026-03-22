@@ -1,3 +1,4 @@
+[00-objective.md](https://github.com/user-attachments/files/26168180/00-objective.md)
 # Objective Brief — G&I Strategic Vision Presentation
 
 ## What is this presentation?
@@ -42,9 +43,11 @@ DOES things for clients    →        ENABLES clients to become
                                        (because of us, not despite us)
 ```
 
-**Why clients can't do this alone:** AI democratization means clients WANT to internalize. We HELP them do it right. Doing it alone = security risk + cost overruns + missed opportunity (they can't extract maximum value without us). We are the accelerator, not the bottleneck.
+**Why clients can't do this alone:** AI democratization means clients WANT to internalize — and they're right to. Tools like Claude and GPT let them do things that used to require experts. But they CANNOT build a proprietary, scalable, secure, modular ecosystem around those tools by themselves. They can't align AI with business objectives, orchestrate agents across their systems, ensure EU compliance, or maintain a technology radar. Doing it alone = security risk + cost overruns + missed opportunity. We are the enablement partner that makes their AI investment actually work — through 6 layers: Data, Infrastructure, Processes, Orchestration, Training, and Technology Radar. Everything oriented to concrete business results.
 
 **The innovation angle:** This is not "the same thing with AI on top." The market is shifting from outsourcing to co-creation. Clients who try to go solo fail 80% of the time (RAND). Those who work with a partner succeed 67% of the time (MIT). We are that partner — but a new kind: one that makes the client stronger, not dependent.
+
+**Critical: we must be our own best success case.** The SDLC AI-First transformation is the most strategic operational initiative. If we can't show that we've transformed our own operations with AI agents, we have no credibility selling it to clients. Alkemy must be a living example of innovation and agent-driven operations. This applies across all practices — the concept of enabling (foundation → orchestration → scale) is not a named product or model, it's the underlying philosophy of how we approach ANY client engagement, whether it's DTC building agentic platforms or Alkemy+ deploying AI-assisted creative production.
 
 ## Why NOW — the historic moment
 
