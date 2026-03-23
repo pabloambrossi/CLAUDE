@@ -1,461 +1,707 @@
-[structure-final.md](https://github.com/user-attachments/files/26180530/structure-final.md)
-# Structure Final v3 — G&I Strategic Vision
-## Single source of truth. All previous versions superseded.
-## English. Audience: Duccio (CEO Global), Silvia Bosani (HR Global), Diego Escalada (CDO/CEO Spain), Alkemy Iberia leadership.
+[structure-v2-full.md](https://github.com/user-attachments/files/26185843/structure-v2-full.md)
+# Presentation Structure v2 — G&I Strategic Vision
+## For Duccio Vitale (CEO Global), Silvia Bosani (HR Global), Diego Escalada (CEO Spain)
+## Language: English | March 2026
 
 ---
-
-## CONTEXT
-This presentation follows the SDLC AI-First Transformation deck (DTC practice).
-DTC will have already presented their operational transformation (130 developers, 9 agentic pillars, 145K investment, 6-month roadmap).
-G&I builds ON that: "DTC is transforming HOW we build. G&I is transforming WHAT we sell, to whom, and how we go to market."
 
 ## GOVERNING THOUGHT
-The market is spending more on AI than ever, but 81% see no bottom-line impact. G&I has designed sales machines — born from what the market demands, not what we currently do — that close this gap. Named products, clear pricing, quarterly adaptation. We've already started, and this is what it takes to make things happen.
+
+**"Spain is Europe's #1 AI adopter — but 81% of companies see no bottom-line impact. G&I has evolved from a portfolio management team into a market-driven growth engine. We've built sales machines — named products, clear pricing, hybrid teams — born from what the market demands. We've already started executing. Here's the plan."**
+
+---
 
 ## NARRATIVE ARC (Minto SCQA)
-- **S:** Spain leads Europe in AI adoption (78%). Iberian CIOs invest +4.3% more than global. AI budgets up +40.8%.
-- **C:** 81% report no P&L impact. Only 5% capture value. AI Act in 133 days (7% revenue fines). Only 36% prepared. Competitors productizing.
-- **Q:** What does Alkemy need to do NOW to turn this market gap into a leadership position?
-- **A:** G&I has built market-driven sales machines for both practices. Named products, clear pricing, hybrid human+AI teams. Quarterly adaptation. Already in motion.
 
-## KEY LINE (3 Pillars — MECE)
-1. **The market opportunity** — investment flows, value gap, regulation as revenue, competitive whitespace
-2. **Our sales machines** — products by practice, with workflow, entry → expansion → recurring
-3. **We're already executing** — SDLC foundation, internal innovation, capability evolution, partnerships, roadmap
+- **S:** Spain leads Europe in AI adoption (78%). Iberian CIOs invest +4.3% above global. AI budgets up +40.8%. The market is spending.
+- **C:** 81% report no P&L impact. Only 5% capture value at scale. AI Act full enforcement in ~133 days. Competitors are productizing. And 12 months ago, we were still classifying our portfolio.
+- **Q:** How does Alkemy turn this gap into a leadership position — with a team of four?
+- **A:** By designing sales machines from market demand, not from internal capabilities. Named products, quarterly adaptation, hybrid human+AI delivery. Already in motion.
 
 ---
 
-## SLIDE-BY-SLIDE
-
-### ACT 0: OPENING (4 slides)
-
-**S01: COVER**
-Light background. Left: [Alkemy] bracket logo, "G&I Strategic Vision — Closing the AI Value Gap", "Growth & Innovation | Q1 2026". Right: brand image (Picture1). Clean, confident.
-
-**S02: THE PARADOX — Three beats**
-Three hero numbers, each with icon:
-- "78%" (green) — AI adoption in Spain. Icon: trending up.
-- "81%" (amber) — no bottom-line impact. Icon: warning.
-- "5%" (red) — capture real value. Icon: target.
-Below: "The gap between experimenting and transforming is where G&I operates."
-Sources: McKinsey State of Orgs 2026 (81%), BCG Build for the Future 2025 (5%).
-
-**S03: EXECUTIVE SUMMARY (SCQA)**
-Four visual blocks with icons and short phrases (speaker fills in):
-- S: Spain leads AI adoption. Investment flowing. Momentum.
-- C: 81% no impact. 5% capture value. AI Act 133 days. Competitors productizing.
-- Q: What does Alkemy need to do NOW to turn this market gap into a leadership position?
-- A: Market-driven sales machines. Named products. Hybrid teams. Quarterly adaptation. Already in motion.
-Governing thought in brand violet.
-Three clickable pillar cards: 01 Market | 02 Machines | 03 Execution.
-
-**S04: AGENDA — Interactive**
-Three numbered blocks. Click to navigate. Short descriptions:
-- 01 The Market Opportunity
-- 02 Our Sales Machines
-- 03 We're Already Executing
+# ACT 00: GROWTH & INNOVATION — WHO WE ARE
+### 3 slides · ~3 min
+**Purpose:** Frame who G&I is, where it sits, and why it exists. Duccio needs this anchor before anything else.
 
 ---
 
-### ACT 1: THE MARKET OPPORTUNITY (7 slides)
+### S01: COVER
 
-**S05: Chapter divider — "01. The Market Opportunity"**
-Picture1 right. Blue accent. Preview: "Investment is flowing. Value isn't captured. Regulation opens a new market. No one owns our space."
+**Layout:** Full-bleed image, dark overlay.
 
-**S06: Investment is flowing — every Alkemy category is growing**
-Animated horizontal bars:
-- GenAI funding: +44.3% (blue spotlight)
-- AI funding: +40.8%
-- Cybersecurity: +28.7%
-- Cloud: +23.5%
-- IT total Iberia: +4.3% (vs +2.8% global)
-SO WHAT: "The money is there. CIOs are betting — and IA is the only marketing category that grew in 5 years (+11% paid media; 9% of CMO budgets now go to AI tools). Our job is to help them win that bet."
-Add context: CMO budget paradox — total marketing budgets fell from 9.5% to 7.7% of revenue, but AI investment is the exception.
-Source context: Gartner CMO Spend Survey 2025 (n=402) + Gartner CIO Survey Spain/Portugal 2026
-Source: Gartner CIO Survey Spain/Portugal 2026 (n=154 Iberian CIOs)
-
-**S07: The value gap IS our market**
-Four evidence cards with icons:
-- 81% of organizations see no P&L impact from AI (McKinsey, 10K+ execs)
-- 8.6% have agents in production — not the 40% vendors claim (Recon Analytics)
-- 67% succeed with a partner vs 22% building alone (MIT)
-- 74% of AI users seek algorithmic recommendations over traditional search (Kantar 2026)
-SO WHAT: "Companies need a partner who implements, not a vendor who demos."
-
-**S08: Regulation is not context — it's a revenue line**
-SVG timeline: DORA active → AI Act prohibitions (Feb 2025) → NOW → AI Act high-risk (Aug 2026, 133 days) → Full enforcement (2027)
-Three fact cards: €35M or 7% global revenue fines (AI Act Aug 2026) | Only 36% prepared (Deloitte) | Spain + Italy: only 2 EU countries with national AI authority | GDPR fines €1.2B in 2025 (€7.1B cumulative since 2018)
-Whitespace: Big 4 >500K | Law firms can't implement | Mid-market underserved = OUR SPACE
-Market: $492M in 2026 → $3.6B by 2033 (36% CAGR)
-
-**S09: What competitors have built — and what they haven't**
-One slide, split Global (left) vs Spain (right):
-Globals: Accenture AI Refinery ($3B+, now "Reinvention Services" $20B), Deloitte Agent Advantage, McKinsey QB (300+ accelerators), Globant AI Pods, **Omnicom-IPG** (merged Nov 2025, $9B, $25B+ revenue), **Publicis CoreAI** (€300M investment, 2.3B profiles + Lotame = 91% of internet adults), **WPP** (Large Marketing Model, 350+ partners, but -8.1% revenue, restructuring). ALL >500K, enterprise only, no mid-market Southern Europe focus.
-Spain: JAKALA (no compliance pivot), Making Science (AdTech focus), Minsait (enterprise/public sector), WPP/Cocktail (glia engine but no compliance+transformation integration).
-SO WHAT: "No one owns compliance + transformation for mid-market Southern Europe."
-
-**S10: Alkemy's whitespace**
-SVG 2x2 positioning: Specialist vs Integrated (X), Enterprise vs Mid-market (Y). Alkemy in integrated + mid-market.
-Three differentiators:
-1. Dual ES-IT (only 2 EU countries with national AI law)
-2. Hybrid teams (human+AI, +40% quality — Harvard/BCG)
-3. Boutique 360 (strategy + creative + data + tech under one roof)
-Client enablement narrative: "Our role is to help clients use AI tools in a proprietary, scalable, secure, business-oriented ecosystem. Foundation → Governance → Value creation. 67% succeed with a partner (MIT)."
-
-**S11: Transition**
-Full-bleed Picture10. White text: "This is why we built specific solutions. Let me show you what they look like."
+**Title:** "g&i strategic vision — closing the ai value gap"
+**Subtitle:** Growth & Innovation | Q1 2026 Business Review
+**Bottom:** [Alkemy] — Designed by Humans. Powered by AI.
 
 ---
 
-### ACT 2: OUR SALES MACHINES (19 slides)
+### S02: WHERE G&I SITS — THE CUSTOMER VALUE JOURNEY
 
-**S12: Chapter divider — "02. Our Sales Machines"**
-Picture7 right. Red accent. "Born from market demand. Adapted quarterly. AI included in the price."
+**Key message:** "Spain is organized around the client's lifecycle, not around practice silos. G&I is the engine at the center."
 
-**S13: Where we come from — the legacy offering**
-Visual map of CURRENT Alkemy Spain structure as the audience knows it:
-- Alkemy+ (BX: Creatividad, Produccion, Social Media, Estrategia, Contenidos, Analitica, IA Generativa | Media: SEO/SEM, Programatica, Social, CTV, DOOH, Retail Media, Afiliacion, Audio Online, RCS, Influencers | Martech: Analytics, CRO, Tag management, herramientas)
-- Data.Tech.AI (Technology + Data & IA unified, UX/UI, Consulting — Letizia Mazza)
-Honest label: "Strong capabilities. Deep expertise. But organized by discipline, not by client need."
-Visual: traditional org boxes, siloed, static. Each area operating independently.
+**Visual:** Simplified version of the org chart — the horizontal Customer Value Journey:
 
-**S14: The Shift — from capability silos to market-driven solutions**
-NARRATIVE SLIDE. The transition that defines everything.
-This is a PROPOSAL from G&I to validate with GTM teams and practices. What the market demands and where we should go.
+```
+RELATIONSHIPS & ACQUIRE  →  GROW  →  SCALE
+       BD & GTM              G&I       Client Service
+   Manuel · Raúl      Germán · Carmen    Iciar
+                       Pablo · Borja
+```
 
-THE SHIFT (visual: animated arrows or transformation graphic):
-- From selling hours → selling results
-- From capability silos → integrated solutions
-- From fixed annual catalog → quarterly market adaptation
-- From Alkemy's internal language → the client's language
-- From individual practices → cross-practice delivery by default
+Below the journey line: **Practices** (DTC + Agency) as the execution layer.
 
-G&I's 3 roles in making this happen:
-(1) Innovate value proposition — design what we sell
-(2) Boost sales & conversion — GTM focus, content, ticket and conversion improvement
-(3) Grow strategic clients — year 1 cross/upsell in key accounts
+**Three callouts around the visual:**
 
-"Same talent. New packaging. The machines are the WHAT. The practices are the HOW."
+1. **Role 1 — Innovation:** Design the value proposition. Translate market demand into named products with pricing, timelines, deliverables. Quarterly adaptation.
+2. **Role 2 — New Business:** Prepare and defend high-impact proposals. Presales support to GTM. Drive ticket size and conversion.
+3. **Role 3 — Strategic Clients Y1:** Nurture new accounts during year 1. Cross/upsell. Turn new clients into growing clients.
 
-**S15: Product Architecture — the full picture**
-THE WOW SVG DIAGRAM. Must be clear, beautiful, and immediately understandable.
+**Supporting fact:** "The team: 2 business profiles + 2 operations profiles. 2 DTC-side + 2 Agency-side. Full complementarity across both practices."
 
-[ALKEMY]+ (red) — 3 pillars organized by what clients need:
-
-  BRAND & SOCIAL COMMERCE
-  "Make your brand sell on every platform"
-  Entry: Social Storefront (20-40K)
-  Expansion: AI Creative Engine (8-15K/mo)
-  Flagship: Brand Ecosystem → Cross-practice
-  Powers: BX creativity + Cosmic video/trends + Social Media + IA Generativa
-
-  SEARCH & AI VISIBILITY
-  "Be found by people AND by AI models"
-  Entry: Search 360 Audit (15-30K)
-  Expansion: Total Search / DPO Management
-  Flagship: AI Performance + Agentic Media
-  Powers: Media SEO/SEM + GEO (Scrolling→in-house) + Programmatic + CTV + RMN (Witailer)
-
-  CONVERSION INTELLIGENCE
-  "Turn data into revenue"
-  Entry: CRO Sprint 30d (15-25K)
-  Expansion: Agentic Analytics & Conversational BI
-  Flagship: Performance Intelligence → Agentic Commerce
-  Powers: Martech analytics + Atoms CRO + ABTasty/DY/CS + UX research + MMM
-
-[DATA.TECH.AI] (blue) — 3 blocks by client journey:
-
-  ENABLE — "Get the base right"
-  Entry: Legacy Blueprint (50-100K)
-  Data Foundations + Infrastructure
-  For clients who need the base before they can innovate
-
-  ORCHESTRATE — "Design for scale, security, and control"
-  Entry: AI Governance Sprint (25-50K)
-  Compliance + FinOps + Org Design + AI Literacy + Strategy
-  The crucial governance and design layer
-
-  ACCELERATE — "Real results. Fast. Continuously."
-  Entry: Agent Launchpad (30-60K)
-  Quick wins + Enterprise Platform + Managed Agentic Ops
-  From pilot to production to continuous evolution
-
-Transversal within DTC: Consulting (Letizia Mazza) | UX/UI
-
-Bottom bar: HYBRID TEAMS · AI IN PRICE · QUARTERLY ADAPTATION
-
-**S16: [Alkemy]+ Brand & Social Commerce — deep dive**
-Readiness: NOW. Strongest Alkemy+ pillar.
-Our own BX capabilities (creativity, production, social media, IA generativa) are the core.
-Group partners complement and create commercial hooks for bigger opportunities:
-- Cosmic: vertical video content + Milky Way trend detection. Positions us as the perfect social partner.
-- Witailer: TikTok Shop partner (unique in Spain), social commerce activation on marketplaces.
-Together: Alkemy BX + Cosmic video + Witailer TikTok Shop = complete social commerce proposition. No one else in our tier offers this combination.
-Staircase: NOW: Social Storefront 20-40K → Q2: AI Creative Engine 8-15K/mo → Q3: Integrated Brand Ecosystem → Q4+: Full social commerce (content + commerce + performance integrated)
-Data: EUR 45→4-6/image with AI (Deloitte), +200% copy capacity, 27% creator content tied to brand (Kantar), 61% marketers increasing creator spend.
-AI Act Art. 50: transparency for AI-generated content — built into workflow.
-
-**S17: BX Workflow — How Social Storefront works**
-SVG flow: Audit (wk 1-2) → Blueprint (wk 3-4) → Gate → Production (wk 5-6) → Launch & Optimize (wk 7-8)
-Cross-sell triggers. Shows HOW we work with clients, not just WHAT we deliver.
-
-**S18: [Alkemy]+ Search & AI Visibility — deep dive**
-Quote: "If the model doesn't know you, it won't choose you." — Kantar 2026
-Staircase:
-  NOW: Search 360 Audit 15-30K — comprehensive multi-channel audit: SEM + SEO + GEO + Social Search + Marketplaces. Scrolling partnership for GEO execution (short term). IMMEDIATE ACTION: hire a GEO project manager to internalize sales and management. Medium term: bring GEO execution fully in-house.
-  Q2: GEO as standalone service — high margin, high demand, first-mover window. AI-written SEO content (tools replace translators = higher margin). Total Search = integrated management of ALL search channels (paid + organic + AI-generated + social + marketplace) as one connected strategy.
-  Q3: AI Performance + Retail Media (Witailer) + CTV. Existing capabilities sharpened with AI.
-  Q4+: AAMP-ready Agentic Media — IAB Tech Lab standard (16 March 2026). Goal: among first agencies in Spain prepared for agentic advertising.
-Reality: media margins ~6-7%. Clients internalizing ad credit lines. Our strategy: DIFFERENTIAL services with higher margin (GEO is very profitable, AAMP is unique, Total Search is strategic). We choose differentiation over volume.
-Data: 74% seek AI recs (Kantar), RMN 1.8x vs digital ads, 70% campaigns don't fully integrate AI (IAB). NEW INTEL: AI Overviews already -58% clicks (Ahrefs), zero-click heading to 70%+ by mid-2026, BUT AI traffic converts at 4.4x the economic value of organic (Adobe). GEO: +30-40% AI visibility from citing sources + statistics (Princeton research). Total search volume grew 26% globally — demand isn't disappearing, value is redistributing. The Trade Desk testing campaign creation via Claude (Anthropic) — agentic media buying is here.
-
-**S19: Media Workflow — Search 360 Audit**
-SVG flow: Multi-channel audit (SEM+SEO+GEO+Social Search+Marketplaces) → Gap analysis & benchmarking → Strategy & roadmap → Activation support.
-Scrolling partnership (short term), in-house GEO team (medium term). 4-6 weeks.
-Cross-sell: data gaps → CRO Sprint; content gaps → Social Storefront; compliance gaps → AI Governance Sprint.
-
-**S20: [Alkemy]+ Conversion Intelligence — deep dive**
-THE EVOLUTION OF ANALYTICS: from reporting to intelligence to agentic.
-Staircase:
-  NOW: CRO Sprint 30d 15-25K — Atoms methodology + partner tech (ABTasty, Dynamic Yield, Contentsquare). Reseller model through Atoms network: we implement vendor tech AND extract maximum value from client assets. Cross-practice: UX (research) + Martech (data) + Tech (implementation).
-  Q2: Advanced Analytics & Agentic Analytics — AI agents that analyze data and generate insights autonomously. Conversational BI with MCP connections. Move from "we send reports" to "the data talks to you."
-  Q3: Performance Intelligence Platform — AI-powered data visualization on demand, marketing automation combined with econometric models (MMM), composable CDPs, identity graphs, cloud DB integrations (BigQuery, AWS). Server-side tagging + privacy-first architecture.
-  Q4+: Agentic Commerce Readiness — A2A monitoring (bot traffic growing fast on ecommerce), MCP servers for agent-readable data, automated conversion optimization. Help clients prepare their websites for when AI agents browse, evaluate, and purchase on behalf of users.
-Key: With AI, we MUST continue delivering value beyond what tools do alone. Our edge: vendor tech + implementation expertise + business context + continuous optimization.
-Dual role of Martech: (1) Enable BX and Media to be differential (data ingestion, engineering, science, orchestration), (2) Sell these capabilities directly to clients.
-Partners: **VWO-ABTasty** (merged Jan 20, 2026, ~$500M, >$100M ARR, 4,000+ clients, 11 offices — our partner just became a much bigger entity. Their Evi agent reduces A/B testing setup by 73%), **Dynamic Yield** (Mastercard, 7 consecutive Gartner leader years, 15-25% conversion improvement), Contentsquare (via Atoms network). We are their resellers AND implementation experts. Mutual referrals = pipeline.
-Data: +18% sales lift MarTech vs working media (Deloitte), 2.9% vs 0.5% conversion with personalization. NEW: GA4 Cross-Channel Budgeting (beta 2026) = shift from retrospective reporting to predictive planning across ALL paid media (Meta, LinkedIn, TikTok, Snapchat, Google). Server-side tagging recovers 15-30% conversion signal. Cyber Week 2025: 17% of all online orders from AI agents ($13.5B). AI personalization delivers 10-30% conversion lift, up to 800% ROI (industry benchmark).
-Current capabilities we keep and sharpen: digital analytics (GA4), tag management, server-side tagging, privacy, CRO, marketing automation. All evolving with AI for efficiency and margin.
-
-**S21: Data.Tech.AI — The client enablement model**
-KEY NARRATIVE. The market has changed: clients now have Claude, GPT, Copilot. They question whether to hire us.
-Our answer: we help them USE these tools in a proprietary, scalable, secure, business-oriented ecosystem. We don't compete with the tools — we ENABLE the client to get maximum value from them.
-PLUS: We also work with these tools ourselves — making us faster and higher quality. Lower CAPEX for the client. Tech projects become more attractive because we deliver more for less. Our role: convince clients they need us to do things properly in the medium and long run.
-What we provide as partner: Data foundations + Infrastructure + Processes + Orchestration + Training + Continuous tech radar. ALL oriented to concrete business results.
-THREE BLOCKS — ENABLE | ORCHESTRATE | ACCELERATE:
-Two entry paths depending on client maturity:
-- Legacy clients → Enable entry (competitive: AI-powered modernization)
-- Innovation-ready clients → Orchestrate or Accelerate entry (disruptive: transform stack/ops/business model)
-
-**S22: ENABLE — "Get the base right"**
-Legacy Blueprint 50-100K. Data Foundations. Infrastructure design.
-For clients who need the base before they can innovate.
-ThoughtWorks "reconstruction" approach. AI-accelerated: 40-50% timeline reduction (McKinsey LegacyX).
-Data: $15-30B legacy market, 79% failure rate (vFunction).
-
-**S23: ORCHESTRATE — "Design for scale, security, and control"**
-AI Governance Sprint 25-50K (entry). AI Literacy Training (Art. 4 — affects every company). FinOps. Org design for AI adoption. Innovation strategy.
-ECIJA partnership. Dual ES-IT. Consulting (Letizia Mazza) within DTC orchestrates.
-Expansion: Implementation 80-200K → Compliance-as-a-Service 3-8K/mo
-Data: 36% prepared (Deloitte), $492M market, 7% fines.
-
-**S24: ACCELERATE — "Real results. Fast. Continuously."**
-Agent Launchpad 30-60K (entry). First agent in production.
-Platform mastery: Copilot Studio, Agentforce, LangChain/LangGraph, MCP.
-Expansion: Enterprise Platform 100-300K → Managed Agentic Ops 5-15K/mo
-Data: 8.6% in production (Recon), 42% CIOs planning agents (Gartner), 67% succeed with partner (MIT). AAMP URGENCY: Microsoft closed Xandr DSP (Feb 2026) — explicitly stating DSP model doesn't fit agentic future. Meta automating advertising completely by end 2026. The Trade Desk testing Claude for campaign creation. AAMP Agent Registry: 10/10 agents use MCP (0 A2A). PubMatic AgenticOS: 87% setup reduction. Companies need to be AAMP-ready NOW.
-Quick wins in the short term + continuous long-term value. Results-oriented.
-
-**S25: DTC Value Chain — Entry to lifetime value**
-SVG flow: Any DTC entry (25-100K) → Implementation (80-300K) → Recurring (3-15K/mo)
-All three blocks converging. Lifetime value 200-500K+ EUR.
-
-**S26: Separator — "Key Industries for 2026"**
-Transition slide. "We've shown the machines. Now let's see how they adapt to the industries where we have the strongest position and the biggest opportunity."
-
-**S27: Vertical — Financial Services**
-What FSI demands: DORA compliance (immediate), AI Act for financial models, agent deployment for RM efficiency, legacy modernization (core banking), customer experience.
-How we adapt: AI Governance Sprint → DORA remediation | Agent Launchpad → RM copilots | Legacy Blueprint → core modernization
-Data: 75% banks deploying agents by 2027 (Capgemini), 69% RM time on non-client tasks, $57B lost revenue without modernization (ThoughtWorks).
-Deep portfolio: BBVA, MAPFRE, Helvetia, AXA, Unicaja, Bankinter.
-
-**S28: Vertical — Energy & Utilities**
-What E&U demands: AI in critical infrastructure (high-risk AI Act), sustainability reporting, digital transformation of operations, customer portals.
-How we adapt: AI Governance Sprint → high-risk compliance | Agent Launchpad → operational optimization | Legacy Blueprint → infrastructure modernization
-15+ clients ES+IT. AMETIC 2023. 13 case studies.
-
-**S29: Vertical — Retail & eCommerce**
-What Retail demands: Social Commerce, Retail Media, CRO, personalization, marketplace management, agentic commerce readiness.
-How we adapt: Social Storefront + Witailer (Retail Media) + CRO Sprint (Atoms+ABTasty) + Performance Intelligence
-Group leverage: Witailer platform LIVE (2 people already in team), Cosmic for content.
-
-**S30: Cross-practice proof — Helvetia**
-WHY IT MATTERS: Helvetia is relevant for THREE reasons, not just one:
-1. FIRST hybrid human+agent team SOLD as value differentiator. "2 lanes" methodology: humans lead, communicate, decide, design, validate. Agents analyze, propose, execute. Result: more profitable AND more efficient project.
-2. The PROPOSAL ITSELF was built with AI. Process: gather documentation + session transcripts + notes → AI processes everything → structured output → human validates and refines → final proposal. This IS the new way of working.
-3. Cross-practice delivery: Tech + UX + GEO + Consulting + BX (supporting). 10 deliverables, 145 assets, 10 weeks.
-NOW EXPANDING: hiring portal redesign with synthetic user testing (AI agents + real users alongside real people for scalable research).
-"Designed by Humans, Powered by AI — this is not a slogan. It's literally how we built this."
-
-**S31: All machines — MECE summary by practice**
-Clean table organized by client need:
-[Alkemy]+:
-  Brand & Social Commerce: Social Storefront 20-40K (NOW)
-  Search & AI Visibility: Search 360 Audit 15-30K (NOW)
-  Conversion Intelligence: CRO Sprint 30d 15-25K (NOW)
-[Data.Tech.AI]:
-  Enable: Legacy Blueprint 50-100K (NOW)
-  Orchestrate: AI Governance Sprint 25-50K (NOW)
-  Accelerate: Agent Launchpad 30-60K (Q2)
-Transversal: Consulting (Letizia Mazza, within DTC) | UX/UI (within DTC, serving all)
-For each: entry price, velocity marker, market validation, expansion path.
-NOTE: This is G&I's proposal. To be validated with GTM teams and practices.
+**Why this slide matters for Duccio:** It shows Spain has a structural growth engine — not just delivery teams hoping clients expand on their own. G&I is the GROW phase of the journey. Clients enter from GTM, G&I converts and grows them, and matured accounts move to Client Service.
 
 ---
 
-### ACT 3: WE'RE ALREADY EXECUTING (8 slides)
+### S03: THE PARADOX THAT DEFINES OUR MARKET
 
-**S32: Chapter divider — "03. We're Already Executing"**
-Picture2 right. Lime accent.
-Italian proverb: "In casa del fabbro, spiedo di ~~legno~~ acciaio."
-"We practice what we preach. Innovation applied inside first — to be our own best case study."
-G&I works continuously with Operations (practices) for innovation sessions. Top-down knowledge + bottom-up feedback. Everyone wins.
+**Key message:** "This is the gap we exist to close."
 
-**S33: The SDLC foundation is in place**
-Reference to DTC's earlier presentation. Key KPIs: -40% cycle time, 3x deploy frequency, -60% bugs, 145K investment, <6mo payback.
-"DTC's transformation is the engine. G&I's machines are the fuel. Together: faster, better, lower cost."
-This is our greatest sales argument: we believe in it, we live it, we can prove it works.
+**Layout:** Three hero numbers, large, animated from 0 to final value.
 
-**S34: Capability evolution — precise and extensive**
-Framework: What we need | What we have | Bridge (Partnership / Upskilling / Hiring)
-Detailed by practice area. Clear benefit: not just survival — LEADERSHIP in this paradigm change.
-Gartner insight: "This is the moment when laggards perish and top performers take it all."
-Key hires: AI Compliance Consultant (pre-May, critical for AI Governance Sprint), Search Social Strategist (Q2, enables GEO), Social Commerce Specialist (Q2, enables Social Storefront at scale).
-Upskilling: Plan Iniciativas IA phases, AI Champions network (11-12 people), Grow Sessions.
-Partnerships as capability bridge: ECIJA (legal), Scrolling (GEO), Atoms+ABTasty (CRO), Witailer (Retail Media), Cosmic (video/social).
-"Not restructuring. Coordinated evolution — with HR and Operations."
+| Number | Color | Meaning | Source |
+|--------|-------|---------|--------|
+| **78%** | Green | Spain's AI adoption rate — #1 in Europe | BCG "AI at Work 2025" |
+| **81%** | Amber | Of companies see NO bottom-line impact from AI | McKinsey State of Orgs 2026, 10K+ executives |
+| **5%** | Red | Actually capture value at scale | BCG "Build for the Future" 2025, 1,250 executives |
 
-**S35: Partnership & event ecosystem**
-SVG hub-and-spoke: Alkemy center → ECIJA (legal/AI compliance) | Scrolling (GEO expertise) | Atoms+VWO-ABTasty (CRO — VWO-ABTasty post-merger $500M entity) | Witailer (Retail Media) | Cosmic (Social/Video) | Holistic AI (SaaS) | CIONET/AMETIC (industry access) | Gartner (under evaluation, ~70K — strategic for market intelligence and being the tip of the spear) | Tech partners (AWS/Google/MS) | Foundry (media visibility)
-Events timeline: Mar (Grow Session done, VWO-ABTasty event done — partner now $500M merged entity) → Jun (AWS Summit, DES Malaga) → Sep (CIONET, own sessions) → Nov (Gartner Symposium BCN) → Ongoing (Foundry, LinkedIn, industry purchasing departments)
-Goal: be present in industry events, forums, and client procurement departments. Structured Alkemy brand communication. This year is FOUNDATIONAL for positioning as a key player.
+**Line below the numbers:** "The gap between adopting AI and transforming with AI is where G&I operates."
 
-**S36: Roadmap Q2-Q3-Q4**
-Three columns with milestones. Color-coded by practice. Velocity markers.
-Q2: Launch first machines (Social Storefront, Search 360, CRO Sprint, AI Governance Sprint). First cross-practice delivery. ECIJA signed. 2 Grow Sessions.
-Q3: Expand machines (AI Creative Engine, Total Search, Analytics). First Agent Launchpad client. Capability evolution 50% complete. Events pipeline.
-Q4: Full machine portfolio active. Managed services revenue starts. Quarterly review → adapt machines for Q1 2027.
+**Transition to next act:** "To understand why this gap exists, let's look at what the market is telling us."
 
-**S37: Stop / Continue / Start**
-DARK slide. Three columns. The pivotal decisions.
+---
+
+# ACT 01: THE MARKET — WHY NOW
+### 4 slides · ~5 min
+**Purpose:** Build urgency with external data. No Alkemy yet — pure market reality. Duccio should finish this act thinking: "we need to move."
+
+---
+
+### S04: CHAPTER SLIDE
+
+**Title:** "01. the market — why now"
+**Preview line:** "Investment is accelerating. Value isn't captured. Regulation creates a new market. No one owns our space."
+
+---
+
+### S05: THE MONEY IS FLOWING — BUT VALUE ISN'T CAPTURED
+
+**Key message:** "CIOs are investing aggressively in AI — even those with shrinking budgets. But the vast majority see no return."
+
+**Layout:** Two columns.
+
+**Left — Investment flows (animated bar chart):**
+- GenAI funding Iberia: **+44.3%** YoY
+- AI funding Iberia: **+40.8%** YoY
+- Cybersecurity: **+28.7%** YoY
+- BI/Data Analytics: **+27.5%** YoY
+- Cloud platforms: **+23.5%** YoY
+- IT budgets total Iberia: **+4.3%** (vs. +2.8% global)
+- Context line: "Even CIOs with shrinking IT budgets still increase AI spend by +34%."
+
+Source: Gartner CIO Survey 2026, n=154 Spain & Portugal.
+
+**Right — The value gap (evidence cards with icons):**
+- **81%** of organizations see no P&L impact from AI (McKinsey, 10K+ execs)
+- **42%** of companies abandoned most AI initiatives in 2025 — 2.5x surge vs. prior year (Gartner/S&P)
+- **80%** of AI projects fail — double the rate of non-AI IT projects (RAND Corporation)
+- **67%** succeed with a partner vs. **22%** building alone (MIT)
+
+**SO WHAT (accent bar):** "Money is flowing in. Value isn't coming out. That's our market — and partner-led execution is the proven path."
+
+---
+
+### S06: REGULATION CREATES A NEW MARKET
+
+**Key message:** "Compliance isn't a cost center — it's a €492M market growing to €3.6B, and no one serves mid-market Southern Europe."
+
+**Layout:** Two columns.
+
+**Left — Regulatory urgency:**
+
+Visual: Timeline with key dates:
+- DORA → active (FSI)
+- Feb 2025 → AI Act: prohibited practices + AI literacy (Art. 4)
+- **NOW** (marker)
+- **Aug 2, 2026 → AI Act: full enforcement. ~133 days.** Fines up to €35M or 7% of global revenue.
+- 2027 → Extensions for specific cases
+
+Key facts below timeline:
+- Only **36%** of organizations prepared for compliance (Deloitte)
+- **65%** don't understand their AI Act obligations (AWS Spain)
+- Spain + Italy: **only 2 EU countries with a dedicated national AI authority** (AESIA)
+- GDPR precedent: **€1.2B** in fines in 2025 alone (€7.1B cumulative)
+- Governance market: **$492M today → $3.6B by 2033** (CAGR 36%)
+
+**Right — Nobody owns our space:**
+
+Split into two tiers:
+
+*Global players (>500K, enterprise only):*
+- Accenture: AI Refinery, $3B+ invested, "Reinvention Services" — but inaccessible to mid-market
+- Publicis: CoreAI, €300M invested, 2.3B profiles — marketing-only
+- McKinsey/BCG: Fortune 500 only, overkill for mid-market
+- Omnicom-IPG: merged $9B, $25B+ revenue — scale machines, not precision
+
+*Spain mid-market:*
+- JAKALA: closest threat, but no compliance pivot, lighter tech infrastructure
+- Making Science: AdTech-focused, no business transformation
+- VML/Cocktail: WPP financial stress (-8.1% revenue), marketing-only
+- VASS: implementer not innovator, no proprietary AI capability
+
+**SO WHAT:** "No one integrates compliance + transformation + creative for mid-market Southern Europe. That whitespace is ours."
+
+---
+
+### S07: WHAT CIOs AND CMOs ACTUALLY NEED
+
+**Key message:** "These aren't abstract trends — they're the specific demands we've translated into products."
+
+**Layout:** Two-column or clustered view. Not a trend list — a **demand map** that feeds directly into Act 03.
+
+**What CIOs are asking for (DTC demand signals):**
+
+| Demand | Evidence | What it means for us |
+|--------|----------|---------------------|
+| **AI in production, not pilots** | Only 8.6% have agents in production, not the 40% vendors claim (Recon Analytics, 120K+ respondents) | Enablement advisory + agentic foundations |
+| **Legacy modernization** | $15-30B global market, 79% fail rate, AI cuts timelines 40-50% (McKinsey) | Legacy blueprint as high-ticket entry |
+| **Governance & compliance** | AI Act Aug 2026, only 36% prepared, $492M → $3.6B market | AI governance sprint as universal entry product |
+| **Do more with same staff** | IT headcount Spain: only +1.3%. CIOs must deliver AI with flat teams (Gartner) | Hybrid human+AI delivery model |
+
+**What CMOs are asking for (Agency demand signals):**
+
+| Demand | Evidence | What it means for us |
+|--------|----------|---------------------|
+| **AI visibility (GEO)** | 74% of AI users seek algorithmic recommendations. "If the model doesn't know you, it won't choose you" (Kantar) | GEO as consulting-margin service |
+| **Social commerce** | $2.11T globally in 2026. TikTok Shop: $15.82B US (+108% YoY). TikTok Spain: +2.88M adults in one year | Social Storefront + Cosmic |
+| **Measurement confidence** | 54% of marketers report no improvement in measurement confidence YoY (TransUnion). 60-75% consider current approaches insufficient (IAB) | MMM/MTA + Conversion Intelligence |
+| **Efficiency without losing quality** | GenAI: €45→€4-6/image, +200% copy capacity, 100x production speed (Deloitte) | AI Creative Engine |
+
+**Transition:** "12 months ago, we set out with a plan to classify our portfolio. What the market told us was bigger than that. Let me show you the journey."
+
+---
+
+# ACT 02: WHERE WE COME FROM
+### 2 slides · ~3 min
+**Purpose:** Honest diagnosis. Show the Year 1 Plan as proof of rigor, then show what evolved and why. Earn credibility before presenting the new direction.
+
+---
+
+### S08: CHAPTER SLIDE
+
+**Title:** "02. where we come from"
+**Preview line:** "We had a plan. The market moved faster. We adapted."
+
+---
+
+### S09: THE EVOLUTION — FROM PORTFOLIO MANAGEMENT TO GROWTH ENGINE
+
+**Key message:** "In January 2025, we started with a rigorous plan to classify our portfolio and optimize NRR. What we found was that the market demanded more than optimization — it demanded reinvention."
+
+**Layout:** Full-width evolution visual. Left = Year 1 Plan (Jan 2025). Right = Current state (Mar 2026). Arrows showing evolution.
+
+| Dimension | Year 1 Plan (Jan 2025) | Now (Mar 2026) | What changed |
+|-----------|----------------------|----------------|-------------|
+| **Focus** | Classify portfolio, optimize NRR >110% | Market-driven sales machines + company repositioning | Market demanded more than optimization |
+| **Products** | "Inventory what we have" | Named products with pricing (GEO, CRO Sprint, AI Governance, Agentic SecDevOps...) | Competitors productized; we had to as well |
+| **AI role** | Growth Copilot (internal tool) | AI embedded in delivery model — hybrid teams, AI in the price | AI shifted from internal tool to client offering |
+| **Market intelligence** | 5-7 competitor battlecards | 30+ sources: Gartner, McKinsey, BCG, Deloitte, IAB, Kantar | Needed to understand the full landscape |
+| **Partnerships** | Not in the original plan | ECIJA, Scrolling, Atoms, ABTasty, Witailer, Cosmic, Gartner (eval), CIONET, AMETIC... | Capability gaps required ecosystem approach |
+| **Client model** | Tiering T1-T4 by revenue | Entry → Expansion → Recurring machine logic | Land & Expand needed concrete mechanics |
+
+**What we kept (prove continuity):**
+- NRR >110% as North Star — same goal, better tools
+- Quarterly adaptation cycle — in our DNA from day one
+- Cross-functional by design — Agency + DTC together
+- AI as byproduct of work, not parallel project
+
+**What the old model looked like (honest):**
+- Selling hours, not results → margins under pressure
+- Practices operating in silos → client got 3 interlocutors for 1 problem
+- No named products → "we do services" while competitors have AI Refinery, AI Pods, GENE
+- Media margins at ~6-7% → unsustainable without differentiation
+- Static annual catalog → market changes every quarter
+- Gartner insight: "Outsource spend pushbacks: 5-30%. Saving time is NOT saving money."
+
+**Closing line:** "The plan was right. The scope was too small. Now we know what's needed."
+
+**Transition:** "Here's where we're going."
+
+---
+
+# ACT 03: WHERE WE'RE GOING
+### 7 slides · ~10 min
+**Purpose:** The core of the presentation. Vision, the fundamental shift, the sales machines, how they work, and the new operating model. This is where Duccio decides if he believes.
+
+---
+
+### S10: CHAPTER SLIDE
+
+**Title:** "03. where we're going"
+**Preview line:** "From a consultancy that does things for clients — to one that enables them to become top performers."
+
+---
+
+### S11: THE FUNDAMENTAL SHIFT
+
+**Key message:** "Same talent. New packaging. The machines are the WHAT. The practices are the HOW."
+
+**Layout:** Dark background, manifesto-style. Big impact.
+
+**The one-line shift:**
+> **BEFORE:** A consultancy that DOES things for clients.
+> **AFTER:** A consultancy that ENABLES clients to become top performers.
+
+**5 transformations (animated arrows, from → to):**
+
+| From | To |
+|------|----|
+| Selling hours | Selling results |
+| Capability silos | Integrated cross-practice solutions |
+| Fixed annual catalog | Quarterly market adaptation |
+| Alkemy's internal language | The client's industry language |
+| Individual practice delivery | Cross-practice by default |
+
+**G&I's 3 roles in making this real** (map back to S02 — audience recognizes the structure):
+1. **Innovate** the value proposition → design WHAT we sell
+2. **Boost** sales & conversion → HOW we go to market
+3. **Grow** strategic clients Y1 → WHERE we expand
+
+**Note for Duccio:** This is G&I's proposal to validate with GTM teams and practices. What the market demands and where we believe we should go.
+
+**Supporting argument:** 67% of consulting buyers prefer fixed-fee. 73% prefer value-based pricing. Firms transitioning to outcome-based models report +43% fee increase in year one. (Source: MASTER Block 3)
+
+---
+
+### S12: THE ENABLEMENT MODEL — WHY CLIENTS NEED US
+
+**Key message:** "Clients want to internalize AI — and they should. But they can't build a proprietary, scalable, secure ecosystem alone. Solo attempts fail 80% of the time. With a partner, 67% succeed."
+
+**Visual:** 6-layer enablement stack (diagram).
+
+| Layer | What it means | Why they can't do it alone |
+|-------|--------------|---------------------------|
+| 1. **Data** | Foundation + governance + quality | Scattered, unstructured, ungoverned |
+| 2. **Infrastructure** | Cloud, APIs, security architecture | Enterprise-grade, not "laptop + ChatGPT" |
+| 3. **Processes** | Workflows, automation, operational redesign | AI doesn't fit into old processes |
+| 4. **Orchestration** | Agents connected, MCP, A2A protocols | Making 20 agents work together safely |
+| 5. **Training** | Capability building for internal teams | AI Act Art. 4 makes this legally mandatory |
+| 6. **Technology Radar** | Continuous monitoring | Landscape changes weekly |
+
+**Alignment with Italy:** Design → Enable → Scale = our 6 layers. Spain and Italy speaking the same language.
+
+**The data that supports this:**
+- 70% of AI success is people, processes, and cultural transformation — not the model (McKinsey, Gartner, BCG, Deloitte)
+- Basic tool deployment: 10-15% productivity gains. End-to-end transformation + AI: 25-30% (Bain)
+- McKinsey AI high performers: 2.8x more likely to have redesigned workflows, 3x more likely to define human-in-the-loop processes
+
+---
+
+### S13: SALES MACHINES — PRODUCT ARCHITECTURE (THE KEY SLIDE)
+
+**Key message:** "Every product was born from a specific market demand. Each has a name, a price, and a path from entry to recurring revenue."
+
+**Layout:** Large visual diagram — 60-70% of slide. Two blocks: [Alkemy]+ and [Data.Tech.AI].
+
+---
+
+#### [ALKEMY]+ — 3 PILLARS
+
+**PILLAR 1: BRAND & SOCIAL INTELLIGENCE**
+*"Understand your market. Make your brand sell on every platform."*
+
+| Service | What it is |
+|---------|-----------|
+| **Contextual Intelligence Platform** | Social Intelligence & Social Listening evolved — not just social, but how your brand appears in AI responses, market signals, competitive intelligence |
+| **TikTok Shop & Live Shopping** | Social Commerce as transaction channel. $2.11T global market. TikTok Spain: 20.9M users |
+| **K-Mean Clustering, Advanced Profiling & Virtual Buyers** | AI-powered audience segmentation and synthetic buyer personas |
+
+Powered by: BX creativity + Cosmic (video/trends) + Social Media + Generative AI.
+
+**PILLAR 2: SEARCH & AI VISIBILITY**
+*"Own every surface where people search — including AI."*
+
+| Service | What it is |
+|---------|-----------|
+| **GEO (Generative Engine Optimization)** | Brand visibility in AI responses (ChatGPT, Claude, Perplexity, Google AI Overviews). 6-phase methodology. Consulting margins, not media margins |
+| **Social Search Optimization (SSO)** | TikTok as search engine (64% Gen Z), Instagram, Pinterest, Reddit (+364% growth) |
+| **Media Intelligence Activation** | AAMP-ready (IAB Agentic Advertising Protocols, March 2026), attention-based media (aCPM), retail media (Witailer) |
+
+Powered by: Media + Scrolling (GEO) + Witailer (Retail Media) + Martech analytics.
+
+**PILLAR 3: CONVERSION INTELLIGENCE**
+*"Turn data into revenue, automatically."*
+
+| Service | What it is |
+|---------|-----------|
+| **MMM & MTA** | Marketing Mix Modeling (Google Meridian, Meta Robyn) + Multi-Touch Attribution + Incrementality Testing. Triangulation approach |
+| **CRO with AI** | Atoms methodology + ABTasty/VWO platform ($500M post-merger entity). -73% setup time with Evi agentic engine |
+| **Advanced Analytics & Conversational BI** | From manual dashboards to automated insights. GA4 Cross-Channel Budgeting. LLM-powered BI |
+
+Powered by: Martech + Atoms (group) + ABTasty + Data & Analytics.
+
+---
+
+#### [DATA.TECH.AI] — 3 PILLARS
+
+**PILLAR 1: AI ENABLEMENT & ADVISORY**
+*"Build the foundation before you build the agents."*
+
+| Service | What it is |
+|---------|-----------|
+| **AI Enablement Advisory** | Like digital transformation, but for AI enablement: strategy, governance roadmap, maturity assessment. "AI Reality Check + Guardrails" sprint |
+| **AI Data Platforms & Processing** | Ingestion, processing, labeling, enrichment with AI. The data foundation without which nothing works |
+| **AI Compliance & Governance** | AI Act (Aug 2026), DORA (FSI), AI literacy (Art. 4). Universal entry product. ECIJA as critical legal partner |
+
+Powered by: Data + Consulting + ECIJA + Holistic AI.
+
+**PILLAR 2: AGENTIC DEVELOPMENT & ORCHESTRATION**
+*"From tools to autonomous systems."*
+
+| Service | What it is |
+|---------|-----------|
+| **Agentic SecDevOps** | Full software development lifecycle with agentic AI. 9 pillars: SuperSpec, AI Coding, AI Code Review, AI Test Gen, AI CI/CD, AI Security, AIOps, AI Doc Gen, Control Plane |
+| **Voice Driven & Conversational Interfaces** | Omnichannel conversational solutions with expert knowledge. Avatars, voice biometrics, sentiment analysis |
+
+Powered by: Tech + InnoCV + SDLC AI-First methodology (our own transformation as proof).
+
+**PILLAR 3: INTELLIGENT OPERATIONS & SUPPORT**
+*"AI that works after go-live."*
+
+| Service | What it is |
+|---------|-----------|
+| **Agentic Support Service** | Intelligent maintenance support. From reactive break-fix to proactive AI-powered ops. Predictive monitoring, autonomous resolution |
+| **Legacy Blueprint & Modernization** | $15-30B market. 79% failure rate. AI cuts 40-50% timelines. Co-investment CAPEX for 3-5 year maintenance at premium rates |
+
+Powered by: Tech + Cloud + Data Driven Platforms.
+
+---
+
+### S14: HOW THE MACHINES WORK — ENTRY → EXPANSION → RECURRING
+
+**Key message:** "Every machine has an affordable door, a natural expansion path, and a recurring revenue model."
+
+**Visual:** Funnel/journey for representative products from each practice.
+
+**[Alkemy]+ example flow:**
+
+| Phase | Product | Ticket | What happens next |
+|-------|---------|--------|-------------------|
+| **Entry** | Search 360 Audit (GEO + SEO + SSO diagnostic) | 15-25K | Client sees their AI visibility gap |
+| **Expansion** | Total Search (GEO + SEO + SEM + SSO implementation) | 5-12K/month | Full search surface managed |
+| **Recurring** | Managed GEO + Analytics retainer + CRO optimization | 8-15K/month | Continuous optimization, quarterly reviews |
+
+**[Data.Tech.AI] example flow:**
+
+| Phase | Product | Ticket | What happens next |
+|-------|---------|--------|-------------------|
+| **Entry** | AI Governance Sprint (compliance assessment + roadmap) | 25-40K | Client sees their risk exposure |
+| **Expansion** | Agentic Foundations (data platform + orchestration layer) | 100-300K | Infrastructure for AI at scale |
+| **Recurring** | Agentic Support Service + Evolution | 10-25K/month | Continuous managed AI operations |
+
+**Cross-practice upsell logic:**
+- Agency client doing GEO → discovers data governance gap → DTC AI Governance Sprint
+- DTC client building data platform → needs brand visibility in AI → Agency GEO
+- Helvetia model: entered through Tech + UX → expanded to GEO + Consulting + BX → now expanding again (hiring portal with synthetic user testing)
+
+**Pricing model shift:** From hours to outcomes. Hybrid teams (human + AI). AI included in the price, not billed separately.
+
+---
+
+### S15: STOP / CONTINUE / START
+
+**Key message:** "Here are the concrete decisions that define the new model."
+
+**Layout:** Dark background. Three columns. Big headers.
 
 **STOP** (red):
-- Selling hours in a pyramid model — the market no longer values time, it values outcomes
-- Selling activities with no intrinsic client value — if the client can't measure the impact, we shouldn't sell it
-- Selling in "Alkemy language" — speak the client's industry language, solve their actual problems
-- Working manually on proposals and delivery — automate with hybrid human+agent workflows (Helvetia proved it works)
-- Catching up with competitors — lead the way thanks to no legacy and flexible size
-- Having static annual objectives — make them dynamic and quarterly
-- Creating a fixed 1-year offering catalog — adapt each quarter (innovation is faster than adoption; speed of obsolescence is brutal)
-- Waiting for the market to tell us what to do — anticipate with intelligence and data
+- Selling hours in a pyramid model — the market pays for outcomes, not time
+- Selling activities with no intrinsic client value
+- Speaking "Alkemy language" — speak the client's industry
+- Manual proposals and delivery — automate with hybrid workflows
+- Static annual objectives — make them dynamic and quarterly
+- Fixed 1-year offering catalog — adapt each quarter
 
 **CONTINUE** (blue):
 - Deep client relationships and domain expertise (FSI, E&U, Retail) — this is our moat
 - Cross-practice delivery capability (Helvetia model, expanding)
-- SDLC AI-First transformation (130 developers, already in motion)
-- Group synergies: Atoms (CRO), Witailer (Retail Media), Cosmic (Social/Video) — already operational
-- Innovation sessions with Operations (top-down + bottom-up knowledge transfer)
+- SDLC AI-First transformation (130 developers, in motion)
+- Group synergies: Atoms (CRO), Witailer (Retail Media), Cosmic (Social/Video)
 - Dual ES-IT market coverage — regulatory advantage
-- GEO positioning (high margin, high demand — accelerate internalization)
-- Existing analytics, tagging, privacy capabilities — evolving with AI
+- NRR >110% as North Star — same goal from day one, better tools now
 
 **START** (green):
-- Named products with fixed pricing, clear scope, and measurable outcomes
-- Proactive market intelligence (Gartner partnership under evaluation, continuous tech radar)
-- AI compliance as universal entry product (AI Act creates a market, not just a risk)
-- Hybrid human+AI teams with AI included in the price — this is the new normal
-- Results-based pricing models (co-investment, hybrid success fees) — no more selling hours
-- Systematic event and forum presence (purchasing departments, industry networks, DES, AWS Summit, Gartner Symposium)
-- Structured Alkemy brand communication — this year is foundational
-- Agentic Analytics, Conversational BI, A2A commerce monitoring — the next generation of Martech
+- Named products with fixed pricing, clear scope, measurable outcomes
+- AI compliance as universal entry product (AI Act creates the market)
+- Hybrid human+AI teams with AI included in the price
+- Results-based pricing models (co-investment, hybrid success fees)
+- Systematic event and forum presence (Gartner, AWS, DES, CIONET)
 - Quarterly machine review cycle — never get stuck, never get obsolete
 
 ---
 
-### ACT 4: WHAT IT TAKES TO MAKE THINGS HAPPEN (5 slides)
+### S16: THE OPERATING MODEL — HOW G&I MAKES IT HAPPEN
 
-**S38: What it takes — resource allocation**
-NOT "asking for money." Framing: "This is what the plan requires to execute."
-Breakdown: SDLC tooling 145K + Partnerships ~40K (ECIJA, Scrolling, ABTasty, events sponsorship) + Events ~30K + Capability evolution ~185K (3 key hires + upskilling programs)
-Total: ~400K EUR.
-Expected return sources:
+**Key message:** "This is how the four of us drive all three roles, connected to the full Customer Value Journey."
+
+**Visual:** Revisit the org chart journey (S02) but now overlaid with the G&I operating model:
+
+**Innovation (Role 1) — feeds Practices:**
+- Market intelligence → demand mapping → product design → quarterly refresh
+- Top-down: industry trends, Gartner insights, regulatory changes
+- Bottom-up: client feedback, delivery learnings, practice input
+- Output: named products with pricing and playbooks
+
+**New Business (Role 2) — feeds GTM:**
+- Proposal leadership and presales support
+- Storytelling + content for pitches
+- Higher conversion rate, higher ticket size
+- Grow Sessions, events, thought leadership content
+
+**Strategic Clients Y1 (Role 3) — feeds Client Service:**
+- Activated clients with growth potential and identified roadmap
+- Cross/upsell designed from initial engagement
+- Handoff to Client Service with expansion plan already in motion
+
+**Governance (from Year 1 Plan — still valid):**
+- Weekly: Pipeline Review (opportunities + client status)
+- Monthly: Value Proposition Committee (portfolio, backlog, GROW/EXIT decisions)
+- Quarterly: QBR (results vs. objectives, strategy adjustments)
+
+---
+
+# ACT 04: PROOF IN MOTION
+### 6 slides · ~8 min
+**Purpose:** Show this isn't a deck — it's already happening. Then be clear about what's ahead and what the plan needs.
+
+---
+
+### S17: CHAPTER SLIDE
+
+**Title:** "04. proof in motion"
+**Preview line:** "We practice what we preach. Innovation applied inside first — to be our own best case study."
+
+---
+
+### S18: WHAT WE'VE ALREADY DONE — PROJECTS & PROPOSALS
+
+**Key message:** "Real projects, real revenue, real execution — across both practices."
+
+**Layout:** Two columns (DTC / Agency).
+
+**DTC — In execution:**
+
+| Project | What | Status |
+|---------|------|--------|
+| **SDLC AI-First** | 130 devs, 9 agentic pillars, 145K investment. Targets: -40% cycle time, 3x deploy, -60% bugs | Phase 1 in progress |
+| **Singular Bank** | Technical assessment + AI discovery of core system. +3 FTE end of March | In execution, good feedback |
+| **Conway** | 2 projects in inception. Active Board-level stakeholder communication | Inception |
+| **GXO** | Maintenance project, 1.1M€ | Pipeline confirmed |
+| **ONEY** | New Loyalty App, 400K | Pipeline |
+| **Unicaja NEOS** | Modernization, 200K | Pending award |
+| **Corporate AI tools** | OpenRouter enterprise, LibreChat with agents for Agency/GTM/CS/Growth | Germán building |
+
+**Agency — In execution:**
+
+| Project | What | Status |
+|---------|------|--------|
+| **UNOde50** | Media + Data, 876K. New business | Won. Kickoff completed |
+| **Helvetia** | Cross-practice v0.1 (Tech+UX+GEO+Consulting+BX). 10 deliverables, 145 assets. **Now expanding**: hiring portal with AI agent testing | v0.1 complete + expanding |
+| **Molgas** | 90K Full Stack (Media, BX, T&D) | Won |
+| **Top Doctors** | 45K Media, 4 markets | Won, in delivery |
+| **Plan Iniciativas IA** | Agency AI transformation. Phase 1: -50-70% time on reporting, -40-60% on proposals | Phase 1 starting |
+| **7 innovative BX solutions** | GenAI, Social Search, Listening, Advanced Profiling, TK Shop... | In development |
+
+**High-impact proposals delivered:**
+- MAPFRE RFP — MMM/MTA (700K, at risk: stakeholder changed)
+- Amadeus — Marketing & Media upselling (800K, pending)
+- Deoleo — First pure GEO proposal (280K, pipeline)
+- Azvalor/Aiko — GEO proposal with 6-phase methodology
+
+**Pipeline snapshot:**
+- Agency: **4.4M total pipeline, 1.2M weighted**. Q1 net revenues +13% vs. 2025.
+- DTC: Major opportunities (GXO 1.1M, ONEY 400K, NEOS 200K). New logos: Riversa, Conway, White Mirror.
+
+---
+
+### S19: WHAT MAKES US DIFFERENT — INNOVATION PROOF POINTS
+
+**Key message:** "Three things nobody in our tier offers. Not plans — working proofs."
+
+**1. Synthetic User Testing with AI Agents (UX)**
+- User testing with AI agents (synthetic users) + real people. Hybrid model.
+- Helvetia = first proof point (new hiring portal).
+- **No one in our tier — or even Tier 1 in Spain — offers AI-powered user research at scale.**
+- Cross-practice: applies to BX content testing, Media landing pages, Martech conversion flows.
+- "Designed by Humans, Powered by AI" — literally in action.
+
+**2. CRO + ABTasty (cross-practice)**
+- Atoms (group) now activated in Spain + ABTasty as tech platform.
+- ABTasty/VWO merged: $500M entity, >$100M ARR, 4,000+ clients.
+- CRO is the strongest cross-practice entry product: UX does research, Martech does data, Tech implements.
+- Attended ABTasty event this week. Mutual referral model under discussion.
+
+**3. GEO as a new consulting-margin service (Media)**
+- 6-phase proprietary methodology (with Scrolling as execution partner).
+- Consulting-level margins, not media margins (~6-7%).
+- No consolidated competition in our tier.
+- First real proposal: Deoleo (280K in pipeline).
+- Tools: PromptWatch for AI search monitoring + 8 LLM optimization pillars.
+
+---
+
+### S20: PARTNERSHIPS & ECOSYSTEM
+
+**Key message:** "We don't need to build everything. We need to orchestrate the right partners."
+
+**Visual:** Hub-and-spoke diagram. Alkemy at center.
+
+| Partner | What they bring | Status |
+|---------|----------------|--------|
+| **ECIJA** | Legal AI compliance, AI Act readiness | To activate — CRITICAL (blocks AI Governance Sprint) |
+| **Scrolling** | GEO execution | Active, first case Deoleo |
+| **Atoms** (group) | CRO methodology | Activated in Spain |
+| **ABTasty/VWO** | CRO platform, $500M entity | Exploring, event this week |
+| **Witailer** (group) | Retail Media, Amazon activation | 2 people in Agency team |
+| **Cosmic** (group) | Short-form video, Milky Way trend tech | Available, joint GTM planned |
+| **Holistic AI** | SaaS governance compliance | Available |
+| **Gartner** | Analyst access, credibility, Top Down unlock | Under evaluation (~70K) |
+| **CIONET** | 12K+ digital leaders, CIO access | Active |
+| **AMETIC** | 200+ companies, institutional credibility | Active, AI Summit partnership |
+| **Tech Partners** | AWS / Google / MS, Salesforce (250+ certs) | Active |
+| **Circus / Yak Yak / Blinko** | Commercial partnerships | Active (Circus 400K/yr, Yak Yak 250K/yr) |
+
+**Events roadmap:**
+- Q1 done: Grow Session (65 pax, MS/TikTok/Google), Congreso ASLAN, ABTasty event
+- Q2: AWS Summit Madrid (Jun 4), South Summit (Jun 3-5), DES Málaga (Jun 9-11)
+- Q3: CIONET events, own Grow Sessions, Advanced Factories BCN
+- Q4: Gartner IT Symposium Barcelona (Nov 9-12), Tech Show Madrid
+
+---
+
+### S21: WHAT'S AHEAD — ROADMAP Q2-Q3-Q4
+
+**Key message:** "Concrete milestones, quarter by quarter. Not a 12-month hope — a 90-day accountability cycle."
+
+**Layout:** Three columns, color-coded by quarter.
+
+**Q2 (Apr-Jun) — LAUNCH:**
+- First machines live: Search 360 Audit, CRO Sprint (Atoms+ABTasty), AI Governance Sprint
+- ECIJA partnership signed (blocks compliance revenue without it)
+- First scaled cross-practice delivery post-Helvetia
+- 2 Grow Sessions
+- Critical hires: AI Compliance Consultant (pre-May), Search Social Strategist
+- Events: AWS Summit, South Summit, DES Málaga
+
+**Q3 (Jul-Sep) — EXPAND:**
+- Expand machines: AI Creative Engine, Total Search (GEO+SEO+SEM+SSO), Advanced Analytics
+- First Agentic Foundations client (DTC)
+- Capability evolution 50%+ complete
+- CIONET events, own sessions
+- Hires: Social Commerce Specialist, Programmatic Specialist
+
+**Q4 (Oct-Dec) — CONSOLIDATE:**
+- Full machine portfolio active
+- Managed services / recurring revenue starts flowing
+- Quarterly review → adapt machines for Q1 2027
+- Gartner IT Symposium Barcelona (Nov 9-12)
+- Year-end partnership evaluation
+- Plan Year 2 with OKRs
+
+**5 commitments in 90 days:**
+
+| # | Commitment | Metric | Deadline |
+|---|-----------|--------|----------|
+| 1 | AI Governance Sprint: first client closed | Contract signed | Before May |
+| 2 | Search 360 Audit: 2 audits delivered | Deliverables complete | Q2 |
+| 3 | CRO Sprint: first Atoms+ABTasty engagement | Project launched | Q2 |
+| 4 | ECIJA partnership signed | Agreement formalized | Before April |
+| 5 | Grow Session Q2: 80+ attendees | Attendees + pipeline tracked | Q2 |
+
+---
+
+### S22: WHAT THE PLAN REQUIRES
+
+**Key message:** "Not asking for money. Showing what the plan needs to execute — and what comes back."
+
+**Layout:** Two columns.
+
+**Left — Investment:**
+- SDLC tooling: 145K (already committed)
+- Partnerships: ~40K (ECIJA, Scrolling, ABTasty, sponsorships)
+- Events: ~30K
+- Capability evolution: ~185K (3 key hires + upskilling)
+- **Total: ~400K EUR**
+
+**Expected return:**
 - More deals won (new machines open new doors)
 - Higher efficiency per FTE (hybrid teams, automated workflows)
-- Higher ticket (differential services vs commodity hours)
-Budget targets: Net revenues +10%, Gross margin (after HR) +20%, EBITDA +30%.
-Each of these three KPIs must improve PER FTE — the metric Duccio cares about most.
+- Higher ticket per deal (differential services vs. commodity hours)
+- **Targets: Net revenues +10%, Gross margin (after HR) +20%, EBITDA +30% — all measured PER FTE**
 
-**S39: What we need — 3 things**
-01: **Your feedback on the positioning and machines.** We want to validate that the direction is right. This is our best strategic thinking — we want your perspective before full execution.
-02: **Clarity and support to demonstrate that Alkemy Spain can collaborate with Innocv and the rest of the group.** This year is key. Diego's appointment signals innovation. We need to prove we can work together and that G&I delivers.
-03: **Investment approval with clear ROI.** ~400K with payback under 12 months. Detailed breakdown: where we spend it, what we get back, which KPIs move. Net revenue per FTE, gross margin per FTE, EBITDA per FTE — all improving.
+**Right — Three things we need from you:**
 
-**S40: 5 commitments in 90 days**
-Measurable. "With data, not with slides."
-1. AI Governance Sprint: first client closed before May
-2. Search 360 Audit: 2 audits delivered in Q2
-3. CRO Sprint: first Atoms+ABTasty engagement launched
-4. ECIJA partnership signed before April
-5. Grow Session Q2: 80+ attendees with pipeline conversion tracked
+**01: Feedback on the positioning and machines.**
+We want to validate direction. This is our best strategic thinking — we need your perspective.
 
-**S41: Risks — honest**
-Traffic light table: Risk | Probability | Impact | Mitigation
-- Gartner partnership cost (70K) — HIGH cost, evaluate ROI carefully
-- Key hires not filled on time — partner bridge (ECIJA, Scrolling)
-- Client inertia on compliance — use AI Act deadline as urgency lever
-- Competitors move faster — speed is our advantage, quarterly adaptation
-- Internal resistance to change — innovation sessions, champion network, lead by example
+**02: Clarity and support for cross-group collaboration.**
+Alkemy Spain working with InnoCV and the group. Diego's appointment signals innovation — we need the organizational backing to deliver on it.
 
-**S43: CLOSING**
-Split: Picture5 (peonies — human beauty) | Picture8 (AI flowers — tech beauty)
-Center: "78% adopt. 5% transform. We close that gap."
+**03: Investment approval with clear ROI.**
+~400K with payback under 12 months. Detailed breakdown available. Net revenue per FTE, gross margin per FTE, EBITDA per FTE — all improving.
+
+---
+
+### S23: CLOSING
+
+**Layout:** Split image — real flowers (left) | AI-generated flowers (right).
+
+**Center text:** "78% adopt. 5% transform. We close that gap."
+
 [Alkemy] | Growth & Innovation | Q1 2026
 
 ---
 
-## TOTAL: 43 slides main deck + 13 annex service sheets = 56 slides
-## Timing: ~1 min/slide = 43 min + 25 min discussion = 68 min (annex is backup only)
-## Language: English throughout
-## Predecessor: SDLC AI-First deck (DTC)
-## No mentions of: EVO Brain, Repsol, Singular Bank, Connexia, Nova, internal financials (P&L, revenue, margins)
+# ANNEX (backup slides — only if questions arise)
+
+| Slide | Content |
+|-------|---------|
+| A01 | Service sheets: [Alkemy]+ (Brand & Social Intelligence, Search & AI Visibility, Conversion Intelligence) |
+| A02 | Service sheets: [Data.Tech.AI] (AI Enablement, Agentic Development, Intelligent Operations) |
+| A03 | Full regulatory detail (AI Act timeline, DORA, GDPR precedent, AESIA) |
+| A04 | Partnership details (full scope, status, value per partner) |
+| A05 | Risk matrix (Gartner 70K, hire timing, client inertia, competitor speed, internal resistance) |
+| A06 | Full pipeline detail (Agency 4.4M / DTC accounts) |
+| A07 | Competitive deep-dive (global + Spain, by competitor) |
 
 ---
 
-## ANNEX: Service Detail Sheets
+# STRUCTURE SUMMARY
 
-One detailed slide per service. Follows a CONSISTENT structure for each. These are backup slides — not part of the main flow but available for deep-dive questions.
+| Act | Slides | Time | Purpose |
+|-----|--------|------|---------|
+| 00: Who we are | 3 | ~3 min | G&I in the org, the paradox |
+| 01: The market | 4 | ~5 min | Urgency + opportunity |
+| 02: Where we come from | 2 | ~3 min | Year 1 plan → evolution → honest diagnosis |
+| 03: Where we're going | 7 | ~10 min | The shift, machines, enablement model, operating model |
+| 04: Proof in motion | 6 | ~8 min | Execution + roadmap + ask |
+| **TOTAL** | **22 + 7 annex** | **~29 min + 15 discussion** | **~44 min** |
 
-### Proposed template for each service sheet:
+---
 
-| Field | Why it matters |
-|-------|---------------|
-| **Service Name** | Market-facing name (in client language) |
-| **Practice / Pillar** | Where it lives (Alkemy+ or DTC / which of the 6 pillars) |
-| **What it is** | 2-3 sentences in plain language. What problem does it solve for the client? |
-| **What the client gets** | Specific deliverables (list) |
-| **Key activities** | Methodology steps — what we actually DO |
-| **Tools, tech & partnerships** | Platforms + external partners that enable it |
-| **Team & capabilities** | Profiles needed, FTEs, existing vs to develop |
-| **Service model & duration** | One-shot / Sprint / Ongoing / Managed. Typical weeks/months. |
-| **Pricing** | Model (fixed/retainer/success-based) + ticket range |
-| **Feasibility** | What we HAVE vs what we NEED to deliver this in the short run. Traffic light: GREEN (ready) / AMBER (needs 1-2 things) / RED (significant gaps) |
-| **Priority** | HIGH / MEDIUM / LOW based on: market demand + margin + speed to market + strategic impact |
-| **Expansion path** | What comes next (upsell/cross-sell to other machines) |
-| **Market validation** | Why NOW — data point + source |
+# DESIGN NOTES
 
-### Annex slides (one per entry product + key expansion products):
-
-**A01: Social Storefront** (Brand & Social Commerce entry)
-**A02: AI Creative Engine** (Brand & Social Commerce expansion)
-**A03: Search 360 Audit** (Search & AI Visibility entry)
-**A04: GEO as Service** (Search & AI Visibility — high margin standalone)
-**A05: Total Search Management** (Search & AI Visibility expansion)
-**A06: CRO Sprint 30d** (Conversion Intelligence entry)
-**A07: Agentic Analytics & Conversational BI** (Conversion Intelligence evolution)
-**A08: Legacy Blueprint** (Enable entry)
-**A09: AI Governance Sprint** (Orchestrate entry)
-**A10: AI Literacy Training** (Orchestrate — Art. 4 obligation)
-**A11: Agent Launchpad** (Accelerate entry)
-**A12: Compliance-as-a-Service** (Orchestrate recurring)
-**A13: Managed Agentic Ops** (Accelerate recurring)
+- Presentation follows the SDLC AI-First deck (DTC practice). DTC will have already presented their operational transformation. G&I builds ON that: "DTC is transforming HOW we build. G&I is transforming WHAT we sell, to whom, and how we go to market."
+- Language: English throughout.
+- No mentions of: EVO Brain, Repsol P&L details, Singular Bank named data, Connexia, Nova, internal financials (P&L, revenue, margins) beyond what's in the Business Review.
+- Products and machines are G&I's PROPOSAL — to be validated with GTM teams and practices. Make this explicit.
