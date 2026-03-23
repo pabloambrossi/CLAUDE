@@ -1,4 +1,4 @@
-[MASTER.md](https://github.com/user-attachments/files/26168485/MASTER.md)
+[MASTER.md](https://github.com/user-attachments/files/26174523/MASTER.md)
 # MASTER KNOWLEDGE BASE -- Alkemy G&I Strategic Vision Presentation
 ## Q1 2026 Business Review for Duccio Vitale (CEO Global)
 
@@ -944,5 +944,270 @@ This means several "Q2" velocity markers could become "NOW" if we activate group
 
 ---
 
+## ADDENDUM 2: GEO & Search Intelligence (March 23 analysis)
+
+### What is GEO and why it differs from SEO
+
+GEO (Generative Engine Optimization) is the set of strategies aimed at improving brand visibility within AI-generated responses (ChatGPT, Claude, Perplexity, DeepSeek, Google AI Overviews). The objective is to increase the frequency of brand mentions, ensure positive context, and position the brand as a reference in relevant AI conversations.
+
+**Key differences from SEO:**
+- **Interface:** SEO targets a list of links; GEO targets natural language conversations
+- **Content control:** SEO shows exact copy; GEO content is reformulated, summarized, adapted by AI
+- **Visibility:** SEO = clear ranking position; GEO = contextual mention, less predictable
+- **Measurement:** SEO = numeric position; GEO = subjective (mention, tone, prominence)
+
+### Total Search = DPO (Digital Presence Optimization)
+
+Search has fragmented: traditional Google, social media discovery, marketplace comparisons, virtual assistants, and generative AI. Alkemy frames this as **Digital Presence Optimization (DPO) = SEM + SEO + GEO + Social Search + Marketplaces**. GEO does not compete with existing disciplines -- it complements them. Performance captures demand; GEO ensures qualified brand presence where users consult AI.
+
+Market urgency: Google still ~87% of searches but AI chatbot traffic growing ~10x annually. ChatGPT is the 5th most visited site globally. By 2030, an estimated 90% of traffic may be AI-mediated. AI Overviews significantly reduce CTR for organic results ("zero-click search").
+
+### Alkemy's GEO methodology (6 phases, currently through Scrolling partnership)
+
+1. **Strategic Alignment** -- define success in AI environments, identify priority topics/queries/audiences
+2. **GEO Diagnosis & LLM Visibility Baseline** -- analyze current brand visibility across AI models, measure mentions/citations/framing/sentiment/authority signals, audit content, analyze prompts, assess digital infrastructure
+3. **GEO Thesis (Positioning Hypothesis)** -- define desired AI response, specify framing/claims/evidence, build evidence map, develop visibility + technical/editorial plan
+4. **Content Architecture & Placement Plan** -- design content production system (hubs, pillar pages, FAQs, glossaries, comparisons, case studies, citable assets)
+5. **GEO Implementation** -- produce and publish assets, optimize touchpoints, prepare citable elements, improve linking, activate authority
+6. **Measurement, Learning & Continuous Optimization** -- periodic query re-evaluation, content updates, evidence expansion, actionable reporting
+
+Current execution model: Alkemy sells and manages client relationships; **Scrolling** (external partner) handles execution. This creates margin compression, knowledge dependency, and limited control.
+
+### Pricing
+
+- **Pilot proposal** (Audit + Strategy + 6 months Reporting): **~21,019 EUR**
+- **Full annual GEO+SEO engagement**: **~68,863 EUR** (GEO-only: ~48,204 EUR)
+- **Margin when using Aiko as subcontractor**: ~68% blended (one-shot ~30%, monthly ~47%)
+- Rates: 65-75 EUR/h, ~70h/month ongoing
+- PromptWatch tool license: 449 EUR/month
+
+### Tools
+
+- **PromptWatch** (primary): AI search monitoring, persona creation, competitor identification, brand mention tracking, cookieless analytics, crawler logs, sitemap analysis, answer gap detection, AI-optimized content generator
+- **Google Search Console**
+- **Bing Webmaster Tools**
+- **Looker Studio** (dashboards)
+- PageSpeed Insights / Lighthouse, standard SEO crawling tools
+
+### 8 Pillars for LLM Optimization
+
+1. Content Structure (clear headings, natural language, avoid splitting articles)
+2. Semantic Optimization (topic clusters, data/statistics)
+3. Structured Data (JSON-LD, Schema.org)
+4. Information Trust (reliable sources, expert citations, precise extraction)
+5. User Intent (real questions)
+6. Multimodal Content (images, videos, quantifiable data)
+7. Technical Optimization (page speed, llms.txt)
+8. Proprietary content framework (Alkemy IP)
+
+### 3 Quick Wins
+
+1. **Schema.org** -- prioritize Organization schema for LLM interpretation
+2. **llms.txt** -- create a sitemap-like file explaining URLs to LLMs
+3. **Bing Webmaster Tools** -- validate domain and submit sitemaps to help Microsoft/ChatGPT understand the site
+
+### Aiko/Azvalor: collaboration model and internalization path
+
+**Aiko** is a boutique GEO specialist positioning as a white-label capability provider to Alkemy (similar role to Scrolling). Their Azvalor case demonstrates genuine analytical depth: granular SOV by AI platform, prompt-level tracking, citation source mapping, sentiment scoring.
+
+- **Short term:** Continue collaboration with Aiko for active projects; begin knowledge transfer
+- **Medium term:** Hire dedicated GEO specialist; progressively take over execution; use Aiko for complex/overflow
+- **Long term (2027):** Full internalization; Aiko as strategic advisor for edge cases only
+
+### Key insight: Authority Transfer Gap
+
+Aiko's Azvalor analysis (36/100 AI visibility score) reveals that **traditional web authority does NOT automatically transfer to AI visibility**. A brand can rank well in Google yet be invisible in ChatGPT/Perplexity responses. This is a powerful sales insight -- most clients assume SEO success means AI visibility, which is often false.
+
+Azvalor specifics: own domain cited only 13 times vs. third-party portals (finect.com: 146, javilinares.com: 74, eleconomista.es: 68). AI trusts third-party sources more than brand websites.
+
+### Immediate actions
+
+- **Hire GEO PM** -- dedicated person who understands GEO methodology, can manage projects, interface with clients, and gradually build internal execution
+- **Internalize sales** -- commercial team must own the GEO narrative without depending on Scrolling/Aiko for presales
+- **Standardize sales deck** -- modular versions for different contexts (executive summary, technical deep-dive, pilot)
+
+### Medium-term evolution (Q2-Q3)
+
+- **Bring execution in-house** -- train existing SEO team, build internal PromptWatch capability, start with simpler projects
+- **AI-written SEO content replaces translators** -- international SEO content currently handled by translators can shift to AI-assisted creation (PromptWatch content generator + AI tools). Higher margins, natively optimized for LLM visibility, scalable across languages. Position as premium service upgrade, not cost-cutting.
+
+---
+
+## ADDENDUM 3: Martech & Analytics Evolution (March 23 analysis)
+
+### Current Capabilities
+
+**Digital Analytics (GA4):**
+- Advanced event model: **24 user dimensions + 49 interaction dimensions + 15 product dimensions** (beyond standard GA4)
+- Dataset: 17M users since 2024, 10M with cookies, ~600K registered (~30% B2B)
+- Daily measurement updates, >95% dashboard uptime target
+
+**Marketing Mix Modeling (MMM) -- STRONGEST CAPABILITY:**
+- Primary framework: Meta's **Robyn** (open-source, R-based), deployed on GCP
+- Techniques: Ridge Regression, Adstock (geometric/Weibull), Hill Function saturation, evolutionary search (LHS)
+- Validation: R-squared, RMSE, NRMSE, MAPE, DECOMP.RSSD
+- Audit framework (3 pillars): Data Sources validation, Methodology review, Robustness testing
+- **6 case studies documented:** Maurer & Wirtz (MMM + Customer Data Hub), Wabi/Santander (+24% efficiency, +18% installs), Santander MTA (-20% CPA, neural networks), Acea (Markov Chain MTA), Barilla (MMM + MTA forecasting), Amplifon (channel impact on bookings)
+
+**CRO (via Atoms):**
+- 6-stage methodology: Research/Analysis -> Prioritization -> Insight Generation -> Design -> Test/Experiment -> Deploy
+- Tools: **Contentsquare** (analytics/heatmaps) + Hotjar + A/B testing platforms
+- Team: UX Designer + UI Designer + CRO Specialist + Analyst + Developer + PM
+
+**BI & Visualization:** Power BI, Looker, Google Data Studio, custom web dashboards, Sankey attribution diagrams
+
+**Cloud Infrastructure:** BigQuery (primary warehouse), GCP (Robyn deployment), Azure, AWS. ETL via Python/PySpark.
+
+**Proto-CDP:** Custom BigQuery-based user ID unification (analytics + ERP + CRM cross-source matching). Not a formal CDP but effectively composable CDP architecture. Maurer & Wirtz "Customer Data Hub" as reference.
+
+### Strongest capability: MMM with Mapfre as enterprise reference
+
+The Mapfre RFP (72 pages) demonstrates enterprise-level credibility:
+- 500+ variables, online AND offline channels (SEM, social, TV, radio), digital AND physical conversion
+- Double modeling layer (lead -> conversion -> retention with policy cancellations)
+- Proposed hybrid model: Robyn + Bayesian validation (LightweightMMM/Meridian) + Stan/PyMC for critical campaigns
+- Advisory model: monthly strategic + tactical sessions, committee participation, data culture diffusion
+- The audit framework and hybrid approach are intellectual property differentiating from competitors running Robyn out-of-the-box
+
+### EfectoLED: 4-phase AI evolution roadmap
+
+**Pricing:** 6,350 EUR/month (100 additional hours/month, 4-month POC)
+
+**Phase 1 -- POC & Data Validation (Feb-May 2026):** source consolidation, user ID unification, data quality + 6 ML explorations (causal inference >75% precision, anomaly detection, customer segmentation RFM+, churn prediction, CLV estimation, purchase propensity). 12 weekly insight reports.
+
+**Phase 2 -- Intelligent Explanatory Alerts (Jun-Jul 2026):** alerts that detect KPI deviations AND explain WHY changes occur.
+
+**Phase 3 -- Scenario Simulation (Aug-Oct 2026):** simulators to evaluate potential impact of decisions before execution.
+
+**Phase 4 -- Advanced Models / MMM (Nov-Dec 2026):** evolution toward agent-based decision systems. Explicitly commits to agentic analytics.
+
+**4-layer architecture:** Data -> ML Models -> Interpretation -> Human Validation. Layer 3 (Interpretation) is where AI agents naturally insert. Layer 4 becomes governance, not bottleneck.
+
+### Evolution Vision
+
+**Agentic Analytics:** From manually compiled weekly reports to AI agents that autonomously analyze data, detect anomalies, generate insights, and propose corrective actions. RAG architecture capability already in advisor background.
+
+**Conversational BI with MCP:** From static dashboards to MCP-connected dashboards responding to natural language queries. BigQuery as warehouse supports LLM-based query engines. Unified semantic layer where an LLM traverses all data sources via MCP protocols.
+
+**A2A Commerce Monitoring:** From human-only behavioral analytics to distinguishing bot/agent traffic, tracking AI agent interactions on client websites, CRO that accounts for agent browsing patterns, A2A commerce protocol monitoring. Net-new capability to build.
+
+**Composable CDPs:** From custom BigQuery ID unification to full composable CDP with identity resolution graph, probabilistic + deterministic matching, AI-powered dynamic segmentation, real-time scoring integrated into activation layer. Positioned as more flexible and cost-effective than monolithic CDPs (Segment, mParticle).
+
+### Partnership Model: Atoms -> ABTasty + Dynamic Yield + Contentsquare
+
+Atoms acts as **reseller + implementation partner** on top of vendor technology:
+- Technology resale/licensing fees (margin on subscriptions)
+- Implementation and configuration services
+- Ongoing optimization (CRO sprints, analysis, testing)
+- Strategic consulting (growth machine framework)
+
+**AI risk to current model:** Vendors adding AI features (auto-generated hypotheses, AI personalization, automated insight detection) erodes human analysis value. Strategy: move up from execution to strategy, integrate CRO with econometric models (CRO that speaks CFO language), build AI orchestration layer across vendor tools, prepare for A2A commerce, architect composable experimentation.
+
+### 7 Critical Gaps
+
+1. **No documented server-side tagging** -- essential for privacy-first analytics future
+2. **No consent management / privacy engineering framework** -- increasingly required by regulation
+3. **Marketing automation weakly documented** -- need concrete platform expertise evidence
+4. **A2A Commerce is completely new** -- no methodology for tracking agent traffic
+5. **Conversational BI / MCP integration is aspirational** -- no current tooling or prototype
+6. **Composable CDP architecturally possible but not productized** -- BigQuery + ID unification exists but needs service packaging
+7. **AI agent solutions are CV-level, not case-study-level** -- RAG/agent mentioned in background but no documented client deployment in Spain
+
+### Strategic Reference Cases
+
+- **Mapfre** = enterprise MMM reference. Proves Alkemy Spain can compete for enterprise-level data & analytics engagements. Audit framework + hybrid model approach = replicable IP.
+- **EfectoLED** = AI evolution proof point. Shows the roadmap FROM current capabilities TO AI-first future (autonomous agents, explanatory alerts, scenario simulation). The 4-phase roadmap is honest about the journey -- does not overclaim current maturity.
+
+---
+
 *END OF MASTER KNOWLEDGE BASE*
-*Total sources: 24 documents + addendum. All data points attributed. Tags: [VERIFIED] = multiple sources, [SINGLE] = one source.*
+*Total sources: 27 documents + 3 addenda. All data points attributed. Tags: [VERIFIED] = multiple sources, [SINGLE] = one source.*
+
+---
+
+# ADDENDUM C — Martech Trends 2026 (March 2026)
+> Source: Martech Trends_2026.md | Added: 2026-03-23
+
+## C.1 Martech Market Size & Budget Paradox
+- **Global martech market: $550B-$715B** in 2025-2026 (broad definition incl. services); $175B-$215B software pure (Forrester/MarketsandMarkets). [SOURCE: Martech Trends 2026]
+- **15,384 martech solutions** in 49 categories — 100x more than in 2011. 9% YoY growth. [SOURCE: Chiefmartec Martech Landscape 2025]
+- **CMO budget paradox:** Marketing budgets stagnant at **7.7% of company revenue** (down from 9.5% 3 years ago). 50% of CMOs report budgets of 6% or less. [SOURCE: Gartner CMO Spend Survey 2025, n=402]
+- **Internal distribution:** Paid media absorbs 30.6% (only category that grew in 5 years, +11% YoY). Martech 22.4% (declining). Labor 21.9%. Agencies 20.7%. Digital = 61.1% of spend — all-time high. [SOURCE: Gartner CMO Spend Survey 2025]
+- **AI marketing investment: $20B-$27B in 2025**, projected $82B-$240B by 2030. **9% of marketing budgets** goes to AI tools — fastest-growing category. [SOURCE: Martech Trends 2026]
+- **88% of marketers** use AI in daily workflow. **81% of martech technology leaders** piloting or implementing AI agents. [SOURCE: Gartner + Martech Trends 2026]
+- **Counterintuitive insight (Deloitte):** Organizations investing **more in martech than in media** achieve **18% higher sales increment** and **7% higher revenue growth**. [SOURCE: Deloitte]
+- **European martech:** ~28-34% of global market. $85.37B in 2023 → projected $285.51B by 2030 (CAGR 18.8%). [SOURCE: Martech Trends 2026]
+- **Spain:** MarTech Summit Madrid held first edition May 2025 (200+ attendees: Iberia, Nike, Santander, Glovo, LVMH, SEAT). Second edition programmed May 2026. [SOURCE: Martech Trends 2026]
+- **Sector funding 2025:** $4.37B (+39.7% YoY), 175 acquisitions. [SOURCE: Martech Trends 2026]
+
+## C.2 AAMP and Agentic Advertising (updates Block 5)
+- **AAMP Agent Registry** (operative March 1, 2026): 10 registered agents as of March 11 — ALL under MCP standard, ZERO under A2A. MCP dominates 10-0 over A2A in first phase. [SOURCE: IAB Tech Lab + Martech Trends 2026]
+- **MCP = "USB-C for AI":** 700+ tools accessible via MCP. Any model (GPT-4, Claude, Gemini) connects to any MCP-enabled platform with a single integration. [SOURCE: Martech Trends 2026]
+- **Microsoft closed Xandr DSP** on February 28, 2026, citing explicitly it no longer fits "a conversational, personalized, agentic future." [SOURCE: Martech Trends 2026]
+- **PubMatic AgenticOS** (CES 2026): first OS for autonomous agent-to-agent ad execution. **87% reduction in setup time**, **70% reduction in incident resolution**. [SOURCE: Martech Trends 2026]
+- **Meta** acquired Manus AI (Dec 2025) and plans to **fully automate advertising by end of 2026**: advertiser provides URL, product image, budget → AI generates creative, targeting, optimization, full reporting. [SOURCE: Martech Trends 2026]
+- **The Trade Desk** ($2.9B revenue 2025) testing campaign creation via **Claude (Anthropic)** in closed beta. Koa Adaptive Trading offers full autonomous management. Negotiating with OpenAI to manage ad sales in ChatGPT. [SOURCE: Martech Trends 2026]
+- **Google** launched AI Max for Search with **27% uplift** in beta. MCP open-source server for Google Ads API available since Oct 2025. [SOURCE: Martech Trends 2026]
+- **Agentic AI market:** $7B-$10B in 2025-2026 → $57B-$199B by 2031-2034 (CAGR 40-45%). Multi-agent systems = 53.3% market share. [SOURCE: Martech Trends 2026]
+- **Caution:** 70%+ of marketers encountered AI incidents in advertising in 2025. Carnegie Mellon: AI agents fail 70% of the time in complex office tasks. [SOURCE: Martech Trends 2026]
+
+## C.3 AI Search & Zero-Click (updates Block 5 / GEO)
+- **AI Overviews (Google):** ~16-30% of desktop searches in US. **475% YoY growth** in mobile. 1B+ users in 200+ countries. [SOURCE: Martech Trends 2026]
+- **Impact on clicks:** -58% reduction in clicks (Ahrefs, Feb 2026). -61% organic CTR, -68% paid CTR (Seer Interactive, 3,119 queries, 42 organizations). **93% of AI Mode searches end without a click.** [SOURCE: Martech Trends 2026]
+- **Zero-click:** 65% of searches (mid-2025, up from 56% in 2024). Heading to **70%+ by mid-2026**. With AI Overviews: ~83% zero-click rate. Gartner projects organic traffic **-50% or more by 2028**. [SOURCE: Martech Trends 2026 + Gartner]
+- **Zero-click paradox:** Total search volume (engines + LLMs) **grew 26% globally** — AI search doesn't destroy demand, it redistributes value. [SOURCE: Graphite, March 2026]
+- **ChatGPT:** 800-900M weekly active users early 2026, 2.5B daily prompts. **20% of global search-related traffic**, 12% in US. Sent **1.2B referrals** to publisher sites (Sep-Nov 2025, +52% YoY). [SOURCE: Martech Trends 2026]
+- **AI traffic quality:** Converts **55% better YoY** (Adobe Digital Economy Index). **+155.6% traffic from AI platforms** (Microsoft Clarity), converts at **3x** other channels. Valued at **4.4x the economic value** of traditional organic traffic. [SOURCE: Martech Trends 2026]
+- **GEO (Princeton research):** Citing sources and adding statistics can improve AI visibility **30-40%**. [SOURCE: Princeton research via Martech Trends 2026]
+- **Social commerce as search:** 64% of Gen Z uses TikTok as a search engine. Fashion searches on TikTok **503% higher** than on Google. [SOURCE: Martech Trends 2026]
+- **Social commerce market:** **$2.11T globally in 2026** (Mordor Intelligence). TikTok Shop: **$15.82B in US sales in 2025** (+108% YoY). [SOURCE: Martech Trends 2026]
+
+## C.4 Analytics & GA4 (updates Conversion Intelligence)
+- **GA4 Cross-Channel Budgeting** (beta 2026): described by specialists as "the most significant GA4 launch of 2026." Forward-looking budget planning tool covering **all paid media including non-Google** (Meta, LinkedIn, TikTok, Snapchat), with projections based on 12 months of historical data. Fundamental shift: **from retrospective reporting to predictive planning**. [SOURCE: Martech Trends 2026]
+- **GA4 MCP connection** available since Oct 2025 — AI agents can query analytics data directly. [SOURCE: Martech Trends 2026]
+- **Conversational BI proliferation:** Looker (Gemini Conversational Analytics GA 2025), ThoughtSpot Spotter (+300% query increase at Fabuwood), Power BI Copilot, Tableau + Einstein GPT, Amplitude Ask, Mixpanel Spark AI. [SOURCE: Martech Trends 2026]
+- **Adobe GenStudio** for Performance Marketing: ARR growth >30% in Q1 FY26. 650+ active trials of agentic web products. Firefly: $250M ARR, 22B generations. [SOURCE: Adobe Q1 FY26 earnings, March 2026]
+
+## C.5 MMM Renaissance (updates Conversion Intelligence)
+- **Google Meridian** (v1.5.3, open-source): launched **no-code Scenario Planner** on Feb 19, 2026 — run budget scenarios and ROI estimates in real time. Uses Bayesian inference with NUTS MCMC. 20+ certified measurement partners. [SOURCE: Martech Trends 2026]
+- **Meta Robyn** (v3.11.1 R, beta Python): 1,200+ GitHub stars, **75,000+ installs** — most adopted open-source MMM. [SOURCE: Martech Trends 2026]
+- **Triangulation consensus 2026:** MMM (macro planning) + Multi-Touch Attribution (real-time tactical) + Incrementality Testing (causal truth layer). [SOURCE: Martech Trends 2026]
+- **Measurement confidence problem:** 54.1% of marketers report no improvement in measurement confidence YoY (TransUnion/eMarketer). 60-75% of buy-side considers current approaches insufficient (IAB State of Data 2026). [SOURCE: Martech Trends 2026]
+
+## C.6 CRO & Experimentation — Critical Partner Update
+- **VWO + AB Tasty MERGED** (January 20, 2026): deal valued at **~$500M**. Creates entity with **>$100M ARR, 4,000+ clients, 11 global offices**. Our partner ABTasty is now part of this larger $500M entity. [SOURCE: Martech Trends 2026]
+- **AB Tasty Evi** (launched Nov 2025): agentic engine automating the full A/B testing workflow with **73% reduction in setup time**. Acquired Wandz.ai for real-time adaptive personalization processing 3.7 trillion data points/month. [SOURCE: Martech Trends 2026]
+- **Optimizely Opal:** expanded from assistant to agent orchestration platform. Benchmark from 47,000 interactions: **+78.66% experiments created** (Opal vs non-Opal, DiD methodology), **+24.05% more personalizations created**. Named leader in **Gartner MQ 2026 for Digital Experience Platforms**. Launched first **GEO-ready CMS** with auto-generation of llms.txt. [SOURCE: Martech Trends 2026]
+- **Dynamic Yield (Mastercard):** 7 consecutive years as Gartner leader. **15-25% conversion improvement** across clients. [SOURCE: Martech Trends 2026]
+- **AI personalization delivers:** 10-30% improvement in conversion rates, up to **800% ROI** on marketing investments. [SOURCE: Martech Trends 2026]
+- **Cyber Week 2025:** AI agents responsible for **~17% of online orders** (~$13.5B in sales, Salesforce). Shoppers using AI chat were **38% more likely to buy** (Adobe). [SOURCE: Martech Trends 2026]
+- **Braze LVMH 24S:** AI Item Recommendations → **+7% add-to-cart, +35% purchase conversion**. [SOURCE: Martech Trends 2026]
+
+## C.7 CDP Evolution (updates DTC Orchestrate)
+- **Salesforce Data 360** (renamed from Data Cloud, Oct 2025): named **definitive leader in Gartner MQ 2026 for CDPs**. Positioned as "context engine to unify structured and unstructured data as foundation for agents and automation." [SOURCE: Martech Trends 2026]
+- **CDP market: $8B-$10B in 2025** → $37B-$85B by 2030-2032 (CAGR 27-34%). [SOURCE: Martech Trends 2026]
+- **Composable CDP paradox:** Gartner projects 70% of organizations will require composable tech by 2026. But actual vendor growth modest (~3% employment). **90% of marketers dissatisfied with their CDP, only 17% report high utilization.** [SOURCE: Martech Trends 2026]
+- **Adobe Real-Time CDP results:** AAA Northeast → +150% conversion, -80% campaign launch time. General Motors unified 131M profiles → +1,378% in vehicle configuration completes. [SOURCE: Martech Trends 2026]
+
+## C.8 Privacy & Regulation (updates Block 4)
+- **Cookies survive in Chrome:** Google officially abandoned third-party cookie deprecation (July 22, 2024). Confirmed no consent prompt (April 2025). Cookies remain active by default in Chrome as of March 2026. Safari/Firefox still block since 2020. [SOURCE: Martech Trends 2026]
+- **Signal loss without consent management:** Organizations without proper consent management **lose 30-40% of data** in analytics platforms. [SOURCE: Martech Trends 2026]
+- **Server-side tagging:** Recovers **15-30% of conversion signal** lost from client-side blocking. Google Tag Manager server-side now includes Google Tag Gateway with automated Cloudflare setup. [SOURCE: Martech Trends 2026]
+- **TCF v2.3 mandatory** from February 28, 2026. CMP market: $730M-$1.1B in 2025. [SOURCE: Martech Trends 2026]
+- **GDPR fines 2025: ~€1.2B** (cumulative €7.1B since May 2018). Landmark cases: TikTok €530M (illegal China transfers), Meta €479M, Google €200M (disguised ads in Gmail), SHEIN €150M (cookies before consent). [SOURCE: Martech Trends 2026]
+- **Digital Markets Act:** 7 gatekeepers, 23 core platform services. Apple fined **€500M**, Meta **€200M** in 2025. [SOURCE: Martech Trends 2026]
+- **AI Act August 2, 2026:** High-risk system rules, transparency rules, innovation measures. Fines up to **€35M or 7% of global annual revenue**. Finland first EU member with fully operational enforcement (January 2026). [SOURCE: Martech Trends 2026]
+- **Data clean rooms:** $1.253B (2024) → $2.722B by 2032 (CAGR 13.6%). Amazon Marketing Cloud became free for all Sponsored Ads advertisers (September 2025). [SOURCE: Martech Trends 2026]
+
+## C.9 Competitive Intelligence Update (updates Block 3)
+- **Omnicom-IPG merger** closed November 26, 2025 (~$9B). Creates world's largest advertising holding with >$25B pro forma revenue. Integration of Acxiom (2.6B profiles) with Flywheel Digital = one of most powerful first-party data ecosystems. ~$750M in annual synergies projected (~7,500 roles affected). [SOURCE: Martech Trends 2026]
+- **Accenture Song:** ~$20B in FY2025 (+8%). #1 in Ad Age ranking of largest agency companies worldwide. Integrated into "Reinvention Services" unit (CEO Ndidi Oteh, replacing David Droga) — repositioned as "operational layer" over traditional agencies. Linked promotions to regular AI tool adoption. [SOURCE: Martech Trends 2026]
+- **Publicis Groupe:** Invested €300M in **CoreAI** (€100M in 2024) built on Marcel + Bodhi ML (Sapient) + Epsilon data (2.3B consumer profiles). Acquired **Lotame** (March 2025, 1.6B IDs in 109 countries) → combined coverage = **91% of adults with internet access**. 50+ CoreAI pilots. €1B reserved for acquisitions in 2026. [SOURCE: Martech Trends 2026]
+- **WPP Elevate28:** under new CEO Cindy Rose (ex-Microsoft COO). Revenue £13.55B in 2025 (-8.1%). Strategy targets £500M in savings for 2028. **WPP Open** serves 114,000+ marketers. "**Large Marketing Model**" trained on signals from 350+ partners in 75+ markets. WPP Open Pro = first self-service AI tool from a holding. Partnership with Google expanded ($400M). Acquired InfoSum for data clean rooms. [SOURCE: Martech Trends 2026]
+- **Dentsu:** Merkury (268M+ US adults, 10B+ global IDs). Launched Adobe GenStudio dentsu+ (January 2025). CMO Report 2025: **89% of CMOs** believe agentic AI will have a profound effect on their business. [SOURCE: Martech Trends 2026]
+- **McKinsey:** Estimates marketing is "the tip of the spear" for AI value creation — **$2.6-4.4 trillion annually**. But **~80% of organizations** report no significant AI results due to fragmented pilots and weak data. [SOURCE: McKinsey via Martech Trends 2026]
+
+## C.10 Marketing Automation Agentic Evolution (updates DTC Accelerate)
+- **Salesforce Agentforce Marketing:** Journey Decisioning Agents replace rigid flows with dynamic real-time decisions. Agentforce Paid Media Optimization auto-pauses underperforming campaigns. ~10 acquisitions in 6 months including **Informatica (~$8B)** for enterprise data governance. [SOURCE: Martech Trends 2026]
+- **HubSpot Breeze AI:** 38% global marketing automation market share. $2.63B revenue 2024 (+21% YoY). Breeze Customer Agent resolves **>50% of tickets** autonomously. [SOURCE: Martech Trends 2026]
+- **Marketing automation market:** ~$7.23B in 2025 → $20.12B by 2034 (CAGR 12-15%). **Gartner:** 60% of brands using agentic AI for 1:1 interactions by 2028. Agent-customer interactions: 3.3B (2025) → 34B (2027) — Juniper Research. [SOURCE: Martech Trends 2026]
