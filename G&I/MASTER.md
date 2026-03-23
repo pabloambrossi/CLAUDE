@@ -1,4 +1,4 @@
-[MASTER.md](https://github.com/user-attachments/files/26174523/MASTER.md)
+[MASTER.md](https://github.com/user-attachments/files/26180506/MASTER.md)
 # MASTER KNOWLEDGE BASE -- Alkemy G&I Strategic Vision Presentation
 ## Q1 2026 Business Review for Duccio Vitale (CEO Global)
 
