@@ -1,4 +1,4 @@
-[structure-v5.md](https://github.com/user-attachments/files/26195397/structure-v5.md)
+[structure-v5.md](https://github.com/user-attachments/files/26201917/structure-v5.md)
 # G&I Business Review — v5 Structure
 ## Reframed per Diego's feedback (16 points). ~16 slides. For Duccio, Silvia, Diego.
 
