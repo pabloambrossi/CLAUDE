@@ -1,31 +1,28 @@
-[plan-skill-alkemy-v4.md](https://github.com/user-attachments/files/26326082/plan-skill-alkemy-v4.md)
+[plan-skill-alkemy-v4.md](https://github.com/user-attachments/files/26326111/plan-skill-alkemy-v4.md)
 # Plan Operativo: Skill de Presentaciones Alkemy
 
-**Versión**: 4.0 · Marzo 2026 · *Integra: Challenge Panel + Benchmark herramientas + Estrategia multi-formato*  
+**Versión**: 4.0 · Marzo 2026 · *Integra: Challenge Panel + Benchmark herramientas + Estrategia HTML nativo*  
 **GitHub**: https://github.com/pabloambrossi/  
 **Carpeta de trabajo**: `C:\Users\PabloAmbrossiLarios\Ontwice\ES_ALK_GTM-Growth and Innovation - Documentos\00-claude\`  
 **CRM**: Pipedrive  
-**Nombre del skill**: `alkemy-presentations` (multi-formato: HTML + PPTX)
+**Nombre del skill**: `alkemy-presentations` (formato único: HTML con Aeonik)
 
 ---
 
-## Estrategia de formato: HTML + PPTX dual
+## Estrategia de formato: HTML nativo
 
-El skill genera **dos formatos** según el contexto. No es "uno u otro" — cada formato tiene su función:
+El skill genera **un solo formato**: HTML autónomo con el motor alkemy-deck. Sin PPTX.
 
-| ¿Quién edita después? | Formato | Fuente tipográfica | Fidelidad visual | Tokens | Colaboración |
-|----------------------|---------|-------------------|-----------------|--------|-------------|
-| Nadie (presentar al cliente, board) | **HTML** (alkemy-deck) | Aeonik embebida | 100% | ~8,000 | Via SharePoint (viewer + versiones) |
-| El equipo (editar, comentar, ajustar) | **PPTX** (PptxGenJS) | **Arial** (oficial para PPT) | ~85% | ~18,000 | PPT Online en SharePoint (real-time) |
-| Urgencia (<5 min) | **HTML express** | Aeonik embebida | 100% | ~4,000 | N/A — genera y presenta |
+| Modo | Formato | Tipografía | Fidelidad | Tokens | Colaboración |
+|------|---------|-----------|-----------|--------|-------------|
+| Standard (con outline) | **HTML** (alkemy-deck) | Aeonik embebida | 100% | ~8,000 | SharePoint (viewer + versiones) + PDF |
+| Express (<5 min) | **HTML express** | Aeonik embebida | 100% | ~4,000 | N/A — genera y presenta |
 
-> **Nota sobre tipografía**: El master de Alkemy establece que **Arial es la fuente oficial para PowerPoint** — no es un fallback, es la regla. Aeonik es para web/HTML/print. Esto simplifica la generación de PPTX porque Arial está en todos los ordenadores.
+**Tipografía**: Aeonik embebida en el HTML. No hay dependencia de fuentes instaladas. Funciona igual en cualquier navegador, cualquier SO, cualquier dispositivo.
 
-El skill pregunta (o infiere): *"¿Necesitas que el equipo pueda editar la presentación después?"*
-- **Sí** → PPTX con Arial, se sube a SharePoint para colaboración
-- **No** → HTML con Aeonik, exportable a PDF
-- **Ambos** → Genera los dos (HTML para presentar, PPTX para editar)
-- **Urgente** → HTML express (8 slides, sin preguntas, <2 min)
+**Colaboración**: el HTML se guarda en SharePoint → el equipo lo abre en el navegador para revisarlo → los comentarios se hacen en SharePoint (comentarios en archivo + historial de versiones) → si alguien necesita cambios, pide a Claude que regenere con los ajustes → se exporta a PDF para enviar al cliente.
+
+**Por qué no PPTX**: el skill alkemy-deck ya existe, genera con 100% de fidelidad al brand, cuesta la mitad de tokens (~8K vs ~18K), no tiene limitaciones de gradientes/SVG/tipografía, y las fonts van embebidas. No necesitamos PowerPoint.
 
 ---
 
@@ -56,7 +53,7 @@ El v0.1 del skill cubre **solo esto**:
 
 | Dimensión | MVP (v0.1) | Futuro (v1.0+) |
 |-----------|-----------|----------------|
-| **Formato** | **HTML (primary) + PPTX (cuando se pide edición)** | + Gamma API como capa de colaboración (si pasa POC) |
+| **Formato** | **HTML (alkemy-deck) + PDF exportable** | + Gamma como editor colaborativo (si pasa POC) |
 | Layouts | 5: cover dark, content text, content two-col, metrics KPI, closing | 20+ del master completo |
 | BU | 1: Data.Tech.AI (Blue) | Las 5 BUs |
 | Tono | 1: commercial | 4 tonos (impact, commercial, technical, workshop) |
@@ -64,12 +61,12 @@ El v0.1 del skill cubre **solo esto**:
 | Assets | Fotos como placeholder (instrucción de reemplazar) | Inserción directa desde asset/photo/ |
 | Iconos | No | Tabler Icons integrados |
 | Modo | Standard (con outline previo) | Standard + Express |
-| Tipografía PPTX | Arial (oficial según master Alkemy) | Arial (no cambia) |
-| Tipografía HTML | Aeonik embebida | Aeonik (no cambia) |
 
-**Por qué HTML primero**: el skill alkemy-deck ya existe y funciona. El MVP reutiliza ese motor para el output principal (calidad 100%, ~8,000 tokens). La capa PPTX se añade como segundo output para cuando el equipo necesite editar.
+| Tipografía | Aeonik embebida en HTML | Aeonik (no cambia) |
 
-**Definition of Done del MVP**: una persona que no ha participado en la creación puede generar una propuesta comercial de 12 slides para un prospect del sector seguros, en BU Data.Tech.AI. La presentación se ve profesional en el navegador (HTML) y, si la pide en PPTX, se abre correctamente en PowerPoint con Arial y colores Blue de Alkemy.
+**Por qué HTML primero**: el skill alkemy-deck ya existe y funciona. El MVP reutiliza ese motor para el output principal (calidad 100%, ~8,000 tokens). No se genera PPTX. La colaboración se resuelve con SharePoint (viewer + versiones) + PDF.
+
+**Definition of Done del MVP**: una persona que no ha participado en la creación puede generar una propuesta comercial de 12 slides para un prospect del sector seguros, en BU Data.Tech.AI. La presentación se ve profesional en el navegador (HTML) se exporta a PDF, y es reconocible como Alkemy.
 
 ---
 
@@ -88,33 +85,34 @@ Guarda los datos en `00-claude/outputs/baseline-before-skill.md`. Sin esto no pu
 
 ---
 
-### Pre.3 — Documentar limitaciones y reglas tipográficas
+### Pre.3 — Documentar capacidades del motor HTML
 
 **🟦 CHAT** · Investigar juntos
 
-#### Regla tipográfica oficial (del master de Alkemy)
+#### Tipografía
 
-> "This is the system font for PowerPoint presentations, not the official font of the new Alkemy rebrand. **Arial should be used only in PowerPoint.**"
+Solo Aeonik. Va embebida en el HTML. No hay dependencia de fuentes instaladas.
 
-Esto significa que Arial NO es un fallback — **es la fuente oficial para PPTX**:
+| Rol | Font | Weight | Style |
+|-----|------|--------|-------|
+| Headline | Alkemy Sans / Aeonik | 900 | lowercase, kerning tight |
+| Sub-headline | Aeonik SemiBold | 600 | UPPERCASE |
+| Body | Aeonik Medium | 500 | Mixed case |
+| Annotation | Aeonik Mono | 400 | UPPERCASE |
 
-| Contexto | Headlines | Body | Mono | Fuente |
-|----------|-----------|------|------|--------|
-| HTML / Web | Aeonik (embebida) | Aeonik Medium | Aeonik Mono | Official brand font |
-| **PPTX** | **Arial Bold** | **Arial Regular** | **Courier New** | **Official PPT font** |
-| PDF (desde HTML) | Aeonik embebida | Aeonik embebida | Aeonik Mono | Hereda del HTML |
+#### Capacidades del motor HTML (alkemy-deck)
 
-#### Limitaciones de PptxGenJS vs el master
+| Capacidad | Soportado | Notas |
+|-----------|----------|-------|
+| Gradientes complejos | ✅ CSS nativo | Sin limitaciones |
+| SVG nativo | ✅ Inline SVG | Escala perfecta, colores con variables CSS |
+| Imágenes full-bleed | ✅ CSS background | Overlays, filters, blend modes |
+| Animaciones/transiciones | ✅ CSS + JS | reveal-up, stagger, counters animados |
+| Chart.js embebido | ✅ Via CDN | Theming Alkemy por BU |
+| Tabler Icons | ✅ Inline SVG | stroke="currentColor" |
+| Exportar a PDF | ✅ Chrome Ctrl+P | Papel custom 33.86 × 19.05 cm |
 
-| Capacidad | PptxGenJS | Master PPTX | Decisión |
-|-----------|----------|-------------|----------|
-| Gradientes complejos (multi-stop) | Limitado | Sí | Usar colores sólidos, ~85% fidelidad |
-| SVG nativo en slides | No | Sí | Convertir SVG a PNG o usar shapes |
-| Imágenes como fondo full-bleed | Sí (base64 o ruta) | Sí | Funciona, archivos pesados |
-| Animaciones/transiciones | Básicas | Completas | Ignorar en v0.1 |
-| Placeholder editable | No | Sí | Las slides se editan post-generación |
-
-**Nivel de fidelidad target PPTX**: 85% visual match. Cuando se necesite pixel-perfect → generar HTML (100% fidelidad) y exportar a PDF.
+**Nivel de fidelidad**: 100% con el brand system. Sin compromisos visuales.
 
 ---
 
@@ -176,12 +174,12 @@ Los archivos son:
    incrustarse o referenciarse. Lista cada uno con nombre, duración, y contenido.
 
 6. Carpeta slides-png-master-layouts/ — Estas NO son assets para insertar. Son 
-   CAPTURAS DE PANTALLA de cada layout del master PPTX, hechas para que un agente de IA 
+   CAPTURAS DE PANTALLA de cada layout del master, hechas para que un agente de IA 
    pueda VER visualmente cómo es la configuración de cada tipo de slide. Para cada 
    imagen, describe: qué tipo de slide es, la composición visual (grid, márgenes, 
    posiciones), tamaños de letra aproximados, uso del color, elementos gráficos 
    (tablas, gráficas, números, iconos), y cómo se relaciona con el layout 
-   correspondiente del PPTX.
+   correspondiente del master.
 
 7. Carpeta slides-png-master-template/ — Igual que la anterior pero con CONTENIDO 
    REAL aplicado. Son ejemplos de slides terminadas. Describe: qué contenido tiene, 
@@ -212,7 +210,7 @@ source/template-pptx--master-spain-2026.pptx (FUENTE DE VERDAD de layouts)
 Para cada archivo fuente, documenta QUÉ hay que revisar cuando cambia:
 
 SI CAMBIA guide-visual-identity.pdf →
-  Revisar: brand-system.md (skill), source/theme-color--alkemy-2026.thmx, base-config.js
+  Revisar: brand-system.md (skill), source/theme-color--alkemy-2026.thmx, base.html (template alkemy-deck)
   Impacto: ALTO
 
 SI CAMBIA source/template-pptx--master-spain-2026.pptx →
@@ -220,7 +218,7 @@ SI CAMBIA source/template-pptx--master-spain-2026.pptx →
   Impacto: ALTO
 
 SI CAMBIA source/theme-color--alkemy-2026.thmx →
-  Revisar: brand-system.md, base-config.js
+  Revisar: brand-system.md, base.html (template alkemy-deck)
   Impacto: MEDIO
 
 SI SE AÑADEN imágenes a asset/photo/ →
@@ -240,12 +238,12 @@ SI SE AÑADEN iconos a asset/icon/ →
 | Archivo del repositorio | Alimenta a (en el skill) | Relación |
 |------------------------|--------------------------|----------|
 | guide-visual-identity.pdf | references/brand-system.md | Reglas extraídas |
-| source/theme-color--alkemy-2026.thmx | templates/base-config.js | Colores HEX |
+| source/theme-color--alkemy-2026.thmx | templates/base.html (template alkemy-deck) | Colores HEX |
 | source/template-pptx--master-spain-2026.pptx | references/layout-catalog.md | Layouts + posiciones |
 | ref/layout/*.png | references/layout-catalog.md | Referencia visual |
 | ref/example/*.png | references/storytelling.md | Ejemplos de narrativa |
-| asset/photo/*.webp | El PPTX generado | Se insertan directamente |
-| asset/icon/*.svg | El PPTX/HTML generado | Iconografía de slides |
+| asset/photo/*.webp | El HTML generado | Se insertan directamente |
+| asset/icon/*.svg | El HTML generado | Iconografía de slides |
 
 Genera un único archivo INVENTARIO.md con TODO esto.
 Guárdalo en la raíz de esta carpeta.
@@ -347,7 +345,7 @@ CAPA docs/ (se crea en el Paso 0.6):
   docs/typography.md
   docs/logo-rules.md
   docs/layouts.md
-  docs/pptx-positions.md
+  docs/slide-positions.md
   docs/visual-imagery.md
 
 ═══════════════════════════════════════════════════════════════════
@@ -436,7 +434,7 @@ alkemy-corporate-slides/
 │   ├── typography.md
 │   ├── logo-rules.md
 │   ├── layouts.md
-│   ├── pptx-positions.md
+│   ├── slide-positions.md
 │   └── visual-imagery.md
 │
 └── (skill/ y outputs/ están un nivel arriba en 00-claude/)
@@ -475,7 +473,7 @@ Haz lo siguiente:
    - Formato: SVG 24x24, stroke 2px
    - Cómo usar: 
      - En HTML slides: inline SVG con stroke="currentColor"
-     - En PPTX: convertir a PNG o embeber como imagen
+     - En PDF: se renderizan nativamente al exportar desde Chrome
      - CDN alternativo: https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/outline/
    - Categorías más útiles para presentaciones de consultoría:
      - Negocio: briefcase, chart-bar, chart-line, coin, target, rocket
@@ -532,7 +530,7 @@ READMEs específicos:
    - refs (Claude los mira para APRENDER cómo deben verse las slides)
    - master (archivos fuente que definen los layouts oficiales)
 
-2. source/_INDEX.md — Resumen técnico del master PPTX:
+2. source/_INDEX.md — Resumen técnico del master:
    - Lista completa de slide layouts disponibles con nombre y descripción
    - Slide masters definidos
    - Fuentes embebidas en el theme
@@ -561,7 +559,7 @@ READMEs específicos:
 6. asset/video/README.md — Similar al de imágenes.
 
 7. Crea también la carpeta 00-claude/skills/alkemy-presentations/ con un README.md 
-   que diga "Carpeta reservada para el skill de presentaciones PPTX Alkemy. 
+   que diga "Carpeta reservada para el skill alkemy-presentations. 
    Se creará en la Fase 1 del plan."
 
 8. Crea también 00-claude/outputs/ con un README.md que diga "Aquí van las 
@@ -590,7 +588,7 @@ directorios completo con los nombres nuevos.
 
 **🟩 COWORK** · Apuntar a: `...\00-claude\alkemy-corporate-slides`
 
-Este es el paso más importante para la eficiencia de tokens. La idea: en lugar de que Claude lea un PDF de 38 páginas o desempaquete un PPTX cada vez que necesita un color HEX o una posición de layout, lee un .md de 30-50 líneas que tiene exactamente lo que necesita, ya pre-extraído y en formato de tabla.
+Este es el paso más importante para la eficiencia de tokens. La idea: en lugar de que Claude lea un PDF de 38 páginas o desempaquete archivos binarios cada vez que necesita un color HEX o una posición de layout, lee un .md de 30-50 líneas que tiene exactamente lo que necesita, ya pre-extraído y en formato de tabla.
 
 Estos archivos viven en una carpeta `docs/` dentro de `alkemy-corporate-slides/`. Son **derivados** de los archivos fuente — si cambia el fuente, hay que regenerarlos (el mapa de dependencias del INVENTARIO dice exactamente cuándo).
 
@@ -657,7 +655,7 @@ en tablas markdown que un agente pueda consumir en <100 tokens.
    ## DON'Ts
    - No outline, no sombra, no caps, no rotar, no estirar, no gradiente
 
-4. docs/layouts.md — Catálogo de layouts extraído del master PPTX
+4. docs/layouts.md — Catálogo de layouts extraído del master
    (Este ya lo genera el Paso 0.4 en ref/layout/_INDEX.md, pero aquí 
    lo resumimos en formato tabla pura, sin descripciones largas)
 
@@ -668,11 +666,11 @@ en tablas markdown que un agente pueda consumir en <100 tokens.
    | 3 | Content | White | H2 28pt, body 16pt, header+footer | Workhorse |
    ...
 
-5. docs/pptx-positions.md — Posiciones exactas de elementos por layout
-   (Extraído del XML del master PPTX — este es el que más tokens ahorra 
-   porque evita desempaquetar el PPTX cada vez)
+5. docs/slide-positions.md — Posiciones exactas de elementos por layout
+   (Extraído del XML del master — este es el que más tokens ahorra 
+   porque evita procesar archivos binarios pesados cada vez)
 
-   # PPTX Element Positions (inches)
+   # Slide Element Positions (inches)
    ## Cover Dark
    | Element | x | y | w | h | Font | Size | Color |
    | Title | 0.7 | 2.5 | 11.9 | 1.5 | Alkemy Sans | 48 | White |
@@ -791,12 +789,12 @@ desde la última extracción.
 | `typography.md` | ~40 tokens | PDF sección tipografía | ~2,000 tokens |
 | `logo-rules.md` | ~60 tokens | PDF sección logos | ~3,000 tokens |
 | `layouts.md` | ~120 tokens | ref/layout/_INDEX.md completo | ~1,500 tokens |
-| `pptx-positions.md` | ~200 tokens | Desempaquetar master PPTX XML | ~8,000 tokens |
+| `slide-positions.md` | ~200 tokens | Desempaquetar master XML | ~8,000 tokens |
 | `visual-imagery.md` | ~50 tokens | PDF sección visual imagery | ~2,000 tokens |
 | `company-context.md` | ~350 tokens | Leer web + credenciales + benchmark | ~12,000 tokens |
 | **Total** | **~900 tokens** | — | **~33,500 tokens ahorrados** |
 
-Cada generación de PPTX que antes costaba ~25,000 tokens ahora cuesta ~5,000 porque Claude lee los .md pre-extraídos en lugar de los archivos fuente.
+Cada generación que antes costaba ~25,000 tokens ahora cuesta ~5,000 porque Claude lee los .md pre-extraídos en lugar de los archivos fuente.
 
 **Regla de actualización**: si cambia un archivo fuente, la tarea Asset Sync de la Fase 5 compara la fecha del fuente con la fecha `extracted` del .md intermedio. Si el fuente es más reciente, alerta para que Cowork regenere el .md.
 
@@ -812,11 +810,11 @@ alkemy-corporate-slides/
 │   ├── typography.md              ← source: guide-visual-identity.pdf
 │   ├── logo-rules.md             ← source: guide-visual-identity.pdf
 │   ├── layouts.md                 ← source: source/template-pptx--master-spain-2026.pptx
-│   ├── pptx-positions.md         ← source: source/template-pptx--master-spain-2026.pptx (XML)
+│   ├── slide-positions.md         ← source: source/template-pptx--master-spain-2026.pptx (XML)
 │   └── visual-imagery.md         ← source: guide-visual-identity.pdf
 ```
 
-**Cómo los usa el skill**: en el SKILL.md, en lugar de decir "lee el PDF de guidelines", dice "lee docs/colors.md para la paleta y docs/pptx-positions.md para las posiciones de elementos". Progressive disclosure a nivel de repositorio.
+**Cómo los usa el skill**: en el SKILL.md, en lugar de decir "lee el PDF de guidelines", dice "lee docs/colors.md para la paleta y docs/slide-positions.md para las posiciones de elementos". Progressive disclosure a nivel de repositorio.
 
 ---
 
@@ -830,20 +828,20 @@ El objetivo de esta fase es escribir todos los archivos del skill (SKILL.md + re
 
 **⬜ MANUAL** · En claude.ai → Nuevo Proyecto
 
-Nombre: **"Alkemy PPTX Skill Development"**
+Nombre: **"Alkemy Presentations Skill Development"**
 
 Instrucciones del proyecto:
 
 ```
 Eres un experto en diseño de skills para Claude, especializado en presentaciones 
 corporativas y brand systems. Estamos construyendo un skill que genera presentaciones 
-PowerPoint nativas (.pptx) siguiendo la identidad visual de Alkemy 2026.
+HTML nativas siguiendo la identidad visual de Alkemy 2026 con el motor alkemy-deck.
 
 Contexto:
 - Alkemy es una consultora tecnológica con 5 BUs: Master Brand, Data.Tech.AI, 
   Retail Tech, Agency [Alkemy]+, Nova
 - Cada BU tiene su paleta de colores derivada de un brand system unificado
-- El skill debe generar PPTX con PptxGenJS que replique los layouts del master oficial
+- El skill genera HTML con alkemy-deck que replica los layouts del master con 100% de fidelidad
 - El skill existente "alkemy-deck" genera HTML slides y tiene el brand system 
   codificado — reutilizar todo lo posible
 
@@ -866,11 +864,11 @@ Principios del skill-creator:
 
 ### Paso 1.2 — Diseñar la estructura del SKILL.md
 
-**🟦 CHAT** · En el proyecto "Alkemy PPTX Skill Development"
+**🟦 CHAT** · En el proyecto "Alkemy Presentations Skill Development"
 
 Trabaja con Claude para definir:
 
-1. **Frontmatter** — nombre `alkemy-presentations` + descripción "pushy" con todos los triggers. Incluir: "presentación, deck, slides, pitch, propuesta, credenciales, business review, PPTX, PowerPoint, HTML slides"
+1. **Frontmatter** — nombre `alkemy-presentations` + descripción "pushy" con todos los triggers. Incluir: "presentación, deck, slides, pitch, propuesta, credenciales, business review, HTML slides, PDF"
 2. **Tabla de modelo recomendado** *(P1 #5 — Claude Expert)*:
    | Tarea | Modelo | Por qué |
    |-------|--------|---------|
@@ -882,20 +880,16 @@ Trabaja con Claude para definir:
    - BU (Data.Tech.AI, Agency, Retail Tech, Nova, Master)
    - Tono (impact, commercial, technical, workshop)
    - Audiencia y big idea
-   - **Formato**: "¿El equipo necesita editar después?" → Sí: PPTX (Arial). No: HTML (Aeonik). Ambos: genera los dos. Urgente: HTML express.
+   - **Formato**: siempre HTML. Si urgente → modo express (8 slides, sin preguntas).
    - **Clasificación de confidencialidad** *(P1 #12 — Compliance)*: "¿Es para audiencia interna o externa?" → si externa: disclaimer, no inventar datos, preguntar sobre nombre real del cliente
 4. **Fase 1 del skill — Outline (OBLIGATORIO)** *(P1 #6)* — Propone títulos de acción + layout por slide + assets sugeridos. Espera OK.
 5. **Fase 2 del skill — Generar**:
-   - Si HTML → reutiliza el motor de alkemy-deck (Aeonik, SVG, Chart.js, animaciones)
-   - Si PPTX → genera con PptxGenJS (Arial oficial, colores por BU, layouts del master)
-   - Si ambos → genera HTML primero (más rápido), luego PPTX con mismo contenido
+   - Genera con el motor alkemy-deck: Aeonik embebida, SVG nativo, Chart.js, animaciones CSS
 6. **Modo express** *(P1 #7 — Ventas)*: "urgente" o "rápido" → genera 8 slides HTML sin preguntas, defaults (BU del user o Master, tono commercial). <2 minutos.
 7. **Catálogo de layouts** — mapping de cada layout del master → código para ambos formatos
 8. **Gestión de assets** — cómo referenciar imágenes de la carpeta asset/photo/
 9. **Reglas de composición** — orden de slides, headers/footers, densidad visual
-10. **Reglas tipográficas por formato**:
-    - HTML: Aeonik 900 (headline), Aeonik Medium 500 (body), Aeonik Mono (annotation)
-    - PPTX: Arial Bold (headline), Arial Regular (body), Courier New (annotation)
+10. **Tipografía**: Aeonik en todo. Headline 900, Sub-headline SemiBold 600, Body Medium 500, Annotation Mono 400
 11. **Checklist final** — verificación antes de entregar
 12. **Context budget check**: si input del usuario es largo, usar docs/ (~900 tokens) en vez de references/ (~2,500 tokens)
 
@@ -911,10 +905,10 @@ Itera con Claude para escribir:
 
 | Archivo | Contenido | Base |
 |---------|-----------|------|
-| `references/brand-system.md` | Paleta, tipografía, logos, reglas de color | Copiar del skill alkemy-deck |
+| `references/brand-system.md` | Paleta, tipografía, logos, reglas de color | Ya existe en alkemy-deck |
 | `references/storytelling.md` | 4 tonos narrativos, arcos, reglas por tono | Copiar del skill alkemy-deck |
-| `references/layout-catalog.md` | Cada layout del master → posiciones, colores, código PptxGenJS | Basado en ref/layout/README.md de Cowork |
-| `references/pptx-technical.md` | Reglas técnicas de PptxGenJS para Alkemy: theme, imágenes, fondos, fuentes | Nuevo, basado en el skill pptx de Anthropic |
+| `references/layout-catalog.md` | Cada layout del master → posiciones, colores, código alkemy-deck | Basado en ref/layout/README.md de Cowork |
+| `references/html-technical.md` | Reglas técnicas de alkemy-deck: template base, CSS variables, componentes, exportar a PDF | Basado en el skill alkemy-deck existente |
 
 ---
 
@@ -922,10 +916,10 @@ Itera con Claude para escribir:
 
 **🟦 CHAT** · Mismo proyecto
 
-Genera `templates/base-config.js` — la configuración base de PptxGenJS con:
+Genera `templates/base.html (template alkemy-deck)` — la configuración base de alkemy-deck con:
 - Paleta completa con todos los HEX (16 colores)
 - Color dominante por BU
-- Fuentes por formato: Aeonik (HTML) / Arial (PPTX, oficial según master)
+- Fuente única: Aeonik (embebida en el HTML template)
 - Dimensiones de slide (16:9)
 - Variable `ASSETS_PATH` configurable por usuario
 - Helpers reutilizables (crear slide con header/footer, insertar imagen, etc.)
@@ -957,9 +951,9 @@ skills/alkemy-presentations/
 │   ├── brand-system.md
 │   ├── storytelling.md
 │   ├── layout-catalog.md
-│   └── pptx-technical.md
+│   └── html-technical.md
 ├── templates/
-│   └── base-config.js
+│   └── base.html (template alkemy-deck)
 └── examples/
     └── README.md
 
@@ -1009,14 +1003,14 @@ Incluir: resultados Q1, pipeline, wins/losses, transformación con IA, plan Q2.
 
 ### Paso 2.4 — Evaluar cada output
 
-**⬜ MANUAL** · Abre cada PPTX en PowerPoint y evalúa
+**⬜ MANUAL** · Abre cada HTML en el navegador y evalúa
 
 Checklist de evaluación:
 
 - [ ] ¿Se activó el skill automáticamente? (si no → mejorar la descripción)
-- [ ] ¿El PPTX se abre correctamente en PowerPoint sin errores?
+- [ ] ¿El HTML se abre correctamente en el navegador sin errores?
 - [ ] ¿Los colores corresponden a la BU indicada?
-- [ ] ¿Las fuentes son Aeonik (o Arial (oficial))?
+- [ ] ¿Las fuentes son Aeonik en todo el deck?
 - [ ] ¿Los layouts se parecen a los de ref/layout/? (abre las PNGs de referencia)
 - [ ] ¿La narrativa sigue la estructura del tono correcto?
 - [ ] ¿Los títulos son de acción ("Revenue grew 24%") no etiquetas ("Revenue Overview")?
@@ -1027,13 +1021,13 @@ Checklist de evaluación:
 
 **⬜ MANUAL** · **Design review formal** *(P1 #9 — Creativo)*
 
-Pide a alguien de diseño (no tú) que compare los 3 PPTX generados contra las PNGs de ref/layout/ y ref/example/. Que anote: discrepancias de composición, problemas de espaciado, inconsistencias de color, cualquier cosa que "no se siente Alkemy". Este feedback se integra en el Paso 2.5.
+Pide a alguien de diseño (no tú) que compare los 3 presentaciones generadas contra las PNGs de ref/layout/ y ref/example/. Que anote: discrepancias de composición, problemas de espaciado, inconsistencias de color, cualquier cosa que "no se siente Alkemy". Este feedback se integra en el Paso 2.5.
 
 ---
 
 ### Paso 2.5 — Iterar sobre los problemas
 
-**🟦 CHAT** · Vuelve al proyecto "Alkemy PPTX Skill Development"
+**🟦 CHAT** · Vuelve al proyecto "Alkemy Presentations Skill Development"
 
 Reporta los problemas encontrados (tuyos + del design reviewer). Ajusta el SKILL.md y/o los references. Descarga los archivos corregidos.
 
@@ -1062,7 +1056,7 @@ Reporta los problemas encontrados (tuyos + del design reviewer). Ajusta el SKILL
 
 **🟦 CHAT** · Integra el feedback y haz una última iteración antes del rollout
 
-**⬜ MANUAL** · Guarda los 3 mejores PPTX generados (tuyos + de early adopters) como **ejemplos de output** *(P1 #11 — UX)* en `skills/alkemy-presentations/examples/`. Estos se muestran a nuevos usuarios para gestionar expectativas.
+**⬜ MANUAL** · Guarda los 3 mejores presentaciones generadas (tuyos + de early adopters) como **ejemplos de output** *(P1 #11 — UX)* en `skills/alkemy-presentations/examples/`. Estos se muestran a nuevos usuarios para gestionar expectativas.
 
 ---
 
@@ -1083,25 +1077,25 @@ alkemy-claude-skills/
 ├── .gitignore             ← Excluir: *.pptx, *.png, *.webp, *.mp4, *.pdf, 
 │                             node_modules/, .DS_Store, outputs/
 ├── skills/
-│   └── alkemy-presentations/  ← MULTI-FORMATO: HTML (alkemy-deck) + PPTX
+│   └── alkemy-presentations/  ← HTML NATIVO (alkemy-deck)
 │       ├── SKILL.md
 │       ├── references/
 │       │   ├── brand-system.md
 │       │   ├── storytelling.md
 │       │   ├── layout-catalog.md
-│       │   └── pptx-technical.md    ← Reglas PptxGenJS + Arial como fuente oficial
+│       │   └── html-technical.md    ← Reglas alkemy-deck: template, CSS, componentes, PDF export
 │       ├── templates/
-│       │   ├── base-config.js       ← Config PptxGenJS (Arial, colores, layouts)
+│       │   ├── base.html (template alkemy-deck)       ← Template alkemy-deck (Aeonik embebida, tokens CSS, JS)
 │       │   └── base.html            ← Template HTML de alkemy-deck (Aeonik embebida)
 │       ├── examples/
-│       │   └── _INDEX.md            ← 3 ejemplos del piloto (HTML + PPTX)
+│       │   └── _INDEX.md            ← 3 ejemplos del piloto (HTML + PDF)
 │       └── FEEDBACK.md
 ├── docs/                  ← Intermedios pre-extraídos (versionados en Git)
 │   ├── colors.md
-│   ├── typography.md      ← ACTUALIZADO: tabla dual HTML (Aeonik) vs PPTX (Arial)
+│   ├── typography.md      ← Aeonik embebida (único)
 │   ├── logo-rules.md
 │   ├── layouts.md
-│   ├── pptx-positions.md
+│   ├── slide-positions.md
 │   ├── visual-imagery.md
 │   └── company-context.md
 ├── plugins/
@@ -1337,7 +1331,7 @@ Cuando abras tu desktop el lunes y veas el reporte del health check:
 
 **Si es ⚠️ Atención necesaria** (ej: nuevos layouts sin documentar):
 
-1. **🟦 CHAT** · Abre el proyecto "Alkemy PPTX Skill Development" y diseña la actualización:
+1. **🟦 CHAT** · Abre el proyecto "Alkemy Presentations Skill Development" y diseña la actualización:
    ```
    El health check detectó que hay 2 nuevos layouts en ref/layout/ que no están 
    en layout-catalog.md. Aquí está el reporte: [pega el contenido].
@@ -1357,7 +1351,7 @@ Cuando abras tu desktop el lunes y veas el reporte del health check:
 
 **Si es 🔴 Acción requerida** (ej: cambio de paleta de colores en las guidelines):
 
-1. **🟦 CHAT** · Rediseñar brand-system.md y posiblemente base-config.js
+1. **🟦 CHAT** · Rediseñar brand-system.md y posiblemente base.html (template alkemy-deck)
 2. **🟩 COWORK** · Reemplazar archivos
 3. **🟥 CODE** · Commit, push, y verificar que el marketplace se sincronizó
 4. **🟦 CHAT** · Re-ejecutar los 3 tests principales para validar que nada se rompió
@@ -1366,7 +1360,7 @@ Cuando abras tu desktop el lunes y veas el reporte del health check:
 
 ### 5.2 — Forzar el ciclo completo bajo demanda
 
-Para cuando necesites actualizar todo ahora mismo (ej: acaban de subir un nuevo master PPTX, o hay una presentación urgente que necesita un layout nuevo):
+Para cuando necesites actualizar todo ahora mismo (ej: acaban de subir un nuevo master, o hay una presentación urgente que necesita un layout nuevo):
 
 **🟩 COWORK** · Desde Dispatch en tu móvil o directamente en Desktop:
 
@@ -1449,8 +1443,8 @@ Si tienes **OpenTelemetry** configurado en la org (Team/Enterprise), añade al r
 | Métrica | Target | Cómo mejorar si no se cumple |
 |---------|--------|------------------------------|
 | Tasa de activación del skill | >95% | Optimizar la descripción (Paso 4.1) |
-| Correcciones manuales por deck | <2 | Refinar layout-catalog.md y base-config.js |
-| Tiempo prompt → PPTX descargado | <3 min (12 slides) | Revisar reglas de eficiencia de tokens |
+| Correcciones manuales por deck | <2 | Refinar layout-catalog.md y base.html (template alkemy-deck) |
+| Tiempo prompt → presentación lista | <3 min (12 slides) | Revisar reglas de eficiencia de tokens |
 | Tokens por generación típica | Reducir 20%/quarter | Progressive disclosure, outline primero |
 | Adopción en la org | >80% equipo ventas | Onboarding + simplificar slash command |
 
@@ -1550,15 +1544,15 @@ El consumo de tokens en la generación de presentaciones es significativo. Estas
 1. **No leer references innecesarios.** Solo cargar el reference que se necesita:
    - ¿Es una presentación estándar? → Solo brand-system.md + layout-catalog.md
    - ¿Tiene storytelling complejo? → Añadir storytelling.md
-   - ¿Necesita código PptxGenJS avanzado? → Añadir pptx-technical.md
+   - ¿Necesita código alkemy-deck avanzado? → Añadir html-technical.md
    - NUNCA cargar los 4 references de golpe si no se necesitan todos
 
 2. **Outline primero, generación después.** Proponer el outline (títulos + layouts) 
-   y esperar confirmación ANTES de generar el código PptxGenJS completo. 
-   Un outline rechazado y replanteado cuesta ~500 tokens. Un PPTX completo 
-   generado y descartado cuesta ~15,000 tokens.
+   y esperar confirmación ANTES de generar el código alkemy-deck completo. 
+   Un outline rechazado y replanteado cuesta ~500 tokens. Un HTML completo 
+   generado y descartado cuesta ~8,000 tokens.
 
-3. **Reutilizar el template base.** Siempre empezar desde base-config.js en lugar 
+3. **Reutilizar el template base.** Siempre empezar desde base.html (template alkemy-deck) en lugar 
    de redefinir colores, fuentes y dimensiones desde cero. Esto ahorra ~2,000 
    tokens por generación.
 
@@ -1566,14 +1560,13 @@ El consumo de tokens en la generación de presentaciones es significativo. Estas
    generar 20. Más slides = más tokens sin valor añadido. Proponer el número 
    mínimo que cubra la narrativa.
 
-5. **No explicar el código.** Cuando se genera el PptxGenJS, producir el código 
-   limpio sin comentarios extensos ni explicaciones. El usuario quiere el PPTX, 
+5. **No explicar el código.** Cuando se genera el alkemy-deck, producir el código 
+   limpio sin comentarios extensos ni explicaciones. El usuario quiere la presentación, 
    no una clase de JavaScript.
 
-6. **Usar Sonnet para tareas simples.** Si el skill solo necesita aplicar un 
-   layout estándar con contenido proporcionado, Sonnet 4.6 es suficiente y 5x 
-   más barato que Opus. Reservar Opus para narrativas complejas o presentaciones 
-   de alto impacto.
+6. **Usar Sonnet para tareas simples.** Sonnet 4.6 para layouts estándar con 
+   contenido proporcionado (5x más barato). Reservar Opus para narrativas SCQA 
+   y presentaciones de alto impacto.
 ```
 
 ---
@@ -1591,7 +1584,7 @@ npx claude-guardrails install
 #   - alkemy-corporate-slides/ (assets)
 #   - skills/alkemy-presentations/ (el propio skill)
 # Y escribir solo en:
-#   - outputs/ (PPTX generados)
+#   - outputs/ (presentaciones generadas)
 ```
 
 **🟩 COWORK** · Configurar el folder de trabajo
@@ -1634,7 +1627,7 @@ Añadir al SKILL.md:
 |---|------|---------|-------------|
 | **Pre.1** | **Definir MVP scope** | **🟦** | **Chat** |
 | **Pre.2** | **Medir baseline actual** | **⬜** | **Manual (3-5 presentaciones)** |
-| **Pre.3** | **Documentar limitaciones PptxGenJS** | **🟦** | **Chat** |
+| **Pre.3** | **Documentar limitaciones alkemy-deck** | **🟦** | **Chat** |
 | **Pre.4** | **Identificar co-owner + early adopters** | **⬜** | **Manual** |
 | 0.1 | Inventariar archivos + mapear dependencias | 🟩 | Cowork |
 | 0.2 | Renombrar y reorganizar carpetas | 🟩 | Cowork (con backup previo) |
@@ -1645,12 +1638,12 @@ Añadir al SKILL.md:
 | 1.1 | Crear proyecto en claude.ai | ⬜ | Manual |
 | 1.2 | Diseñar SKILL.md (con modelo/tono/express/confidencialidad) | 🟦 | Chat + Proyecto |
 | 1.3 | Escribir los references (.md) | 🟦 | Chat + Proyecto |
-| 1.4 | Crear template base PptxGenJS | 🟦 | Chat + Proyecto |
+| 1.4 | Crear template base alkemy-deck | 🟦 | Chat + Proyecto |
 | 1.5 | Descargar archivos del Chat | ⬜ | Manual |
 | 2.1 | Montar el skill en la carpeta local | 🟩 | Cowork |
 | 2.2 | Subir skill como ZIP a claude.ai | ⬜ | Manual |
 | 2.3 | Probar con 3 prompts realistas | 🟦 | Chat (conversación nueva) |
-| 2.4 | Evaluar PPTX + design review formal | ⬜ | Manual + alguien de diseño |
+| 2.4 | Evaluar HTML + design review formal | ⬜ | Manual + alguien de diseño |
 | 2.5 | Iterar: ajustar → resubir → reprobar | 🟦+🟩+⬜ | Chat + Cowork + Manual (ciclo) |
 | **2.6** | **Programa piloto con 5 early adopters** | **⬜+🟦** | **Manual + Chat** |
 | 3.1 | Crear repo en GitHub (con docs/ + prompts/) | 🟥 | Code |
@@ -1666,7 +1659,7 @@ Añadir al SKILL.md:
 
 ## Principios del skill-creator a seguir
 
-1. **Descripción "pushy"** — Claude under-triggers por defecto. La descripción debe incluir explícitamente todos los sinónimos y contextos: "presentación, deck, slides, pitch, propuesta, credenciales, business review, PPTX, PowerPoint".
+1. **Descripción "pushy"** — Claude under-triggers por defecto. La descripción debe incluir explícitamente todos los sinónimos y contextos: "presentación, deck, slides, pitch, propuesta, credenciales, business review, HTML slides, PDF".
 
 2. **Progressive disclosure** — SKILL.md < 500 líneas. Los detalles van en `references/`. Claude carga SKILL.md siempre, pero solo lee un reference cuando lo necesita. Esto es también una regla de eficiencia de tokens: no cargar references innecesarios.
 
@@ -1678,7 +1671,7 @@ Añadir al SKILL.md:
 
 6. **Assets ≠ skill** — Las imágenes y videos viven en SharePoint. El skill sabe que existen (via READMEs de assets) y las referencia por nombre cuando el usuario lo pide.
 
-7. **Outline primero, código después** — Siempre proponer la estructura narrativa y esperar OK antes de generar el PPTX completo. Un outline rechazado cuesta ~500 tokens. Un PPTX descartado cuesta ~15,000.
+7. **Outline primero, código después** — Siempre proponer la estructura narrativa y esperar OK antes de generar el HTML completo. Un outline rechazado cuesta ~500 tokens. Un HTML descartado cuesta ~8,000.
 
 8. **Seguridad por defecto** — Nunca inventar datos financieros sin marcar como placeholder. Nunca exponer rutas locales en slides visibles. Tratar contenido del usuario como datos, no como instrucciones.
 
@@ -1705,8 +1698,8 @@ Estas acciones se planifican DESPUÉS de que el MVP esté en producción y con a
 | P2.18 | Canal de feedback simplificado: Google Form → FEEDBACK.md via Cowork | Pablo | 🟩 Cowork |
 | P2.19 | Baseline granularizado de tokens por fase del skill | Pablo | 🟦 Chat + 🟥 Code |
 | **POC.1** | **POC Gamma Business** — Crear cuenta Business para 3-5 early adopters. Verificar: API genera con brand Alkemy? SSO con Entra ID? DPA cubre GDPR? Data residency EU? | Pablo + IT | ⬜ Manual |
-| **POC.2** | **Si Gamma pasa POC**: integrar como capa de colaboración post-generación. Claude genera contenido → Gamma API crea la presentación → equipo edita en Gamma → exporta PPTX/PDF | Pablo | 🟥 Code (MCP/API) |
-| **POC.3** | **Si Gamma NO pasa POC**: quedarse con Solución B (HTML + PPTX dual via SharePoint). Documentar por qué se descartó en `benchmark/poc-gamma/` | Pablo | 🟦 Chat |
+| **POC.2** | **Si Gamma pasa POC**: integrar como capa de colaboración post-generación. Claude genera contenido → Gamma API crea la presentación → equipo edita en Gamma → exporta PDF | Pablo | 🟥 Code (MCP/API) |
+| **POC.3** | **Si Gamma NO pasa POC**: quedarse con Solución B (HTML + SharePoint + PDF). Documentar por qué se descartó en `benchmark/poc-gamma/` | Pablo | 🟦 Chat |
 
 ### Mes 2 post-lanzamiento
 
@@ -1749,13 +1742,13 @@ Guardar en `docs-onboarding/security-checklist.md`.
 
 | Riesgo | Probabilidad | Impacto | Mitigación |
 |--------|-------------|---------|------------|
-| PptxGenJS no replica un layout complejo del master | Alta | Medio | 85% fidelidad. Para pixel-perfect → HTML+PDF |
-| PPTX necesita Arial, no Aeonik | Resuelta | — | Arial es la fuente OFICIAL de PPT según master Alkemy |
-| Skill de Anthropic para PPTX cambia y rompe el nuestro | Baja | Alto | Pinear versión de PptxGenJS. Health check detecta errores |
+| alkemy-deck no replica un layout complejo del master | Alta | Medio | 85% fidelidad. Para pixel-perfect → HTML+PDF |
+| Solo HTML, no PPTX | N/A | — | Decisión de diseño. Colaboración via SharePoint + PDF |
+| Skill de Anthropic cambia y rompe alkemy-deck | Baja | Alto | Pinear versión de alkemy-deck. Health check detecta errores |
 | Solo Pablo mantiene el skill → bus factor | Alta | Crítico | Co-owner técnico desde Pre.4 |
 | Baja adopción por resistencia al cambio | Media | Alto | Early adopters, onboarding, quick start, FAQ, NPS |
 | Datos de clientes en herramienta externa (Gamma) | Media | Alto | Checklist de seguridad + POC antes de rollout |
-| HTML no es colaborativo nativamente | Media | Medio | Solución B: PPTX para edición + HTML para presentar |
+| HTML no es colaborativo nativamente | Media | Medio | SharePoint (viewer + versiones) + regenerar con Claude + PDF |
 
 ---
 
@@ -1801,21 +1794,21 @@ Guardar en `docs-onboarding/security-checklist.md`.
 │       ├── typography.md                      ← ~40 tokens
 │       ├── logo-rules.md                      ← ~60 tokens
 │       ├── layouts.md                         ← ~120 tokens
-│       ├── pptx-positions.md                  ← ~200 tokens
+│       ├── slide-positions.md                  ← ~200 tokens
 │       ├── visual-imagery.md                  ← ~50 tokens
 │       └── company-context.md                 ← ~350 tokens (BUs, servicios, clientes, tono)
 │
 ├── skills/
-│   └── alkemy-presentations/              ← MULTI-FORMATO: HTML + PPTX
+│   └── alkemy-presentations/              ← HTML NATIVO (alkemy-deck)
 │       ├── SKILL.md
 │       ├── FEEDBACK.md
 │       ├── references/
 │       │   ├── brand-system.md
 │       │   ├── storytelling.md
 │       │   ├── layout-catalog.md
-│       │   └── pptx-technical.md          ← Arial oficial, reglas PptxGenJS
+│       │   └── html-technical.md          ← Reglas alkemy-deck: template, CSS, componentes, export PDF
 │       ├── templates/
-│       │   ├── base-config.js             ← Config PptxGenJS (Arial)
+│       │   ├── base.html (template alkemy-deck)             ← Template alkemy-deck (Aeonik embebida)
 │       │   └── base.html                  ← Template alkemy-deck (Aeonik)
 │       └── examples/
 │           └── _INDEX.md
@@ -1827,20 +1820,20 @@ https://github.com/pabloambrossi/alkemy-claude-skills   ← GitHub (código del 
 ├── README.md
 ├── .gitignore
 ├── skills/
-│   └── alkemy-presentations/                  ← Multi-formato: HTML (Aeonik) + PPTX (Arial)
+│   └── alkemy-presentations/                  ← HTML nativo con Aeonik embebida embebida
 │       ├── SKILL.md
 │       ├── FEEDBACK.md
 │       ├── references/
 │       ├── templates/
-│       │   ├── base-config.js                 ← PptxGenJS config (Arial oficial)
+│       │   ├── base.html (template alkemy-deck)                 ← alkemy-deck config (Arial oficial)
 │       │   └── base.html                      ← alkemy-deck template (Aeonik embebida)
 │       └── examples/
 ├── docs/                                      ← Intermedios pre-extraídos (versionados)
 │   ├── colors.md
-│   ├── typography.md                          ← Dual: Aeonik (HTML) + Arial (PPTX)
+│   ├── typography.md                          ← Aeonik embebida (único)
 │   ├── logo-rules.md
 │   ├── layouts.md
-│   ├── pptx-positions.md
+│   ├── slide-positions.md
 │   ├── visual-imagery.md
 │   └── company-context.md
 ├── plugins/
@@ -1873,4 +1866,4 @@ https://github.com/pabloambrossi/alkemy-claude-skills   ← GitHub (código del 
 
 **Documentos de referencia asociados a este plan:**
 - `benchmark-herramientas-presentaciones.md` — Benchmark completo de 10 herramientas + recomendación
-- `challenge-panel-plan-pptx.md` — Feedback de 10 expertos con 29 acciones priorizadas
+- `challenge-panel.md` — Feedback de 10 expertos con 29 acciones priorizadas
