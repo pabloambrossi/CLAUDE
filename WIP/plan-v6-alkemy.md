@@ -1,6 +1,7 @@
-# Plan Operativo v5: Alkemy Presentations + Knowledge Base G&I
+[plan-v6-alkemy.md](https://github.com/user-attachments/files/26330978/plan-v6-alkemy.md)
+# Plan Operativo v6: Alkemy Presentations + Knowledge Base G&I
 
-**Versión**: 5.0 · 29 marzo 2026  
+**Versión**: 6.1 · 29 marzo 2026
 **Owner**: Pablo Ambrossi (G&I Lead, Alkemy España)  
 **Co-owner técnico**: Germán Santos (german.santos@innocv.com)  
 **GitHub**: github.com/pabloambrossi/alkemy-claude-skills (privado)  
@@ -43,6 +44,11 @@ Los dos tracks se ejecutan en paralelo. La KB alimenta al skill, pero el skill p
 | Motor alkemy-deck | ✅ DONE | 9 references, base.html 450KB, 20+ slides |
 | KB v1 (transcripciones) | ✅ DONE | 66 MDs, 10 masters, knowledge graph v1.2 |
 | Plan KB v2 diseñado | ✅ DONE | 9 categorías, 5 capas, prompts listos |
+| KB v2 reestructurada | ✅ DONE | 5 capas, 9 categorías, 69 MDs clasificados |
+| READMEs por carpeta | ✅ DONE | 7 READMEs + _INDEX en alkemy-corporate-slides/ |
+| docs/ pre-extraídos | ✅ DONE | 5 archivos (~900 tokens), frontmatter |
+| Skill ensamblado | ✅ DONE | 17 archivos, SKILL.md <1024 chars desc |
+| Logos corporativos | ✅ DONE | 38 PNGs renombrados, README, integrados en refs |
 
 ---
 
@@ -80,7 +86,8 @@ Los dos tracks se ejecutan en paralelo. La KB alimenta al skill, pero el skill p
 │   ├── asset/                                 ← Recursos insertables
 │   │   ├── photo/  (WebP)
 │   │   ├── video/  (MP4)
-│   │   └── icon/tabler/ (SVG)
+│   │   ├── icon/tabler/ (SVG)
+│   │   └── logos/  (38 PNGs: master, BU, sub-brands × black/white)
 │   └── docs/                                  ← Intermedios pre-extraídos (~900 tokens)
 │       ├── colors.md, typography.md, logo-rules.md
 │       ├── layouts.md, visual-imagery.md
@@ -132,7 +139,8 @@ Los dos tracks se ejecutan en paralelo. La KB alimenta al skill, pero el skill p
 │   │   ├── charts.md                          ← Del alkemy-deck existente
 │   │   ├── animations.md                      ← Del alkemy-deck existente
 │   │   ├── master-layouts.md                  ← Del alkemy-deck existente
-│   │   └── design-tokens.md                   ← Del alkemy-deck existente
+│   │   ├── design-tokens.md                   ← Del alkemy-deck existente
+│   │   └── pixel-perfect-rules.md             ← 🆕 Se genera en Fase 2.5 desde gold standards
 │   ├── templates/
 │   │   ├── base.html                          ← Del alkemy-deck existente (450KB)
 │   │   └── logo_new_alkemy.svg
@@ -180,13 +188,13 @@ GitHub: github.com/pabloambrossi/alkemy-claude-skills
 
 | Semana | Track SKILL | Track KB |
 |--------|------------|----------|
-| **1** | Fase 0: inventario, renombrado, iconos | KB.0: reestructurar carpetas (5 capas, 9 categorías) |
-| **1-2** | Fase 0: READMEs, docs/ pre-extraídos | KB.1: redactar MDs v2.0 (categorías 1-5) |
-| **2** | — | KB.1: redactar MDs v2.0 (categorías 6-9) |
+| **1** | ~~Fase 0: inventario, renombrado, iconos, logos~~ ✅ | ~~KB.0: reestructurar carpetas (5 capas, 9 categorías)~~ ✅ |
+| **1-2** | ~~Fase 0: READMEs, docs/ pre-extraídos~~ ✅ | KB.1: redactar MDs v2.0 (categorías 1-5) |
+| **2** | ~~Fase 1: montar skill completo~~ ✅ | KB.1: redactar MDs v2.0 (categorías 6-9) |
 | **2** | — | KB.2: validar MECE |
-| **3** | Fase 1: montar skill completo | KB.3: regenerar 9 masters |
-| **3** | — | KB.4: visión global |
-| **4** | Fase 2: testing + piloto | KB.5: knowledge graph v2.0 |
+| **3** | **Fase 2: crear gold standards pixel-perfect en Cowork** | KB.3: regenerar 9 masters |
+| **3** | **Fase 2: documentar skill desde gold standards** | KB.4: visión global |
+| **4** | Fase 2: piloto con early adopters | KB.5: knowledge graph v2.0 |
 | **4** | — | KB.5b: regenerar company-context.md → skill |
 | **5** | Fase 3: GitHub, plugin, marketplace | KB.6: configurar kb-sync |
 | **6** | Fase 4: optimización | — |
@@ -205,9 +213,9 @@ GitHub: github.com/pabloambrossi/alkemy-claude-skills
 
 ---
 
-## Fase 0 — Preparar el terreno (assets del skill)
+## Fase 0 — Preparar el terreno (assets del skill) ✅ COMPLETADA
 
-### Paso 0.1 — Inventariar y mapear dependencias
+### Paso 0.1 — Inventariar y mapear dependencias ✅ DONE
 
 **🟩 COWORK** · Apuntar a: `...\00-claude\alkemy-corporate-slides`
 
@@ -235,7 +243,7 @@ Genera un INVENTARIO.md con:
 Guárdalo en la raíz de alkemy-corporate-slides/
 ```
 
-### Paso 0.2 — Renombrar y reorganizar
+### Paso 0.2 — Renombrar y reorganizar ✅ DONE
 
 **🟩 COWORK** · Misma sesión
 
@@ -259,7 +267,7 @@ Propón la estructura completa con TODOS los nombres y ESPERA MI OK
 antes de ejecutar.
 ```
 
-### Paso 0.3 — Iconos Tabler
+### Paso 0.3 — Iconos Tabler ✅ DONE
 
 **⬜ MANUAL** · En PowerShell:
 
@@ -279,7 +287,37 @@ Remove-Item -Recurse -Force tabler-icons
 
 **🟩 COWORK** · Después, generar _INDEX.md y CATEGORIES.md para los iconos.
 
-### Paso 0.4 — READMEs de contexto por carpeta
+### Paso 0.3b — Logos corporativos ✅ DONE
+
+**⬜ MANUAL** · Extraer logos del master PPTX o guidelines y copiarlos a `asset/logos/`.
+
+**🟩 COWORK** · Clasificar, renombrar y documentar:
+
+```
+En asset/logos/ hay PNGs de logos corporativos sin nombres descriptivos.
+
+1. Inspecciona VISUALMENTE cada PNG para identificar:
+   - ¿Qué marca/empresa es? (Alkemy master, BU, sub-brand)
+   - ¿Color negro o blanco sobre transparente?
+   - ¿Con tagline, sin tagline, isotipo?
+
+2. Renombra siguiendo la convención:
+   logo-{tipo}--{nombre}-{color}.png
+   Tipos: master, bu, sub
+   Colores: black, white
+
+3. Crea README.md con:
+   - Tabla por tipo (master, BU, sub-brands)
+   - Dimensiones, variante, uso recomendado
+   - Reglas de uso en presentaciones (qué logo en qué slide)
+
+4. Actualiza references/brand-system.md y references/company-context.md
+   para que el skill sepa qué logos usar y cuándo.
+```
+
+**Resultado**: 38 PNGs (6 master + 8 BU + 24 sub-brands), README.md, referencias actualizadas.
+
+### Paso 0.4 — READMEs de contexto por carpeta ✅ DONE
 
 **🟩 COWORK** · Misma carpeta
 
@@ -301,7 +339,7 @@ Crea un README.md dentro de cada subcarpeta de alkemy-corporate-slides/:
    Comunicación, Data, Seguridad...)
 ```
 
-### Paso 0.5 — Archivos intermedios pre-extraídos (docs/)
+### Paso 0.5 — Archivos intermedios pre-extraídos (docs/) ✅ DONE
 
 **🟩 COWORK** · Misma carpeta
 
@@ -333,9 +371,9 @@ version: 1.0
 
 ---
 
-## Fase 1 — Montar el skill completo
+## Fase 1 — Montar el skill completo ✅ COMPLETADA
 
-### Paso 1.1 — Ensamblar el skill en carpeta local
+### Paso 1.1 — Ensamblar el skill en carpeta local ✅ DONE
 
 **🟩 COWORK** · Apuntar a: `...\00-claude\`
 
@@ -366,7 +404,7 @@ skills/alkemy-presentations/
     └── README.md               ← "Ejemplos se añadirán tras el piloto"
 ```
 
-### Paso 1.2 — Subir skill a Claude
+### Paso 1.2 — Subir skill a Claude ✅ DONE
 
 **⬜ MANUAL** · En claude.ai
 
@@ -374,7 +412,9 @@ skills/alkemy-presentations/
 2. Settings > Customize > Skills > Upload
 3. Verificar que aparece en la lista de skills
 
-### Paso 1.3 — Verificar que el skill se activa
+> **Nota v6**: La descripción del SKILL.md debe ser ≤1024 caracteres (límite del sistema).
+
+### Paso 1.3 — Verificar que el skill se activa ← PENDIENTE
 
 **🟦 CHAT** · Conversación nueva (fuera del proyecto de desarrollo)
 
@@ -382,66 +422,329 @@ Test rápido: escribir "Hazme una presentación de credenciales de Alkemy para u
 
 ---
 
-## Fase 2 — Testing y piloto
+## Fase 2 — Crear el HTML de referencia pixel-perfect
 
-### Paso 2.1 — 3 tests realistas
+> **Enfoque v6.1**: NO testeamos el skill directamente. Primero creamos un HTML pixel-perfect que replique exactamente el master y las guidelines. Ese HTML se convierte en el "gold standard". Después actualizamos la skill para que siempre genere así. Es más eficiente: construir lo correcto una vez → documentar → replicar.
 
-**🟦 CHAT** · Conversación nueva
+### Paso 2.0 — Preparación
 
-**Test 1 — Credenciales:**
+**⬜ MANUAL**
+
+1. Abre Cowork (Claude Desktop)
+2. Selecciona carpeta: `...\00-claude\alkemy-corporate-slides\`
+3. Verifica que ves: `source/`, `ref/`, `asset/`, `skills/`, `docs/`
+
+### Paso 2.1 — Estudio profundo de las referencias
+
+**🟩 COWORK** · Este es el paso más importante. Claude debe ESTUDIAR antes de crear.
+
 ```
-Crea una presentación de credenciales de Alkemy para un prospect del sector seguros. 
-BU: Data.Tech.AI. Unas 12 slides. Incluye: quiénes somos, qué hacemos, casos de 
-éxito relevantes, equipo, y contacto.
+CONTEXTO: Voy a crear una presentación HTML pixel-perfect que replique 
+exactamente la estética del master de Alkemy 2026. Antes de generar nada, 
+necesitas estudiar a fondo todas las referencias visuales.
+
+FASE DE ESTUDIO (no generes nada):
+
+1. Lee source/guide-brand--visual-identity-2026.pdf COMPLETO. Extrae:
+   - Reglas de visual imagery y fotografía (cómo se usan las fotos)
+   - Reglas de composición de slides
+   - Reglas de uso de logo (posición, clear space, versiones)
+   - Reglas tipográficas exactas (tamaños en pt, pesos, estilos)
+   - Reglas de color: combinaciones permitidas, prohibidas
+   - Pilares de diseño: Maxi Typography, Full White, Brackets, AI Interface
+
+2. Abre y ESTUDIA cada PNG de ref/layout/. Para CADA imagen describe:
+   - Composición exacta: márgenes (en px o %), grid, alineaciones
+   - Tipografía observada: tamaño, peso, color, posición
+   - Uso de fotografía (si la hay): tamaño, posición, overlay, opacidad
+   - Header/footer: contenido, posición, tipografía
+   - Logo: versión, posición, tamaño
+   - Colores de fondo, bordes, acentos
+   - Uso de corchetes [ ] como motivo visual
+   - Densidad de contenido (% de superficie ocupada)
+
+3. Abre y ESTUDIA cada PNG de ref/example/. Anota:
+   - Cómo se aplica el brand con contenido REAL
+   - Cómo se insertan fotos en slides reales
+   - Diferencias entre el layout vacío y el layout con contenido
+
+4. Lista TODAS las fotos de asset/photo/:
+   - Nombre, formato, dimensiones
+   - Descripción visual del contenido
+   - Tono (claro/oscuro, colores dominantes)
+   - En qué tipo de slide encajaría según lo que observas en ref/
+
+5. Lista TODOS los logos de asset/logos/:
+   - Nombre, variante (master/BU/sub-brand, black/white)
+   - Cuándo usar cada versión según las guidelines
+
+6. Lee skills/alkemy-presentations/references/slide-catalog.md para 
+   entender el HTML disponible para cada tipo de slide
+
+CUANDO HAYAS TERMINADO, genera un INFORME DE ESTUDIO con:
+
+## Reglas observadas en ref/layout/ (no inventadas — OBSERVADAS)
+[Para cada tipo de slide: composición, tipografía, colores, uso de foto]
+
+## Reglas de visual imagery del PDF de guidelines
+[Cómo se usan las fotos, reglas de overlay, cuándo foto sí y cuándo no]
+
+## Reglas de logo del PDF de guidelines  
+[Qué versión en qué contexto, posición, tamaño mínimo]
+
+## Catálogo de assets disponibles
+[Fotos con uso recomendado, logos con uso recomendado]
+
+## Discrepancias detectadas
+[Si algo del slide-catalog.md o brand-system.md contradice lo que ves 
+en ref/layout/ o en las guidelines, anótalo aquí]
+
+NO generes ninguna slide. Solo el informe.
 ```
 
-**Test 2 — Propuesta comercial:**
+**⬜ MANUAL** · Lee el informe. Verifica que lo que Claude observó en las referencias coincide con lo que tú ves. Corrige si hay interpretaciones erróneas. Este informe es la base de todo lo que viene después.
+
+### Paso 2.2 — Crear el HTML de referencia (gold standard)
+
+**🟩 COWORK** · Tras validar el informe de estudio:
+
 ```
-Necesito una propuesta comercial para Helvetia sobre un programa de IA agéntica 
-aplicada a atención al cliente. BU: Data.Tech.AI. Tono comercial. 
-Incluir: situación del cliente, propuesta, enfoque técnico, timeline, inversión.
+Ahora genera una presentación HTML pixel-perfect que replique EXACTAMENTE 
+lo que observaste en las referencias. Esta presentación será el "gold 
+standard" contra el que evaluaremos todo lo demás.
+
+CONTENIDO: Credenciales de Alkemy para un prospect del sector seguros.
+- BU: Data.Tech.AI
+- Tono: commercial
+- Audiencia: Director de Transformación Digital de aseguradora mediana
+- Big idea: "Alkemy combina tecnología y dato para transformar la 
+  experiencia del cliente asegurador"
+- 12 slides
+- Confidencialidad: externa
+
+REGLAS ABSOLUTAS:
+- Cada slide debe replicar EXACTAMENTE la composición que observaste en 
+  el PNG correspondiente de ref/layout/
+- La tipografía (tamaños, pesos, colores, posiciones) debe coincidir 
+  con lo que observaste en ref/layout/ y lo que dictan las guidelines
+- Los colores deben seguir las reglas EXACTAS de las guidelines para 
+  Data.Tech.AI (Blue #404AFF)
+- Los logos deben usar las versiones correctas de asset/logos/ según las 
+  reglas observadas en las guidelines (negro sobre claro, blanco sobre 
+  oscuro, posición exacta)
+
+REGLAS DE FOTOGRAFÍA:
+- Usa fotos de asset/photo/ en las slides donde las referencias de 
+  ref/layout/ y ref/example/ muestran uso de fotografía
+- Aplica EXACTAMENTE los mismos patrones de overlay, opacidad y 
+  composición que observaste en tu estudio
+- Embebe las fotos como base64 (lee el archivo, convierte, inserta)
+- Mínimo 3 slides con foto (cover + 2 más, según lo que muestran 
+  las referencias)
+- Elige las fotos más apropiadas del catálogo que listaste
+
+REGLAS DE LOGOS:
+- Usa los PNGs de asset/logos/ correctos para cada slide
+- Embebe como base64
+- Versión y posición según las guidelines
+
+PROCESO:
+1. Primero dame el outline con estas columnas:
+   | # | Título de acción | Tipo slide | PNG de ref/layout/ que replica | Foto de asset/photo/ | Logo de asset/logos/ |
+
+2. Espera mi OK
+
+3. Genera el HTML completo (un solo archivo .html autónomo)
+
+4. DESPUÉS de generar, COMPÁRATE TÚ MISMO contra las referencias:
+   Para cada slide, abre el PNG de ref/layout/ correspondiente y evalúa:
+   ✅ Coincide con referencia
+   ⚠️ Ajuste menor — [qué difiere]
+   🔴 No coincide — [qué está mal]
 ```
 
-**Test 3 — Business review:**
+**⬜ MANUAL** · Abre el HTML en Chrome. Compara visualmente contra los PNGs de ref/layout/ y ref/example/. Anota TODO lo que no coincide — por mínimo que sea.
+
+### Paso 2.3 — Refinamiento hasta pixel-perfect
+
+**🟩 COWORK** · Para cada discrepancia que detectes:
+
 ```
-Prepara una business review de G&I para el board de Alkemy Iberia. Tono impact. 
-Incluir: resultados Q1, pipeline, wins/losses, transformación con IA, plan Q2.
+En la presentación que generaste, he encontrado estas diferencias vs 
+las referencias:
+
+[Lista de discrepancias que TÚ (Pablo) has detectado al abrir en Chrome]
+
+Para cada problema:
+1. Abre el PNG de ref/layout/ correspondiente
+2. Describe EXACTAMENTE lo que ves en la referencia
+3. Describe lo que generaste
+4. Explica la diferencia
+5. Corrige el HTML para que coincida con la referencia
+
+Genera la versión corregida COMPLETA del HTML.
 ```
 
-### Paso 2.2 — Evaluar cada output
+**Repetir** hasta que el HTML sea indistinguible de las referencias. Típicamente 3-5 iteraciones. No pasar al siguiente paso hasta que estés satisfecho.
 
-**⬜ MANUAL** · Abrir cada HTML en Chrome y evaluar:
+### Paso 2.4 — Segundo gold standard (tono impact)
 
-- [ ] ¿El skill se activó automáticamente?
-- [ ] ¿El HTML se abre correctamente en Chrome?
-- [ ] ¿Los colores corresponden a la BU indicada?
-- [ ] ¿La tipografía es Aeonik (no Arial)?
-- [ ] ¿La narrativa sigue la estructura del tono correcto?
-- [ ] ¿Los títulos son de acción, no etiquetas?
-- [ ] ¿Hay al menos 1 visual por cada 3 slides de texto?
-- [ ] ¿Corchetes [ ] aparecen ≥3 veces?
-- [ ] ¿Se exporta a PDF correctamente? (Ctrl+P → horizontal → sin márgenes → gráficos de fondo)
-- [ ] ¿Si es externa, tiene disclaimer de confidencialidad?
+**🟩 COWORK** · Repetir con un tono diferente para verificar que las reglas son generalizables:
 
-**⬜ MANUAL** · Pedir a Carmen (Agency/Diseño) design review formal comparando contra los PNGs de ref/layout/.
+```
+Genera una segunda presentación pixel-perfect con tono diferente:
 
-### Paso 2.3 — Iterar
+Business review de G&I para el board de Alkemy Iberia.
+- BU: Master Brand (Green)
+- Tono: impact
+- Audiencia: Duccio Vitale (CEO Global) + Diego Escalada (CDO España)
+- Big idea: "G&I ha construido las bases para escalar IA en Alkemy España"
+- 15 slides
+- Confidencialidad: interna
 
-**🟦 CHAT** · Proyecto de desarrollo → reportar problemas → ajustar SKILL.md/references → re-descargar → re-subir ZIP → re-testear.
+Mismas reglas absolutas: replicar ref/layout/, guidelines, fotos de 
+asset/photo/ embebidas, logos de asset/logos/ correctos.
 
-Repetir hasta que los 3 tests pasen. Típicamente 2-3 iteraciones.
+Outline primero con columnas: # | Título | Tipo slide | Ref layout | Foto | Logo
+```
 
-### Paso 2.4 — Piloto con early adopters
+**⬜ MANUAL** · Mismo ciclo de refinamiento hasta pixel-perfect.
 
-**⬜ MANUAL** · Compartir skill con Borja (ventas) y Carmen (diseño)
+### Paso 2.5 — Documentar la skill desde los gold standards
 
-Cada uno prueba con un caso REAL. Feedback estructurado en FEEDBACK.md:
+> **Este es el paso clave**: en vez de documentar reglas teóricas, extraemos las reglas de lo que FUNCIONA.
+
+**🟩 COWORK** ·
+
+```
+Ahora tienes 2 presentaciones HTML pixel-perfect que coinciden exactamente 
+con las referencias de Alkemy. Necesito que extraigas de ellas las REGLAS 
+CONCRETAS que debe seguir la skill para replicar siempre este nivel.
+
+Compara los 2 HTMLs que generaste y extrae:
+
+1. REGLAS DE CSS que son constantes entre ambas presentaciones:
+   - Variables CSS (colores, tamaños, espaciados)
+   - Clases que se repiten
+   - Patrones de layout (grid, flexbox, posiciones)
+   - Media queries
+
+2. REGLAS DE COMPOSICIÓN por tipo de slide:
+   Para cada tipo de slide que usaste, documenta:
+   - HTML exacto de la estructura
+   - CSS exacto aplicado
+   - Dónde va la foto (si aplica): selector CSS, background-size, 
+     background-position, overlay
+   - Dónde va el logo: selector, posición, tamaño
+   - Tipografía exacta: font-family, font-size, font-weight, 
+     line-height, letter-spacing, color
+
+3. REGLAS DE USO DE FOTOS:
+   - Tipos de slide que llevan foto
+   - Cómo se embebe (CSS background vs img tag vs figure)
+   - Overlay: color, opacidad
+   - Posición y tamaño de la foto
+
+4. REGLAS DE LOGOS:
+   - Qué logo en qué tipo de slide
+   - Posición exacta (CSS)
+   - Tamaño
+
+5. DIFERENCIAS POR TONO:
+   - Qué cambia entre commercial e impact
+   - Qué se mantiene igual
+
+Genera un archivo: skills/alkemy-presentations/references/pixel-perfect-rules.md
+con TODAS estas reglas documentadas de forma que la skill las pueda aplicar 
+automáticamente.
+```
+
+### Paso 2.6 — Actualizar la skill
+
+**🟩 COWORK** ·
+
+```
+Basándote en pixel-perfect-rules.md que acabas de generar, propón los 
+cambios necesarios a:
+
+1. SKILL.md — ¿Qué secciones necesitan actualizarse con reglas más 
+   precisas de composición?
+2. references/slide-catalog.md — ¿El HTML de los tipos de slide coincide 
+   con lo que realmente funciona pixel-perfect?
+3. references/brand-system.md — ¿Hay reglas que faltan o que contradicen 
+   lo observado en las guidelines?
+4. templates/base.html — ¿El CSS del template necesita ajustes para que 
+   el output por defecto sea pixel-perfect?
+
+Para cada cambio:
+- Archivo: [cuál]
+- Sección: [dónde]
+- Antes: [qué dice ahora]
+- Después: [qué debería decir]
+- Razón: [qué gold standard lo demostró]
+
+NO apliques cambios. Lista primero para que yo valide.
+```
+
+**⬜ MANUAL** · Valida la lista de cambios.
+
+**🟩 COWORK** · Aplica los cambios aprobados.
+
+**⬜ MANUAL** · Re-comprimir ZIP, re-subir a claude.ai (Settings > Skills).
+
+### Paso 2.7 — Test de verificación: ¿la skill replica el gold standard?
+
+**🟩 COWORK** · Ahora sí testeamos la skill actualizada:
+
+```
+Lee el SKILL.md actualizado y GENERA la misma presentación de credenciales 
+del Test 1 (sector seguros, Data.Tech.AI, commercial, 12 slides, externa) 
+siguiendo SOLO las instrucciones del SKILL.md y los references.
+
+NO mires los gold standards. Actúa como si fueras un Claude nuevo que 
+solo tiene el skill y los references.
+
+Genera el HTML. Después compáralo contra el gold standard del Paso 2.2:
+- ¿La composición coincide?
+- ¿La tipografía coincide?
+- ¿Los colores coinciden?
+- ¿Las fotos y logos están correctos?
+
+Veredicto por slide: ✅ / ⚠️ / 🔴
+```
+
+Si hay ⚠️ o 🔴: las reglas del SKILL.md o los references no son suficientes → iterar paso 2.6 con reglas más específicas.
+
+Si todo es ✅: la skill está lista para el piloto.
+
+### Paso 2.8 — Checklist de evaluación
+
+Para cada presentación, verificar:
+
+- [ ] ¿Composición de cada slide coincide con el PNG de ref/layout/ correspondiente?
+- [ ] ¿Tipografía es Aeonik con los tamaños y pesos exactos de las guidelines?
+- [ ] ¿Colores corresponden a la BU indicada según las guidelines?
+- [ ] ¿Logos correctos (versión, posición, tamaño) según guidelines?
+- [ ] ¿Fotos de asset/photo/ embebidas donde las referencias las muestran?
+- [ ] ¿Overlay de fotos con opacidad correcta según observado en referencias?
+- [ ] ¿Corchetes [ ] aparecen como motivo visual donde lo muestran las referencias?
+- [ ] ¿Header/footer con contenido y posición exactos de las referencias?
+- [ ] ¿Títulos de acción (no etiquetas) siguiendo estructura Minto/SCQA?
+- [ ] ¿Al menos 1 visual (SVG/chart/foto) por cada 3 slides de texto?
+- [ ] ¿Se exporta a PDF correctamente? (Chrome → Ctrl+P → horizontal → sin márgenes)
+- [ ] ¿Si es externa, disclaimer de confidencialidad presente?
+
+### Paso 2.9 — Piloto con early adopters
+
+**⬜ MANUAL** · Compartir skill actualizada con Borja (ventas) y Carmen (diseño)
+
+Cada uno prueba con un caso REAL. Feedback en FEEDBACK.md:
 - ¿Qué funcionó bien?
 - ¿Qué falló o necesitó corrección?
 - ¿Lo usarías en vez de hacerlo manual? ¿Por qué?
 - ¿Qué le falta?
 
-Guardar los 3 mejores HTMLs como ejemplos en `examples/`.
+Guardar los gold standards + mejores outputs del piloto en `examples/`.
 
 ---
 
@@ -504,7 +807,7 @@ Inicializa repo privado github.com/pabloambrossi/alkemy-claude-skills con:
 
 ---
 
-## Fase KB.0 — Reestructurar la Knowledge Base
+## Fase KB.0 — Reestructurar la Knowledge Base ✅ COMPLETADA
 
 > *Crear 5 capas y 9 categorías con subcarpetas espejo.*
 
@@ -873,16 +1176,18 @@ Antes de integrar cualquier herramienta via API/MCP:
 
 ## Principios operativos
 
-1. **Descripción "pushy"** del skill con todos los sinónimos y triggers
-2. **Progressive disclosure**: SKILL.md <500 líneas, detalles en references/
-3. **Explicar el por qué**, no solo el qué
-4. **Generalizar** desde ejemplos, no crear recetas
-5. **Outline primero**, código después
-6. **Seguridad por defecto**: placeholders > datos inventados
-7. **MVP primero**: v0.1 = 5 layouts × 1 BU × 1 tono. Expandir por sprint
-8. **El usuario final no es Pablo**: diseñar como producto (quick start, express, FAQ)
-9. **Esto es un caso de éxito de Alkemy**: documentar ROI, usar en credenciales
-10. **La KB alimenta al skill**: company-context.md es derivado, no manual
+1. **Reference-first**: crear el output perfecto estudiando las referencias reales ANTES de documentar reglas
+2. **Descripción "pushy"** del skill con todos los sinónimos y triggers
+3. **Progressive disclosure**: SKILL.md <500 líneas, detalles en references/
+4. **Explicar el por qué**, no solo el qué
+5. **Generalizar** desde ejemplos, no crear recetas
+6. **Outline primero**, código después
+7. **Seguridad por defecto**: placeholders > datos inventados
+8. **MVP primero**: v0.1 = 5 layouts × 1 BU × 1 tono. Expandir por sprint
+9. **El usuario final no es Pablo**: diseñar como producto (quick start, express, FAQ)
+10. **Esto es un caso de éxito de Alkemy**: documentar ROI, usar en credenciales
+11. **La KB alimenta al skill**: company-context.md es derivado, no manual
+12. **Observar, no inventar**: toda regla de composición debe poder trazarse a un PNG de ref/ o a las guidelines
 
 ---
 
@@ -923,3 +1228,13 @@ Antes de integrar cualquier herramienta via API/MCP:
 | Conocimiento accesible | 63 PDFs sin estructura | 9 masters accionables + visión global + grafo |
 | Nuevo documento → integrado en | Nunca (se pierde en SharePoint) | <1h: clasificar → redactar → propagar |
 | ROI estimado | — | ~24h/mes recuperadas (~€2,000/mes) |
+
+---
+
+## Changelog
+
+| Versión | Fecha | Cambios |
+|---------|-------|---------|
+| v5.0 | 2026-03-29 | Plan inicial completo con 2 tracks paralelos |
+| v6.0 | 2026-03-29 | Fase 0 y KB.0 completadas. Fase 1 completada (skill ensamblado + subido). Añadido paso 0.3b (logos corporativos: 38 PNGs clasificados, renombrados, README, integrados en brand-system.md y company-context.md). Fase 2 reescrita: testing pixel-perfect en Cowork (no Chat) para comparación visual contra ref/layout/ y ref/example/. Flujo: cargar contexto → outline → generar → comparar → refinar → actualizar skill. Nota técnica: descripción SKILL.md ≤1024 chars. |
+| v6.1 | 2026-03-29 | **Fase 2 reescrita desde cero con enfoque "reference-first"**: primero crear HTML pixel-perfect estudiando referencias reales (guidelines PDF, ref/layout/, ref/example/) → después documentar la skill desde lo que funciona (pixel-perfect-rules.md) → después verificar que la skill replica el gold standard. Fotos de asset/photo/ y logos de asset/logos/ obligatorios en tests (base64 embebido). Nuevo archivo references/pixel-perfect-rules.md generado desde los gold standards. Paso 2.7 verifica que la skill actualizada genera output equivalente al gold standard sin ver las referencias. |
