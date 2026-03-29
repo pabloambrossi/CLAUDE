@@ -1,4 +1,4 @@
-[plan-v6-alkemy.md](https://github.com/user-attachments/files/26330978/plan-v6-alkemy.md)
+[plan-v6-alkemy.md](https://github.com/user-attachments/files/26332606/plan-v6-alkemy.md)
 # Plan Operativo v6: Alkemy Presentations + Knowledge Base G&I
 
 **Versión**: 6.1 · 29 marzo 2026
