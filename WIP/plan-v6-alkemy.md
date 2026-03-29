@@ -1,7 +1,7 @@
-[plan-v6-alkemy.md](https://github.com/user-attachments/files/26332606/plan-v6-alkemy.md)
+[plan-v6-alkemy.md](https://github.com/user-attachments/files/26332992/plan-v6-alkemy.md)
 # Plan Operativo v6: Alkemy Presentations + Knowledge Base G&I
 
-**Versión**: 6.1 · 29 marzo 2026
+**Versión**: 6.2 · 29 marzo 2026
 **Owner**: Pablo Ambrossi (G&I Lead, Alkemy España)  
 **Co-owner técnico**: Germán Santos (german.santos@innocv.com)  
 **GitHub**: github.com/pabloambrossi/alkemy-claude-skills (privado)  
@@ -140,7 +140,9 @@ Los dos tracks se ejecutan en paralelo. La KB alimenta al skill, pero el skill p
 │   │   ├── animations.md                      ← Del alkemy-deck existente
 │   │   ├── master-layouts.md                  ← Del alkemy-deck existente
 │   │   ├── design-tokens.md                   ← Del alkemy-deck existente
-│   │   └── pixel-perfect-rules.md             ← 🆕 Se genera en Fase 2.5 desde gold standards
+│   │   ├── pixel-perfect-rules.md             ← 🆕 Se genera en Fase 2.5 desde gold standards
+│   │   ├── slide-typology.md                  ← 🆕 Se genera en Fase 2.1: catálogo con criterio de uso
+│   │   └── sequence-logic.md                  ← 🆕 Se genera en Fase 2.1: lógica de selección y ritmo
 │   ├── templates/
 │   │   ├── base.html                          ← Del alkemy-deck existente (450KB)
 │   │   └── logo_new_alkemy.svg
@@ -434,9 +436,11 @@ Test rápido: escribir "Hazme una presentación de credenciales de Alkemy para u
 2. Selecciona carpeta: `...\00-claude\alkemy-corporate-slides\`
 3. Verifica que ves: `source/`, `ref/`, `asset/`, `skills/`, `docs/`
 
-### Paso 2.1 — Estudio profundo de las referencias
+### Paso 2.1 — Estudio profundo de las referencias + catálogo de tipologías
 
-**🟩 COWORK** · Este es el paso más importante. Claude debe ESTUDIAR antes de crear.
+**🟩 COWORK** · Este es el paso más importante. Claude debe ESTUDIAR antes de crear. Genera 3 entregables.
+
+#### 2.1a — Informe de estudio visual
 
 ```
 CONTEXTO: Voy a crear una presentación HTML pixel-perfect que replique 
@@ -469,7 +473,7 @@ FASE DE ESTUDIO (no generes nada):
    - Diferencias entre el layout vacío y el layout con contenido
 
 4. Lista TODAS las fotos de asset/photo/:
-   - Nombre, formato, dimensiones
+   - Nombre, formato, dimensiones REALES (ancho × alto en px)
    - Descripción visual del contenido
    - Tono (claro/oscuro, colores dominantes)
    - En qué tipo de slide encajaría según lo que observas en ref/
@@ -493,7 +497,7 @@ CUANDO HAYAS TERMINADO, genera un INFORME DE ESTUDIO con:
 [Qué versión en qué contexto, posición, tamaño mínimo]
 
 ## Catálogo de assets disponibles
-[Fotos con uso recomendado, logos con uso recomendado]
+[Fotos con dimensiones reales y uso recomendado, logos con uso recomendado]
 
 ## Discrepancias detectadas
 [Si algo del slide-catalog.md o brand-system.md contradice lo que ves 
@@ -502,11 +506,198 @@ en ref/layout/ o en las guidelines, anótalo aquí]
 NO generes ninguna slide. Solo el informe.
 ```
 
-**⬜ MANUAL** · Lee el informe. Verifica que lo que Claude observó en las referencias coincide con lo que tú ves. Corrige si hay interpretaciones erróneas. Este informe es la base de todo lo que viene después.
+**⬜ MANUAL** · Lee el informe. Verifica que lo que Claude observó coincide con lo que tú ves. Corrige interpretaciones erróneas. Este informe es la base de todo.
+
+#### 2.1b — Catálogo de tipologías con criterio de uso
+
+**🟩 COWORK** · Tras validar el informe:
+
+```
+Basándote en tu estudio de ref/layout/, ref/example/ y las guidelines, 
+genera un catálogo de tipologías de slide que explique no solo QUÉ es 
+cada tipo sino CUÁNDO y POR QUÉ usarlo.
+
+Para CADA tipo de slide que observaste en ref/layout/:
+
+## [Nombre del tipo] — `.clase-css`
+
+### Función comunicativa
+[¿Qué efecto debe producir en la audiencia? No "mostrar datos" sino 
+"crear impacto emocional con una cifra antes de explicar el contexto"]
+
+### Cuándo usarla
+[Situaciones concretas: "después de presentar un problema, para mostrar 
+la magnitud"; "para abrir un nuevo acto de la narrativa"]
+
+### Cuándo NO usarla
+[Anti-patrones: "nunca como segunda slide consecutiva del mismo tipo"; 
+"no usar si el dato necesita contexto que no cabe en la slide"]
+
+### Composición observada (de ref/layout/)
+[Descripción exacta: márgenes, grid, posiciones, tipografía, colores.
+Basada en lo que VISTE en los PNGs, no en el slide-catalog.md]
+
+### Uso de fotografía (si aplica)
+[Cómo se integra la foto según lo observado en ref/layout/ y ref/example/]
+
+### Categoría de repetibilidad
+Clasifica cada tipo en UNA de estas categorías:
+- BÁSICA (puede repetirse sin límite): para slides que son "workhorses"
+- DE ACENTO (máx 2 por deck): para slides que añaden variedad visual
+- DE IMPACTO (máx 1 por deck): para momentos únicos de máximo efecto
+- ESTRUCTURAL (posición fija): cover, closing, section separators
+
+Guarda como: skills/alkemy-presentations/references/slide-typology.md
+```
+
+#### 2.1c — Lógica de selección y ritmo visual
+
+**🟩 COWORK** · Inmediatamente después:
+
+```
+Ahora genera la lógica que conecta el OBJETIVO de cada diapositiva con 
+la TIPOLOGÍA correcta y el RITMO del deck completo.
+
+El skill debe pensar en 3 capas antes de elegir una tipología:
+
+CAPA 1 — ESTRUCTURA NARRATIVA (por tono)
+Documenta el arco narrativo de cada tono:
+- commercial: Problema → Solución → Proof → Ask
+- impact: SCQA → 3 actos (Problema → Respuesta → Acción)
+- technical: Contexto → Arquitectura → Detalle → Resultados
+- workshop: Concepto → Ejemplo → Ejercicio → Debrief
+
+CAPA 2 — OBJETIVO COMUNICATIVO POR SLIDE
+Cada slide debe tener UN objetivo comunicativo asignado:
+
+| Objetivo | Qué debe sentir/pensar la audiencia |
+|----------|-------------------------------------|
+| ABRIR | "Esto me interesa" — captar atención |
+| CONTEXTUALIZAR | "Entiendo la situación" — dar marco |
+| PROBLEMATIZAR | "Esto es un problema real" — crear tensión |
+| PROPONER | "Hay una solución" — presentar la respuesta |
+| DEMOSTRAR | "Esto funciona" — aportar evidencia |
+| CUANTIFICAR | "Los números hablan" — impacto medible |
+| VISUALIZAR | "Ahora lo veo claro" — diagrama, proceso, mapa |
+| TRANSICIONAR | "Cambiamos de tema" — separar actos |
+| CERRAR | "Sé qué hacer" — call to action |
+
+CAPA 3 — SELECCIÓN DE TIPOLOGÍA
+Mapeo objetivo → tipologías candidatas (en orden de preferencia):
+
+| Objetivo | Tipologías candidatas |
+|----------|----------------------|
+| ABRIR | cover, cover-light, hero |
+| CONTEXTUALIZAR | content, two-col, split |
+| PROBLEMATIZAR | hero, metrics, abstract, image |
+| PROPONER | content, two-col, split |
+| DEMOSTRAR | infographic, two-col, content |
+| CUANTIFICAR | metrics, kpi-rows, kpi-cards, chart |
+| VISUALIZAR | infographic, chart, roadmap |
+| TRANSICIONAR | section, agenda, hero |
+| CERRAR | closing |
+
+REGLAS DE RITMO VISUAL (obligatorias):
+
+1. ALTERNANCIA DE FONDOS:
+   Nunca 3 slides del mismo tipo de fondo consecutivas.
+   Alternar: claro → oscuro → claro, o claro → claro → color → claro.
+
+2. VARIEDAD DE TIPOS:
+   - BÁSICAS (content, two-col): pueden repetirse
+   - DE ACENTO (metrics, infographic, chart, split): máx 2 por deck
+   - DE IMPACTO (hero, image, creative, quote, abstract): máx 1 por deck
+   - Si el outline tiene 2 slides CUANTIFICAR, usar metrics + chart 
+     (no metrics + metrics)
+
+3. DENSIDAD VISUAL:
+   Mín 1 slide visual por cada 3 de texto. Máx 2 de texto consecutivas.
+
+4. DISTRIBUCIÓN DE IMPACTO:
+   Los momentos de impacto se distribuyen uniformemente:
+   - Deck 8 slides: posiciones ~1, 4, 7, 8
+   - Deck 12 slides: posiciones ~1, 4-5, 8-9, 12
+   - Deck 15 slides: posiciones ~1, 4-5, 8-9, 12-13, 15
+   No concentrar todos los visuales al principio o al final.
+
+5. PROPORCIÓN POR LONGITUD:
+   | Slides | Básicas | Acento | Impacto | Estructurales |
+   |--------|---------|--------|---------|---------------|
+   | 8 (express) | 3-4 | 1-2 | 1 | 2 |
+   | 12 (standard) | 4-5 | 2-3 | 2 | 3 |
+   | 15 (extended) | 5-7 | 3-4 | 2-3 | 3-4 |
+   | 20+ (deep-dive) | 8-10 | 4-5 | 3 | 4-5 |
+
+PROCESO DE OUTLINE (el skill debe seguir esto SIEMPRE):
+
+1. Definir actos narrativos según tono
+2. Asignar objetivo comunicativo a cada slide
+3. Seleccionar tipología candidata según el mapeo
+4. Verificar reglas de ritmo (alternar fondos, no repetir impacto)
+5. Si viola una regla → cambiar la tipología por otra candidata del mismo objetivo
+6. Presentar outline con columnas:
+   | # | Acto | Objetivo | Título de acción | Tipología | Fondo | Visual/Foto |
+
+Guarda como: skills/alkemy-presentations/references/sequence-logic.md
+```
+
+#### 2.1d — Reglas de imágenes en alta resolución
+
+**🟩 COWORK** · Añadir al final de la sesión:
+
+```
+Necesito que documentes las reglas técnicas para embeber imágenes en alta 
+resolución en el HTML. Esto es CRÍTICO para la calidad visual.
+
+1. Para cada foto en asset/photo/, muéstrame sus dimensiones reales:
+   Ejecuta: python3 -c "
+   from PIL import Image; import os
+   folder = 'asset/photo/'
+   for f in sorted(os.listdir(folder)):
+       if f.endswith(('.webp','.jpg','.png')):
+           img = Image.open(os.path.join(folder, f))
+           size = os.path.getsize(os.path.join(folder, f))
+           print(f'{f}: {img.width}x{img.height}px, {size//1024}KB')
+   "
+
+2. Documenta estas reglas de embebido en el informe de estudio:
+
+REGLAS DE IMÁGENES EN ALTA RESOLUCIÓN:
+
+a) Leer la foto en su resolución ORIGINAL. No redimensionar.
+
+b) Si el archivo pesa >500KB, convertir a JPEG quality 90:
+   python3 -c "
+   from PIL import Image
+   import base64, io
+   img = Image.open('asset/photo/[archivo]')
+   buf = io.BytesIO()
+   img.save(buf, format='JPEG', quality=90)
+   b64 = base64.b64encode(buf.getvalue()).decode()
+   # usar este base64 en el HTML
+   "
+
+c) Si pesa ≤500KB, usar el formato original (WebP es más eficiente).
+
+d) En CSS, controlar el tamaño de visualización sin degradar:
+   background-image: url(data:image/...;base64,...);
+   background-size: cover;
+   background-position: center;
+   image-rendering: auto;
+
+e) Para logos PNG de asset/logos/, usar resolución original sin compresión.
+
+f) VERIFICACIÓN: al terminar, abrir en Chrome, zoom 200% en slides con 
+   foto. Si se ve pixelada → la imagen no se embebió correctamente.
+
+Añade estas reglas al informe de estudio que generaste antes.
+```
+
+**⬜ MANUAL** · Verifica que `pillow` está instalado (`pip install pillow`). Si Cowork no puede ejecutar Python, haz tú la verificación de dimensiones y comparte el resultado.
 
 ### Paso 2.2 — Crear el HTML de referencia (gold standard)
 
-**🟩 COWORK** · Tras validar el informe de estudio:
+**🟩 COWORK** · Tras validar los 3 entregables del paso 2.1:
 
 ```
 Ahora genera una presentación HTML pixel-perfect que replique EXACTAMENTE 
@@ -533,30 +724,41 @@ REGLAS ABSOLUTAS:
   reglas observadas en las guidelines (negro sobre claro, blanco sobre 
   oscuro, posición exacta)
 
-REGLAS DE FOTOGRAFÍA:
+REGLAS DE SELECCIÓN DE TIPOLOGÍA (de sequence-logic.md):
+- Sigue el proceso de 3 capas: actos narrativos → objetivo comunicativo 
+  → tipología candidata
+- Aplica las 5 reglas de ritmo visual: alternancia de fondos, variedad 
+  de tipos, densidad visual, distribución de impacto, proporción
+- Usa las categorías de repetibilidad de slide-typology.md: no repitas 
+  tipos DE IMPACTO, máx 2 DE ACENTO
+
+REGLAS DE FOTOGRAFÍA (alta resolución):
 - Usa fotos de asset/photo/ en las slides donde las referencias de 
   ref/layout/ y ref/example/ muestran uso de fotografía
 - Aplica EXACTAMENTE los mismos patrones de overlay, opacidad y 
   composición que observaste en tu estudio
-- Embebe las fotos como base64 (lee el archivo, convierte, inserta)
+- Embebe en alta resolución: lee la foto original sin redimensionar, 
+  convierte a base64 preservando la resolución. Si >500KB, convierte a 
+  JPEG quality 90 antes de base64.
 - Mínimo 3 slides con foto (cover + 2 más, según lo que muestran 
   las referencias)
-- Elige las fotos más apropiadas del catálogo que listaste
 
 REGLAS DE LOGOS:
 - Usa los PNGs de asset/logos/ correctos para cada slide
-- Embebe como base64
+- Embebe como base64 en resolución original
 - Versión y posición según las guidelines
 
 PROCESO:
 1. Primero dame el outline con estas columnas:
-   | # | Título de acción | Tipo slide | PNG de ref/layout/ que replica | Foto de asset/photo/ | Logo de asset/logos/ |
+   | # | Acto | Objetivo | Título de acción | Tipología | Categoría (B/A/I/E) | Fondo | Foto asset | Logo asset |
 
-2. Espera mi OK
+2. Verifica que el outline cumple las reglas de ritmo de sequence-logic.md
 
-3. Genera el HTML completo (un solo archivo .html autónomo)
+3. Espera mi OK
 
-4. DESPUÉS de generar, COMPÁRATE TÚ MISMO contra las referencias:
+4. Genera el HTML completo (un solo archivo .html autónomo)
+
+5. DESPUÉS de generar, COMPÁRATE TÚ MISMO contra las referencias:
    Para cada slide, abre el PNG de ref/layout/ correspondiente y evalúa:
    ✅ Coincide con referencia
    ⚠️ Ajuste menor — [qué difiere]
@@ -639,11 +841,10 @@ Compara los 2 HTMLs que generaste y extrae:
    - Tipografía exacta: font-family, font-size, font-weight, 
      line-height, letter-spacing, color
 
-3. REGLAS DE USO DE FOTOS:
-   - Tipos de slide que llevan foto
-   - Cómo se embebe (CSS background vs img tag vs figure)
-   - Overlay: color, opacidad
-   - Posición y tamaño de la foto
+3. REGLAS DE IMÁGENES EN ALTA RESOLUCIÓN:
+   - Cómo se embebieron las fotos (formato base64, resolución)
+   - CSS de renderizado (background-size, image-rendering)
+   - Verificación de calidad al 200% zoom
 
 4. REGLAS DE LOGOS:
    - Qué logo en qué tipo de slide
@@ -654,9 +855,18 @@ Compara los 2 HTMLs que generaste y extrae:
    - Qué cambia entre commercial e impact
    - Qué se mantiene igual
 
+6. VALIDACIÓN DE TIPOLOGÍA Y RITMO:
+   - ¿Los outlines cumplieron las reglas de sequence-logic.md?
+   - ¿Alguna regla de ritmo necesita ajustarse tras ver los gold standards?
+   - ¿Hay tipos de slide que funcionan mejor de lo esperado o peor?
+   - Actualizar slide-typology.md y sequence-logic.md si es necesario
+
 Genera un archivo: skills/alkemy-presentations/references/pixel-perfect-rules.md
 con TODAS estas reglas documentadas de forma que la skill las pueda aplicar 
 automáticamente.
+
+Si los gold standards revelaron ajustes necesarios a slide-typology.md o 
+sequence-logic.md, propón los cambios y espera mi OK.
 ```
 
 ### Paso 2.6 — Actualizar la skill
@@ -667,13 +877,26 @@ automáticamente.
 Basándote en pixel-perfect-rules.md que acabas de generar, propón los 
 cambios necesarios a:
 
-1. SKILL.md — ¿Qué secciones necesitan actualizarse con reglas más 
-   precisas de composición?
+1. SKILL.md — ¿Qué secciones necesitan actualizarse? En particular:
+   - La sección de selección de tipología debe referenciar sequence-logic.md
+   - El outline debe incluir las columnas Acto/Objetivo/Tipología/Categoría
+   - Las reglas de composición deben apuntar a pixel-perfect-rules.md
+   - Añadir reglas de imagen en alta resolución
+
 2. references/slide-catalog.md — ¿El HTML de los tipos de slide coincide 
-   con lo que realmente funciona pixel-perfect?
+   con lo que realmente funciona pixel-perfect? Actualizar con el HTML 
+   exacto de los gold standards.
+
 3. references/brand-system.md — ¿Hay reglas que faltan o que contradicen 
    lo observado en las guidelines?
-4. templates/base.html — ¿El CSS del template necesita ajustes para que 
+
+4. references/slide-typology.md — ¿Algún tipo necesita ajuste tras los 
+   gold standards?
+
+5. references/sequence-logic.md — ¿Alguna regla de ritmo necesita 
+   refinarse?
+
+6. templates/base.html — ¿El CSS del template necesita ajustes para que 
    el output por defecto sea pixel-perfect?
 
 Para cada cambio:
@@ -721,15 +944,32 @@ Si todo es ✅: la skill está lista para el piloto.
 
 Para cada presentación, verificar:
 
+**Composición y brand**
 - [ ] ¿Composición de cada slide coincide con el PNG de ref/layout/ correspondiente?
 - [ ] ¿Tipografía es Aeonik con los tamaños y pesos exactos de las guidelines?
 - [ ] ¿Colores corresponden a la BU indicada según las guidelines?
 - [ ] ¿Logos correctos (versión, posición, tamaño) según guidelines?
-- [ ] ¿Fotos de asset/photo/ embebidas donde las referencias las muestran?
-- [ ] ¿Overlay de fotos con opacidad correcta según observado en referencias?
-- [ ] ¿Corchetes [ ] aparecen como motivo visual donde lo muestran las referencias?
 - [ ] ¿Header/footer con contenido y posición exactos de las referencias?
+- [ ] ¿Corchetes [ ] aparecen como motivo visual donde lo muestran las referencias?
+
+**Tipología y ritmo (de sequence-logic.md)**
+- [ ] ¿El outline asigna objetivo comunicativo a cada slide?
+- [ ] ¿Las tipologías seleccionadas corresponden al objetivo de cada slide?
+- [ ] ¿No se repiten tipos DE IMPACTO (hero, image, creative, quote, abstract)?
+- [ ] ¿Los tipos DE ACENTO aparecen máx 2 veces?
+- [ ] ¿No hay 3 slides con el mismo fondo consecutivas?
+- [ ] ¿Máx 2 slides de texto seguidas sin una visual entre medio?
+- [ ] ¿Los momentos de impacto están distribuidos uniformemente en el deck?
+
+**Imágenes y assets**
+- [ ] ¿Fotos de asset/photo/ embebidas donde las referencias las muestran?
+- [ ] ¿Fotos en alta resolución? (verificar zoom 200% en Chrome: no pixeladas)
+- [ ] ¿Overlay de fotos con opacidad correcta según observado en referencias?
+- [ ] ¿Logos embebidos en resolución original?
+
+**Narrativa y contenido**
 - [ ] ¿Títulos de acción (no etiquetas) siguiendo estructura Minto/SCQA?
+- [ ] ¿Estructura narrativa sigue el arco del tono (commercial/impact/etc)?
 - [ ] ¿Al menos 1 visual (SVG/chart/foto) por cada 3 slides de texto?
 - [ ] ¿Se exporta a PDF correctamente? (Chrome → Ctrl+P → horizontal → sin márgenes)
 - [ ] ¿Si es externa, disclaimer de confidencialidad presente?
@@ -1238,3 +1478,4 @@ Antes de integrar cualquier herramienta via API/MCP:
 | v5.0 | 2026-03-29 | Plan inicial completo con 2 tracks paralelos |
 | v6.0 | 2026-03-29 | Fase 0 y KB.0 completadas. Fase 1 completada (skill ensamblado + subido). Añadido paso 0.3b (logos corporativos: 38 PNGs clasificados, renombrados, README, integrados en brand-system.md y company-context.md). Fase 2 reescrita: testing pixel-perfect en Cowork (no Chat) para comparación visual contra ref/layout/ y ref/example/. Flujo: cargar contexto → outline → generar → comparar → refinar → actualizar skill. Nota técnica: descripción SKILL.md ≤1024 chars. |
 | v6.1 | 2026-03-29 | **Fase 2 reescrita desde cero con enfoque "reference-first"**: primero crear HTML pixel-perfect estudiando referencias reales (guidelines PDF, ref/layout/, ref/example/) → después documentar la skill desde lo que funciona (pixel-perfect-rules.md) → después verificar que la skill replica el gold standard. Fotos de asset/photo/ y logos de asset/logos/ obligatorios en tests (base64 embebido). Nuevo archivo references/pixel-perfect-rules.md generado desde los gold standards. Paso 2.7 verifica que la skill actualizada genera output equivalente al gold standard sin ver las referencias. |
+| v6.2 | 2026-03-29 | **Sistema de tipología y ritmo visual**: Paso 2.1 genera 3 entregables (informe visual + slide-typology.md + sequence-logic.md). Catálogo de tipologías con función comunicativa, criterio de uso, y categoría de repetibilidad (BÁSICA/ACENTO/IMPACTO/ESTRUCTURAL). Lógica de selección de 3 capas (actos narrativos → objetivo comunicativo → tipología). 5 reglas de ritmo visual (alternancia fondos, variedad tipos, densidad visual, distribución impacto, proporción por longitud). Outline ampliado con columnas Acto/Objetivo/Tipología/Categoría. Reglas de imagen en alta resolución (preservar resolución original, JPEG q90 si >500KB, verificación zoom 200%). Checklist ampliada con sección de tipología/ritmo y calidad de imagen. Principios operativos: +reference-first, +observar no inventar. |
